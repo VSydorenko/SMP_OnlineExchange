@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3d1714f-077d-4a24-a22e-4c3b4219b1b1">
+  <producedTypes>
+    <objectType typeId="53cc62ed-4dea-42a2-b8f6-28461474766f" valueTypeId="f6a00c17-2eec-4f40-bab7-fad032d6db80"/>
+    <managerType typeId="961a10e8-14bb-46e5-96e5-8c7bec481d4b" valueTypeId="b3fca758-5052-472c-9443-76c1c2552a85"/>
+  </producedTypes>
+  <name>liteExchange_ЗаданиеЗагрузкаФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>liteExchange задание загрузка файлов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.liteExchange_ЗаданиеЗагрузкаФайлов.Form.Форма</defaultForm>
+  <attributes uuid="7abbc22f-9897-4069-9ad7-71f0ec113dc0">
+    <name>Параметр1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр №1</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="a3f510be-f989-43de-98f6-1b959aed43b2">
+    <name>Параметр2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр №2</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="dfb16cd5-0835-432e-bf74-94bae7b3c132">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

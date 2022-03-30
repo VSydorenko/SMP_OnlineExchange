@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1a15b2b1-0331-440e-adca-8eac49634d1e">
+  <producedTypes>
+    <objectType typeId="6bb1bd00-1594-4b05-b723-b7f093411089" valueTypeId="bfe21048-6012-4943-83ab-1b42b37ea8ef"/>
+    <managerType typeId="5bd49bf5-b027-459c-8e68-01159087b5b7" valueTypeId="0904bb87-d521-48da-af53-0d1cd1930fb2"/>
+  </producedTypes>
+  <name>леJSONКонвертер4</name>
+  <synonym>
+    <key>ru</key>
+    <value>JSON конвертер (v4)</value>
+  </synonym>
+  <comment>Проебразовывает структуры данных в JSON и обратно</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.леJSONКонвертер4.Form.Форма</defaultForm>
+  <forms uuid="dbc9e5cc-af4b-4bef-8d96-1c28f1b94afc">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

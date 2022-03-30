@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce3f8b2d-9c59-463a-b33c-62b33da1077a">
+  <name>ex</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ex</value>
+  </synonym>
+  <rootURL>ex</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>5</sessionMaxAge>
+  <urlTemplates uuid="f1d0e2c5-0163-4230-b3e7-6e0eb2e24029">
+    <name>Запрос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрос</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="99cbcd68-6796-4028-abc6-6592ed1bed2b">
+      <name>get</name>
+      <synonym>
+        <key>ru</key>
+        <value>Get</value>
+      </synonym>
+      <handler>Запросget</handler>
+    </methods>
+    <methods uuid="42cdaac0-d22c-4882-81ee-01b66d17eaf8">
+      <name>post</name>
+      <synonym>
+        <key>ru</key>
+        <value>Post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>Запросpost</handler>
+    </methods>
+    <methods uuid="5d251976-8f5b-4fc3-8e79-f1f5433f4665">
+      <name>put</name>
+      <synonym>
+        <key>ru</key>
+        <value>Put</value>
+      </synonym>
+      <httpMethod>PUT</httpMethod>
+      <handler>Запросput</handler>
+    </methods>
+    <methods uuid="9ee2451f-349b-4e06-96a2-006db9ad2961">
+      <name>delete</name>
+      <synonym>
+        <key>ru</key>
+        <value>Delete</value>
+      </synonym>
+      <httpMethod>DELETE</httpMethod>
+      <handler>Запросdelete</handler>
+    </methods>
+    <methods uuid="3732679b-75d6-403f-a5d8-8796deabc207">
+      <name>patch</name>
+      <synonym>
+        <key>ru</key>
+        <value>Patch</value>
+      </synonym>
+      <httpMethod>PATCH</httpMethod>
+      <handler>Запросpatch</handler>
+    </methods>
+    <methods uuid="4bf7eb3d-da47-4a65-b436-3270ba934dec">
+      <name>options</name>
+      <synonym>
+        <key>ru</key>
+        <value>otions</value>
+      </synonym>
+      <httpMethod>OPTIONS</httpMethod>
+      <handler>ЗапросOptions</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

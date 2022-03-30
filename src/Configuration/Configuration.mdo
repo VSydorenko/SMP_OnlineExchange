@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="135b7f3c-dbc9-4a9e-a3f7-3c1120e2aaed">
+  <name>liteExchange2</name>
+  <synonym>
+    <key>ru</key>
+    <value>liteExchange2</value>
+  </synonym>
+  <objectBelonging>Adopted</objectBelonging>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension"/>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="c1b23587-22a9-481e-81a1-70286fe78539"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="c375239a-3897-479f-a7ed-adc2eba1fb26"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="f755824e-5524-4f72-b0d8-44d13fe3e095"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="3f35ee8e-1a57-49d9-b73f-1beec62bc0a5"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="2cdd34c5-6b37-48d2-888b-a29c211f98f2"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="6e72eba1-0c90-4d75-ad6d-9b9c120e30ff"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="ef17e5be-009e-4670-ba56-c7a874c0020a"/>
+  <keepMappingToExtendedConfigurationObjectsByIDs>true</keepMappingToExtendedConfigurationObjectsByIDs>
+  <namePrefix>СМП_</namePrefix>
+  <configurationExtensionCompatibilityMode>8.3.12</configurationExtensionCompatibilityMode>
+  <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
+  <scriptVariant>Russian</scriptVariant>
+  <vendor>liteapps.ru</vendor>
+  <version>2.4.2.17</version>
+  <compatibilityMode>8.3.22</compatibilityMode>
+  <languages uuid="29121641-cb7f-4337-8581-342e00c818fd">
+    <name>Русский</name>
+    <objectBelonging>Adopted</objectBelonging>
+    <extension xsi:type="mdclassExtension:LanguageExtension">
+      <languageCode>Checked</languageCode>
+    </extension>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.le_liteExchange</subsystems>
+  <commonPictures>CommonPicture.леПиктограммаПодсистемы</commonPictures>
+  <commonPictures>CommonPicture.леЗагрузить</commonPictures>
+  <commonPictures>CommonPicture.леВыгрузить</commonPictures>
+  <commonModules>CommonModule.леПодключаемыеОбработчики</commonModules>
+  <commonModules>CommonModule.леКоннекторHTTP</commonModules>
+  <commonModules>CommonModule.леУправлениеОчередями</commonModules>
+  <commonModules>CommonModule.леЛоггирование</commonModules>
+  <commonModules>CommonModule.леОбщегоНазначения</commonModules>
+  <commonModules>CommonModule.леСобытия</commonModules>
+  <httpServices>HTTPService.ex</httpServices>
+  <enums>Enum.леСтатусыОбработкиСообщений</enums>
+  <dataProcessors>DataProcessor.леLiteExchange2</dataProcessors>
+  <dataProcessors>DataProcessor.Обработкаtest</dataProcessors>
+  <dataProcessors>DataProcessor.леHTTPRequest</dataProcessors>
+  <dataProcessors>DataProcessor.леGZipОбработка</dataProcessors>
+  <dataProcessors>DataProcessor.леАнализаторДанных</dataProcessors>
+  <dataProcessors>DataProcessor.леЛоггирование</dataProcessors>
+  <dataProcessors>DataProcessor.леJSONКонвертер4</dataProcessors>
+  <dataProcessors>DataProcessor.liteExchange_ЗаданиеОчередьОбработкиДанных</dataProcessors>
+  <dataProcessors>DataProcessor.liteExchange_ЗаданиеОчередьВходящих</dataProcessors>
+  <dataProcessors>DataProcessor.liteExchange_ЗаданиеЗагрузкаФайлов</dataProcessors>
+  <dataProcessors>DataProcessor.liteExchange_правилаКонвертации</dataProcessors>
+  <dataProcessors>DataProcessor.леТранспорт</dataProcessors>
+  <informationRegisters>InformationRegister.леНастройкиТранспортаОбменаДанными</informationRegisters>
+  <informationRegisters>InformationRegister.леОчередьОбработкиДанных</informationRegisters>
+  <informationRegisters>InformationRegister.леОчередьИсходящихСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.леОчередьВходящихСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.леОчередьОжидания</informationRegisters>
+</mdclass:Configuration>

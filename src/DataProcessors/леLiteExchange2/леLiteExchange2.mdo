@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4dafd88c-ada5-464a-b182-debd24238fab">
+  <producedTypes>
+    <objectType typeId="fcd82ccf-c442-40ad-ac38-e25364ee698d" valueTypeId="8321331c-bae7-4f8b-bca0-be2b26885294"/>
+    <managerType typeId="c3d1f794-93e2-4910-9bf6-870c30f9a169" valueTypeId="4f39d417-d8ab-4e29-a75b-dff51b76c0d2"/>
+  </producedTypes>
+  <name>леLiteExchange2</name>
+  <synonym>
+    <key>ru</key>
+    <value>liteExchange 2</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+</mdclass:DataProcessor>

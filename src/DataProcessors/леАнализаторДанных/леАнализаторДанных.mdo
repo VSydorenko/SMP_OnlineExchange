@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dfc0c369-d92e-4b18-8a65-c55c01a3817b">
+  <producedTypes>
+    <objectType typeId="a44d8538-02ca-410a-8abe-138a7176acc2" valueTypeId="7af42766-ad3d-49fd-a8f9-28e45543d956"/>
+    <managerType typeId="cd570963-a0e6-4ba9-9f3a-9f162500f465" valueTypeId="3629835c-0d67-43ba-a876-8db3dd58fbbf"/>
+  </producedTypes>
+  <name>леАнализаторДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализатор данных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <explanation>
+    <key>ru</key>
+    <value>Строит иерархию ссылок на объекты</value>
+  </explanation>
+</mdclass:DataProcessor>

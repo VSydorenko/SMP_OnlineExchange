@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b454cbd6-4a81-4d52-8541-a657fb59ab3f">
+  <name>le_liteExchange</name>
+  <synonym>
+    <key>ru</key>
+    <value>liteExchange</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.леПиктограммаПодсистемы</picture>
+  </picture>
+  <content>HTTPService.ex</content>
+  <content>DataProcessor.Обработкаtest</content>
+  <content>InformationRegister.леНастройкиТранспортаОбменаДанными</content>
+  <content>CommonModule.леКоннекторHTTP</content>
+  <content>CommonModule.леПодключаемыеОбработчики</content>
+  <content>InformationRegister.леОчередьОбработкиДанных</content>
+  <content>InformationRegister.леОчередьИсходящихСообщений</content>
+  <content>InformationRegister.леОчередьВходящихСообщений</content>
+  <content>InformationRegister.леОчередьОжидания</content>
+  <content>DataProcessor.леТранспорт</content>
+</mdclass:Subsystem>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1e54e883-51bc-4962-83e4-e07685a49840">
+  <producedTypes>
+    <objectType typeId="0b58299b-2fee-4d33-8e57-f2366b001e14" valueTypeId="d99a7374-7e49-42a6-8977-4fde1c7a3f0e"/>
+    <managerType typeId="3742df85-f96f-4c40-a929-3b7e8097dd1a" valueTypeId="74777a87-6534-4409-a215-570ac4d0da62"/>
+  </producedTypes>
+  <name>liteExchange_ЗаданиеОчередьВходящих</name>
+  <synonym>
+    <key>ru</key>
+    <value>liteExchange задание очередь входящих</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.liteExchange_ЗаданиеОчередьВходящих.Form.Форма</defaultForm>
+  <attributes uuid="5eb44ed3-254d-472a-8b2b-80fe2badeb6d">
+    <name>Параметр1</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр №1</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>30</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="66f7e067-29fb-4e26-86a5-45139058699b">
+    <name>Параметр2</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметр №2</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="e25f78db-2811-4d20-b651-b7fc03ef9b0e">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="39a5cfc0-5068-46ea-a9f1-5941d8ab9617">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="01852c76-bc27-4976-8f85-0f549bef62b5">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
