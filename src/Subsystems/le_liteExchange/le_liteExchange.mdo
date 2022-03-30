@@ -20,4 +20,5 @@
   <content>InformationRegister.леОчередьВходящихСообщений</content>
   <content>InformationRegister.леОчередьОжидания</content>
   <content>DataProcessor.леТранспорт</content>
+  <content>Catalog.СМП_УчетныеЗаписиОбменов</content>
 </mdclass:Subsystem>

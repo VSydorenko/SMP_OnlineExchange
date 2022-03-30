@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="22ebc3ab-3d75-4ab8-94e5-c19c78bd403d">
+  <producedTypes>
+    <objectType typeId="0ad7e659-7381-4410-820a-c5453df13b6a" valueTypeId="0cfbd1f8-6649-481f-8eb6-2f8a2aa0ad36"/>
+    <refType typeId="bb6ac87a-d47d-46a6-a5d3-419869406fa4" valueTypeId="ea7869ec-0a94-4def-934b-b50ddc7948f1"/>
+    <selectionType typeId="4adaf73b-5656-4478-8a87-cf94ea6f7ce4" valueTypeId="3dbf6f00-ff6c-4f0b-8d85-42e6ef911203"/>
+    <listType typeId="1f7ec051-4923-4021-840a-ee773678159f" valueTypeId="01675f9b-ef3a-4539-8b4f-4c04e92931c8"/>
+    <managerType typeId="06bda93c-cd9b-4e8b-a97f-df11e3960ef1" valueTypeId="7ee5d4bc-f6d2-400e-98e8-cc02f1471c9b"/>
+  </producedTypes>
+  <name>СМП_УчетныеЗаписиОбменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Учетные записи обменов</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СМП_УчетныеЗаписиОбменов.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.СМП_УчетныеЗаписиОбменов.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

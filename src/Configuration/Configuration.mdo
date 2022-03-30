@@ -41,6 +41,7 @@
   <commonModules>CommonModule.леОбщегоНазначения</commonModules>
   <commonModules>CommonModule.леСобытия</commonModules>
   <httpServices>HTTPService.ex</httpServices>
+  <catalogs>Catalog.СМП_УчетныеЗаписиОбменов</catalogs>
   <enums>Enum.леСтатусыОбработкиСообщений</enums>
   <dataProcessors>DataProcessor.леLiteExchange2</dataProcessors>
   <dataProcessors>DataProcessor.Обработкаtest</dataProcessors>
