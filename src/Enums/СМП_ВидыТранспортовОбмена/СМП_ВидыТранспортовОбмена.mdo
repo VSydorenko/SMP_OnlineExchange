@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b3e3022f-b638-4b3a-9fc7-0f68cded197c">
+  <producedTypes>
+    <refType typeId="c440ee44-1dab-4292-aacd-e3af903a5390" valueTypeId="f6310d87-102a-4fc3-8083-50c5752b7ab6"/>
+    <listType typeId="ee00c6b2-3def-4480-9363-e1b454d200e5" valueTypeId="a087b0bd-9870-4870-9a81-0ea26bbcc281"/>
+    <managerType typeId="f23f3955-881b-4b41-a171-0659a33bf04b" valueTypeId="fbcfe60e-efe1-4f8d-b546-7ba4a840cc83"/>
+  </producedTypes>
+  <name>СМП_ВидыТранспортовОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды транспортов обмена</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9ddaeb17-cb12-4b86-9788-a011238e998a">
+    <name>FILE</name>
+    <synonym>
+      <key>ru</key>
+      <value>Локальный или сетевой каталог</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a1d1e480-ae55-403a-aa6a-e52a8fa1d5d5">
+    <name>HS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интернет (http, https)</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ecaff91f-6073-4aee-861b-e902e52cd917">
+    <name>COM</name>
+    <synonym>
+      <key>ru</key>
+      <value>Прямое подключение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
