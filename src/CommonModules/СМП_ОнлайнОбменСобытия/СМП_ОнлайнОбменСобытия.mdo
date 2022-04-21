@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="78163812-2c65-4f2e-8301-f6433c755f93">
+  <name>СМП_ОнлайнОбменСобытия</name>
+  <synonym>
+    <key>ru</key>
+    <value>СМП онлайн обмен события</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

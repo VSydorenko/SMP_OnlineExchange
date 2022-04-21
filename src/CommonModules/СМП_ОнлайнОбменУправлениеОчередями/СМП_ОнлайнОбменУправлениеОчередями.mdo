@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="acd66c96-441d-439a-9368-d441eef974a4">
-  <name>леУправлениеОчередями</name>
+  <name>СМП_ОнлайнОбменУправлениеОчередями</name>
   <synonym>
     <key>ru</key>
     <value>Управление очередями</value>

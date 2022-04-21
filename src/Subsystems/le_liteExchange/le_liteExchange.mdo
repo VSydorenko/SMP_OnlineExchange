@@ -16,9 +16,10 @@
   <content>CommonModule.леКоннекторHTTP</content>
   <content>CommonModule.леПодключаемыеОбработчики</content>
   <content>InformationRegister.леОчередьОбработкиДанных</content>
-  <content>InformationRegister.леОчередьИсходящихСообщений</content>
+  <content>InformationRegister.СМП_ОчередьИсходящихСообщений</content>
   <content>InformationRegister.леОчередьВходящихСообщений</content>
   <content>InformationRegister.леОчередьОжидания</content>
   <content>DataProcessor.леТранспорт</content>
   <content>Catalog.СМП_УчетныеЗаписиОбменов</content>
+  <content>CommonModule.СМП_ОнлайнОбменПовтИсп</content>
 </mdclass:Subsystem>

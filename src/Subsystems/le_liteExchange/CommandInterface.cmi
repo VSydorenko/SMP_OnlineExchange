@@ -12,7 +12,7 @@
       <commands>Catalog.СМП_УчетныеЗаписиОбменов.StandardCommand.OpenList</commands>
       <commands>InformationRegister.леНастройкиТранспортаОбменаДанными.StandardCommand.OpenList</commands>
       <commands>InformationRegister.леОчередьВходящихСообщений.StandardCommand.OpenList</commands>
-      <commands>InformationRegister.леОчередьИсходящихСообщений.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СМП_ОчередьИсходящихСообщений.StandardCommand.OpenList</commands>
       <commands>InformationRegister.леОчередьОбработкиДанных.StandardCommand.OpenList</commands>
       <commands>InformationRegister.леОчередьОжидания.StandardCommand.OpenList</commands>
     </orderFragments>

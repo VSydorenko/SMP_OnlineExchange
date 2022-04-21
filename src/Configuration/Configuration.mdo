@@ -36,11 +36,14 @@
   <commonPictures>CommonPicture.леВыгрузить</commonPictures>
   <commonModules>CommonModule.леПодключаемыеОбработчики</commonModules>
   <commonModules>CommonModule.леКоннекторHTTP</commonModules>
-  <commonModules>CommonModule.леУправлениеОчередями</commonModules>
   <commonModules>CommonModule.леЛоггирование</commonModules>
   <commonModules>CommonModule.леОбщегоНазначения</commonModules>
   <commonModules>CommonModule.леСобытия</commonModules>
+  <commonModules>CommonModule.СМП_ОнлайнОбменПовтИсп</commonModules>
+  <commonModules>CommonModule.СМП_ОнлайнОбменСобытия</commonModules>
+  <commonModules>CommonModule.СМП_ОнлайнОбменУправлениеОчередями</commonModules>
   <httpServices>HTTPService.ex</httpServices>
+  <eventSubscriptions>EventSubscription.СМП_ОнлайнОбменРегистрацияДокумента</eventSubscriptions>
   <catalogs>Catalog.СМП_УчетныеЗаписиОбменов</catalogs>
   <enums>Enum.леСтатусыОбработкиСообщений</enums>
   <enums>Enum.СМП_ВидыТранспортовОбмена</enums>
@@ -58,7 +61,7 @@
   <dataProcessors>DataProcessor.леТранспорт</dataProcessors>
   <informationRegisters>InformationRegister.леНастройкиТранспортаОбменаДанными</informationRegisters>
   <informationRegisters>InformationRegister.леОчередьОбработкиДанных</informationRegisters>
-  <informationRegisters>InformationRegister.леОчередьИсходящихСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.СМП_ОчередьИсходящихСообщений</informationRegisters>
   <informationRegisters>InformationRegister.леОчередьВходящихСообщений</informationRegisters>
   <informationRegisters>InformationRegister.леОчередьОжидания</informationRegisters>
 </mdclass:Configuration>

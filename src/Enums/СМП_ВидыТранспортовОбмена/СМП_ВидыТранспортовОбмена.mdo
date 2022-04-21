@@ -13,24 +13,24 @@
   <quickChoice>true</quickChoice>
   <choiceMode>BothWays</choiceMode>
   <enumValues uuid="9ddaeb17-cb12-4b86-9788-a011238e998a">
-    <name>FILE</name>
+    <name>Файл</name>
     <synonym>
       <key>ru</key>
       <value>Локальный или сетевой каталог</value>
     </synonym>
   </enumValues>
   <enumValues uuid="a1d1e480-ae55-403a-aa6a-e52a8fa1d5d5">
-    <name>HS</name>
+    <name>ХттпСервис</name>
     <synonym>
       <key>ru</key>
       <value>Интернет (http, https)</value>
     </synonym>
   </enumValues>
   <enumValues uuid="ecaff91f-6073-4aee-861b-e902e52cd917">
-    <name>COM</name>
+    <name>Ком</name>
     <synonym>
       <key>ru</key>
-      <value>Прямое подключение</value>
+      <value>Прямое подключение (COM)</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

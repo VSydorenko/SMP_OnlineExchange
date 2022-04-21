@@ -21,7 +21,7 @@
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>Настройки обмена</value>
+    <value>Настройки онлайн-обмена</value>
   </objectPresentation>
   <explanation>
     <key>ru</key>
@@ -53,13 +53,13 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillChecking>ShowError</fillChecking>
     <fillValue xsi:type="core:ReferenceValue">
-      <value>Enum.СМП_ВидыТранспортовОбмена.EnumValue.HS</value>
+      <value>Enum.СМП_ВидыТранспортовОбмена.EnumValue.ХттпСервис</value>
     </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="0c35cfa7-558e-4dc9-90e8-c8a1f3e8f53d">
-    <name>FILEКаталогОбмена</name>
+    <name>ФайлКаталогОбмена</name>
     <synonym>
       <key>ru</key>
       <value>Каталог обмена</value>
@@ -77,7 +77,7 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="d8c7da51-9509-4e60-af03-6961f02d4408">
-    <name>HSАдресПодключения</name>
+    <name>ХттпСервисАдресПодключения</name>
     <synonym>
       <key>ru</key>
       <value>Адрес подключения</value>
@@ -95,7 +95,7 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="758b153f-b6b8-4ad2-bd84-51b27ecc4fa3">
-    <name>COMИмяСервера1СПредприятия</name>
+    <name>КомИмяСервера1СПредприятия</name>
     <synonym>
       <key>ru</key>
       <value>Имя сервера1С Предприятия</value>
@@ -113,7 +113,7 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="33279b23-e18b-42d6-85c1-2fca3e06e668">
-    <name>COMИмяИнформационнойБазыНаСервере1СПредприятия</name>
+    <name>КомИмяИнформационнойБазыНаСервере1СПредприятия</name>
     <synonym>
       <key>ru</key>
       <value>Имя информационной базы на сервере</value>
@@ -131,7 +131,7 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="b419d207-0a5f-49e4-a8a2-b1f14e831d04">
-    <name>COMИмяПользователя</name>
+    <name>КомИмяПользователя</name>
     <synonym>
       <key>ru</key>
       <value>Имя пользователя</value>
@@ -151,7 +151,7 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="0797a0a0-42a0-4ea0-8481-c58e4d881f8f">
-    <name>COMПарольПользователя</name>
+    <name>КомПарольПользователя</name>
     <synonym>
       <key>ru</key>
       <value>Пароль пользователя</value>
@@ -248,6 +248,34 @@
       <synonym>
         <key>ru</key>
         <value>Отбор</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="34ec78a5-aa78-487a-9934-45d1e27feb4c">
+      <name>СКДДляОтборов</name>
+      <synonym>
+        <key>ru</key>
+        <value>СКДДля отборов</value>
+      </synonym>
+      <type>
+        <types>ValueStorage</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+    </attributes>
+    <attributes uuid="11424e1d-58b7-49c8-aed6-7037bd581f72">
+      <name>ПолноеИмяОбъекта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Полное имя объекта</value>
       </synonym>
       <type>
         <types>String</types>

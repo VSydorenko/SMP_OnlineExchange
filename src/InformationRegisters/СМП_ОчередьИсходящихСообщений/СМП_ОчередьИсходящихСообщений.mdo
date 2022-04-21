@@ -9,13 +9,15 @@
     <recordType typeId="98062162-ebf5-4e21-9b88-def4bc76b851" valueTypeId="eead14b1-13a0-439d-a409-d8cf23d05fda"/>
     <recordManagerType typeId="77cfb8e7-a2ce-4d44-854e-7cccd6e6a73b" valueTypeId="f78c50c3-2505-4014-92b5-32b55129086e"/>
   </producedTypes>
-  <name>леОчередьИсходящихСообщений</name>
+  <name>СМП_ОчередьИсходящихСообщений</name>
   <synonym>
     <key>ru</key>
     <value>Очередь исходящих сообщений</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СМП_ОчередьИсходящихСообщений.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СМП_ОчередьИсходящихСообщений.Form.ФормаСписка</defaultListForm>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Active</name>
@@ -153,6 +155,24 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <dimensions uuid="d6551afb-ab2e-4a0f-9835-2f9b129664c4">
+    <name>УчетнаяЗаписьОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись обмена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СМП_УчетныеЗаписиОбменов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
   <dimensions uuid="e49243d8-cd92-442d-881a-350b59dc838c">
     <name>УникальныйИдентификатор</name>
     <synonym>
@@ -194,4 +214,22 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
+  <forms uuid="e321d249-9a55-479c-8347-56186e353e6d">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="d7c674f5-b5f7-43e2-acc3-384dace19fa5">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:InformationRegister>
