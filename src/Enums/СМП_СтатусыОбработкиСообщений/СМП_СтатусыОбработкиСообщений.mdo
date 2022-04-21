@@ -5,7 +5,7 @@
     <listType typeId="adb05f52-e25a-4c22-9cda-e89071157153" valueTypeId="6392141c-b4aa-465e-89f9-bb43eb3c4787"/>
     <managerType typeId="3939f252-e090-4315-b0fe-36b0aa110b62" valueTypeId="42fe1553-c63b-44f5-ae54-9c9d32756321"/>
   </producedTypes>
-  <name>леСтатусыОбработкиСообщений</name>
+  <name>СМП_СтатусыОбработкиСообщений</name>
   <synonym>
     <key>ru</key>
     <value>Статусы обработки сообщений</value>

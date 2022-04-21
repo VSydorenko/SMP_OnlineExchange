@@ -59,7 +59,7 @@
       <value>Статус</value>
     </synonym>
     <type>
-      <types>EnumRef.леСтатусыОбработкиСообщений</types>
+      <types>EnumRef.СМП_СтатусыОбработкиСообщений</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

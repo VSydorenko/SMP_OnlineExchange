@@ -22,4 +22,28 @@
   <content>DataProcessor.леТранспорт</content>
   <content>Catalog.СМП_УчетныеЗаписиОбменов</content>
   <content>CommonModule.СМП_ОнлайнОбменПовтИсп</content>
+  <content>EventSubscription.СМП_ОнлайнОбменРегистрацияДокумента</content>
+  <content>CommonModule.леЛоггирование</content>
+  <content>CommonModule.СМП_ОнлайнОбменОбщегоНазначения</content>
+  <content>CommonModule.СМП_ОнлайнОбменСобытия</content>
+  <content>CommonModule.СМП_ОнлайнОбменУправлениеОчередями</content>
+  <content>CommonModule.СМП_СобытияОтправкиДанных</content>
+  <content>CommonPicture.леПиктограммаПодсистемы</content>
+  <content>CommonPicture.леЗагрузить</content>
+  <content>CommonPicture.леВыгрузить</content>
+  <content>Catalog.Конфигурации</content>
+  <content>Catalog.Объекты</content>
+  <content>Catalog.Свойства</content>
+  <content>Catalog.Значения</content>
+  <content>Enum.ВидыСвойств</content>
+  <content>Enum.Приложения</content>
+  <content>Enum.ПриоритетОбъектовОбмена</content>
+  <content>Enum.СМП_ВидыТранспортовОбмена</content>
+  <content>Enum.СМП_НастройкиОбменов</content>
+  <content>Enum.СМП_СтатусыОбработкиСообщений</content>
+  <content>Enum.ТипыОбъектов</content>
+  <content>Catalog.ПравилаКонвертацииОбъектов</content>
+  <content>Catalog.ПравилаКонвертацииЗначений</content>
+  <content>Catalog.ПравилаКонвертацииСвойств</content>
+  <content>Catalog.Алгоритмы</content>
 </mdclass:Subsystem>

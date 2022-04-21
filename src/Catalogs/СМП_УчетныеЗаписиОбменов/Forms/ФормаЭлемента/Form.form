@@ -227,6 +227,61 @@
         <currentRowUse>Auto</currentRowUse>
       </extInfo>
     </items>
+    <items xsi:type="form:FormField">
+      <name>НастройкаОбмена</name>
+      <id>142</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.НастройкаОбмена</segments>
+      </dataPath>
+      <extendedTooltip>
+        <name>НастройкаОбменаРасширеннаяПодсказка</name>
+        <id>144</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>НастройкаОбменаКонтекстноеМеню</name>
+        <id>143</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>RadioButtonField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:RadioButtonsFieldExtInfo">
+        <radioButtonsType>Tumbler</radioButtonsType>
+        <choiceList>
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.СМП_НастройкиОбменов.EnumValue.ДляОтправки</value>
+          </value>
+        </choiceList>
+        <choiceList>
+          <value xsi:type="core:ReferenceValue">
+            <value>Enum.СМП_НастройкиОбменов.EnumValue.ДляПолучения</value>
+          </value>
+        </choiceList>
+      </extInfo>
+    </items>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -265,7 +320,7 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormGroup">
-    <name>ГруппаСтраницы</name>
+    <name>СтраницыНастроек</name>
     <id>40</id>
     <items xsi:type="form:FormGroup">
       <name>СтраницаНастройкиТранспорта</name>
@@ -1975,6 +2030,154 @@
         <scrollOnCompress>true</scrollOnCompress>
       </extInfo>
     </items>
+    <items xsi:type="form:FormGroup">
+      <name>СтраницаНастройкиЗагрузки</name>
+      <id>145</id>
+      <items xsi:type="form:FormGroup">
+        <name>СтраницыКонвертаций</name>
+        <id>244</id>
+        <items xsi:type="form:FormGroup">
+          <name>СтраницаПравилаКонвертацииСвойств</name>
+          <id>340</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Конвертация свойств</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Страница правила конвертации свойств</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СтраницаПравилаКонвертацииСвойствРасширеннаяПодсказка</name>
+            <id>341</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <items xsi:type="form:FormGroup">
+          <name>СтраницаПравилаКонвертацииЗначений</name>
+          <id>342</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <title>
+            <key>ru</key>
+            <value>Конвертация значений</value>
+          </title>
+          <toolTip>
+            <key>ru</key>
+            <value>Страница правила конвертации значений</value>
+          </toolTip>
+          <extendedTooltip>
+            <name>СтраницаПравилаКонвертацииЗначенийРасширеннаяПодсказка</name>
+            <id>343</id>
+            <visible>true</visible>
+            <enabled>true</enabled>
+            <userVisible>
+              <common>true</common>
+            </userVisible>
+            <type>Label</type>
+            <autoMaxWidth>true</autoMaxWidth>
+            <autoMaxHeight>true</autoMaxHeight>
+            <extInfo xsi:type="form:LabelDecorationExtInfo">
+              <horizontalAlign>Left</horizontalAlign>
+            </extInfo>
+          </extendedTooltip>
+          <type>Page</type>
+          <extInfo xsi:type="form:PageGroupExtInfo">
+            <group>Vertical</group>
+            <showTitle>true</showTitle>
+          </extInfo>
+        </items>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <title>
+          <key>ru</key>
+          <value>Страницы конвертаций</value>
+        </title>
+        <toolTip>
+          <key>ru</key>
+          <value>Страницы конвертаций</value>
+        </toolTip>
+        <extendedTooltip>
+          <name>СтраницыКонвертацийРасширеннаяПодсказка</name>
+          <id>245</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>Pages</type>
+        <extInfo xsi:type="form:PagesGroupExtInfo">
+          <pagesRepresentation>TabsOnTop</pagesRepresentation>
+          <currentRowUse>Auto</currentRowUse>
+        </extInfo>
+      </items>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <title>
+        <key>ru</key>
+        <value>Страница настройки загрузки</value>
+      </title>
+      <toolTip>
+        <key>ru</key>
+        <value>Страница настройки загрузки</value>
+      </toolTip>
+      <extendedTooltip>
+        <name>СтраницаНастройкиЗагрузкиРасширеннаяПодсказка</name>
+        <id>146</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <type>Page</type>
+      <extInfo xsi:type="form:PageGroupExtInfo">
+        <group>Vertical</group>
+        <showTitle>true</showTitle>
+      </extInfo>
+    </items>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -1982,14 +2185,14 @@
     </userVisible>
     <title>
       <key>ru</key>
-      <value>Группа страницы</value>
+      <value>Страницы настроек</value>
     </title>
     <toolTip>
       <key>ru</key>
-      <value>Группа страницы</value>
+      <value>Страницы настроек</value>
     </toolTip>
     <extendedTooltip>
-      <name>ГруппаСтраницыРасширеннаяПодсказка</name>
+      <name>СтраницыНастроекРасширеннаяПодсказка</name>
       <id>41</id>
       <visible>true</visible>
       <enabled>true</enabled>
@@ -2264,7 +2467,16 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
-    <navigationPanel/>
+    <navigationPanel>
+      <cmiFragmentRecord>
+        <command>4:eb4b84f6-bf09-4aaa-b3c1-fe332dc06eaf</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.ПравилаКонвертацииОбъектов.StandardCommand.OpenByValue</command>
+        <userVisible/>
+      </cmiFragmentRecord>
+    </navigationPanel>
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:CatalogFormExtInfo">
