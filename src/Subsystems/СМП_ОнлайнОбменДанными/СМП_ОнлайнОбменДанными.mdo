@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b454cbd6-4a81-4d52-8541-a657fb59ab3f">
-  <name>le_liteExchange</name>
+  <name>СМП_ОнлайнОбменДанными</name>
   <synonym>
     <key>ru</key>
-    <value>liteExchange</value>
+    <value>On-line Exchange</value>
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Настройка онлайн обменов данными между текущей базой данных и другими системами (1С и не только)</value>
+  </explanation>
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.леПиктограммаПодсистемы</picture>
   </picture>
   <content>HTTPService.ex</content>
   <content>DataProcessor.Обработкаtest</content>
-  <content>InformationRegister.леНастройкиТранспортаОбменаДанными</content>
   <content>CommonModule.леКоннекторHTTP</content>
   <content>CommonModule.леПодключаемыеОбработчики</content>
-  <content>InformationRegister.леОчередьОбработкиДанных</content>
-  <content>InformationRegister.СМП_ОчередьИсходящихСообщений</content>
-  <content>InformationRegister.леОчередьВходящихСообщений</content>
-  <content>InformationRegister.леОчередьОжидания</content>
   <content>DataProcessor.леТранспорт</content>
-  <content>Catalog.СМП_УчетныеЗаписиОбменов</content>
   <content>CommonModule.СМП_ОнлайнОбменПовтИсп</content>
   <content>EventSubscription.СМП_ОнлайнОбменРегистрацияДокумента</content>
   <content>CommonModule.леЛоггирование</content>
@@ -31,10 +29,6 @@
   <content>CommonPicture.леПиктограммаПодсистемы</content>
   <content>CommonPicture.леЗагрузить</content>
   <content>CommonPicture.леВыгрузить</content>
-  <content>Catalog.Конфигурации</content>
-  <content>Catalog.Объекты</content>
-  <content>Catalog.Свойства</content>
-  <content>Catalog.Значения</content>
   <content>Enum.ВидыСвойств</content>
   <content>Enum.Приложения</content>
   <content>Enum.ПриоритетОбъектовОбмена</content>
@@ -42,8 +36,6 @@
   <content>Enum.СМП_НастройкиОбменов</content>
   <content>Enum.СМП_СтатусыОбработкиСообщений</content>
   <content>Enum.ТипыОбъектов</content>
-  <content>Catalog.ПравилаКонвертацииОбъектов</content>
-  <content>Catalog.ПравилаКонвертацииЗначений</content>
-  <content>Catalog.ПравилаКонвертацииСвойств</content>
-  <content>Catalog.Алгоритмы</content>
+  <subsystems>СМП_НастройкаКонвертации</subsystems>
+  <subsystems>СМП_УправлениеОчередями</subsystems>
 </mdclass:Subsystem>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0b432a8-3f0b-404f-8743-a376f4b24d05">
+  <name>СМП_НастройкаКонвертации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка конвертации</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.СМП_УчетныеЗаписиОбменов</content>
+  <content>Catalog.Конфигурации</content>
+  <content>Catalog.Объекты</content>
+  <content>Catalog.Свойства</content>
+  <content>Catalog.Значения</content>
+  <content>Catalog.ПравилаКонвертацииОбъектов</content>
+  <content>Catalog.ПравилаКонвертацииЗначений</content>
+  <content>Catalog.ПравилаКонвертацииСвойств</content>
+  <content>Catalog.Алгоритмы</content>
+  <content>CommonPicture.СМП_Содержание</content>
+  <content>CommonPicture.СМП_ОбъектыМетаданных</content>
+  <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
+</mdclass:Subsystem>

@@ -112,6 +112,9 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Значения.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Значения.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Значения.Form.ФормаВыбора</defaultChoiceForm>
   <attributes uuid="9d917ab2-9146-4b01-be1e-1b400e5d7a0f">
     <name>Синоним</name>
     <synonym>
@@ -195,4 +198,31 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <forms uuid="6eb8c529-d8e5-4248-a929-d10e263ab000">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="7aafd9fb-4787-4fb2-b324-25166609f8a2">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2c9d5425-7921-4f48-9cf0-9470d8eef33d">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

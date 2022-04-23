@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>Catalog.СМП_УчетныеЗаписиОбменов.StandardCommand.OpenList</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsPlacement>
+    <placementFragments>
+      <group>NavigationPanelImportant</group>
+      <commands>Catalog.СМП_УчетныеЗаписиОбменов.StandardCommand.OpenList</commands>
+    </placementFragments>
+  </commandsPlacement>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelImportant</group>
+      <commands>Catalog.СМП_УчетныеЗаписиОбменов.StandardCommand.OpenList</commands>
+    </orderFragments>
+    <orderFragments>
+      <group>NavigationPanelOrdinary</group>
+      <commands>Catalog.Конфигурации.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПравилаКонвертацииОбъектов.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПравилаКонвертацииСвойств.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПравилаКонвертацииЗначений.StandardCommand.OpenList</commands>
+      <commands>Catalog.Объекты.StandardCommand.OpenList</commands>
+      <commands>Catalog.Свойства.StandardCommand.OpenList</commands>
+      <commands>Catalog.Значения.StandardCommand.OpenList</commands>
+    </orderFragments>
+  </commandsOrder>
+</cmi:CommandInterface>

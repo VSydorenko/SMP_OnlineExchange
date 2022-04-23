@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63128f3a-f0be-49a8-83ff-11dfbfc0cdc7">
+  <name>СМП_УправлениеОчередями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление очередями</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.леОчередьОбработкиДанных</content>
+  <content>InformationRegister.СМП_ОчередьИсходящихСообщений</content>
+  <content>InformationRegister.леОчередьВходящихСообщений</content>
+  <content>InformationRegister.леОчередьОжидания</content>
+  <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
+</mdclass:Subsystem>

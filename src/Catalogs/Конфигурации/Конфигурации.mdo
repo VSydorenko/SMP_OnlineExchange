@@ -14,7 +14,6 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.Конфигурации.StandardAttribute.Description</inputByString>
-  <inputByString>Catalog.Конфигурации.StandardAttribute.Code</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
@@ -69,8 +68,14 @@
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>Parent</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа конфигураций</value>
+    </synonym>
     <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:ReferenceValue">
+      <value>Catalog.Конфигурации.EmptyRef</value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -100,14 +105,34 @@
     </pages>
   </help>
   <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Конфигурация</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Конфигурации</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Список конфигураций</value>
+  </extendedListPresentation>
+  <explanation>
+    <key>ru</key>
+    <value>Конфигурации информационных баз для которых настраивается обмен данными</value>
+  </explanation>
   <hierarchical>true</hierarchical>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
-  <codeLength>9</codeLength>
   <descriptionLength>100</descriptionLength>
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Конфигурации.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.Конфигурации.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.Конфигурации.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Конфигурации.Form.ФормаВыбора</defaultChoiceForm>
+  <defaultFolderChoiceForm>Catalog.Конфигурации.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
   <attributes uuid="3fd2ed27-0f81-408e-a5bf-11a1632f46cc">
     <name>Имя</name>
     <synonym>
@@ -219,4 +244,49 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="06de5774-3975-4c19-bd15-bb81409372d5">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b3745f40-e78b-4575-be1c-4bf1450b9a46">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="993afe70-9233-4ca8-94d6-014a49890f6f">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="75182c94-480c-49e8-9bdd-5f670f9890be">
+    <name>ФормаВыбораГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="cb41cf9a-c40f-4c79-a8cd-936b09644ad3">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

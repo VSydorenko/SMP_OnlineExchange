@@ -30,10 +30,12 @@
     </extension>
     <languageCode>ru</languageCode>
   </languages>
-  <subsystems>Subsystem.le_liteExchange</subsystems>
+  <subsystems>Subsystem.СМП_ОнлайнОбменДанными</subsystems>
   <commonPictures>CommonPicture.леПиктограммаПодсистемы</commonPictures>
   <commonPictures>CommonPicture.леЗагрузить</commonPictures>
   <commonPictures>CommonPicture.леВыгрузить</commonPictures>
+  <commonPictures>CommonPicture.СМП_Содержание</commonPictures>
+  <commonPictures>CommonPicture.СМП_ОбъектыМетаданных</commonPictures>
   <commonModules>CommonModule.леКоннекторHTTP</commonModules>
   <commonModules>CommonModule.леЛоггирование</commonModules>
   <commonModules>CommonModule.леПодключаемыеОбработчики</commonModules>
@@ -45,13 +47,13 @@
   <httpServices>HTTPService.ex</httpServices>
   <eventSubscriptions>EventSubscription.СМП_ОнлайнОбменРегистрацияДокумента</eventSubscriptions>
   <catalogs>Catalog.СМП_УчетныеЗаписиОбменов</catalogs>
+  <catalogs>Catalog.ПравилаКонвертацииОбъектов</catalogs>
+  <catalogs>Catalog.ПравилаКонвертацииСвойств</catalogs>
+  <catalogs>Catalog.ПравилаКонвертацииЗначений</catalogs>
   <catalogs>Catalog.Конфигурации</catalogs>
   <catalogs>Catalog.Объекты</catalogs>
   <catalogs>Catalog.Свойства</catalogs>
   <catalogs>Catalog.Значения</catalogs>
-  <catalogs>Catalog.ПравилаКонвертацииОбъектов</catalogs>
-  <catalogs>Catalog.ПравилаКонвертацииЗначений</catalogs>
-  <catalogs>Catalog.ПравилаКонвертацииСвойств</catalogs>
   <catalogs>Catalog.Алгоритмы</catalogs>
   <enums>Enum.ВидыСвойств</enums>
   <enums>Enum.Приложения</enums>

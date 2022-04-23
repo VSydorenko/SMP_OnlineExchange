@@ -14,7 +14,6 @@
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.Объекты.StandardAttribute.Description</inputByString>
-  <inputByString>Catalog.Объекты.StandardAttribute.Code</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
@@ -100,18 +99,26 @@
     </pages>
   </help>
   <fullTextSearch>Use</fullTextSearch>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Объект метаданных</value>
+  </extendedObjectPresentation>
   <hierarchical>true</hierarchical>
   <limitLevelCount>true</limitLevelCount>
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <owners>Catalog.Конфигурации</owners>
-  <codeLength>9</codeLength>
   <descriptionLength>100</descriptionLength>
   <codeType>String</codeType>
   <codeSeries>WithinOwnerSubordination</codeSeries>
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Объекты.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.Объекты.Form.ФормаГруппы</defaultFolderForm>
+  <defaultListForm>Catalog.Объекты.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Объекты.Form.ФормаВыбора</defaultChoiceForm>
+  <defaultFolderChoiceForm>Catalog.Объекты.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
   <attributes uuid="e8ffb539-b4b4-40ff-b9e7-9fc697f352ce">
     <name>Имя</name>
     <synonym>
@@ -333,4 +340,49 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <forms uuid="965f84a0-c560-4884-8353-401ce4aeb9c7">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="448c4ad2-ddc6-4dbb-867e-a0c364704a1a">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="168d79bc-3afb-4983-a14c-5761014b4950">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="1e48a9fa-98c0-49d7-9b75-7942735c6ffb">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="0d02dc90-5096-4900-82c6-263d2ccf43d2">
+    <name>ФормаВыбораГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора группы</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
 </mdclass:Catalog>

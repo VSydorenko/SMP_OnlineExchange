@@ -1,18 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
-  <commandsVisibility>
-    <visibilityFragments>
-      <command>DataProcessor.Обработкаtest.StandardCommand.Open</command>
-      <visible/>
-    </visibilityFragments>
-  </commandsVisibility>
   <commandsOrder>
     <orderFragments>
       <group>NavigationPanelOrdinary</group>
-      <commands>Catalog.СМП_УчетныеЗаписиОбменов.StandardCommand.OpenList</commands>
-      <commands>InformationRegister.леНастройкиТранспортаОбменаДанными.StandardCommand.OpenList</commands>
-      <commands>InformationRegister.леОчередьВходящихСообщений.StandardCommand.OpenList</commands>
       <commands>InformationRegister.СМП_ОчередьИсходящихСообщений.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.леОчередьВходящихСообщений.StandardCommand.OpenList</commands>
       <commands>InformationRegister.леОчередьОбработкиДанных.StandardCommand.OpenList</commands>
       <commands>InformationRegister.леОчередьОжидания.StandardCommand.OpenList</commands>
     </orderFragments>
