@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="58585e85-af6b-4844-9955-d25eff0abbcf">
+  <name>РедакторКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Редактор кода</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.СМП_РедакторКодаКлиент</content>
+  <content>DataProcessor.СМП_РедакторКода</content>
+  <content>CommonModule.СМП_РедакторКодаСервер</content>
+  <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
+</mdclass:Subsystem>

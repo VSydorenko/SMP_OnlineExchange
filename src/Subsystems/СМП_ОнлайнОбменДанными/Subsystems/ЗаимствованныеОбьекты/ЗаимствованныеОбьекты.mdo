@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cbe075ff-7205-4725-9030-30020e02cf18">
+  <name>ЗаимствованныеОбьекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заимствованные обьекты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.ЗапретРедактированияРеквизитовОбъектовПереопределяемый</content>
+  <content>Role.ПолныеПрава</content>
+  <content>CommonPicture.ДлительнаяОперация80</content>
+  <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d75a156-29f9-453f-97a2-eebd72575f4e">
+  <producedTypes>
+    <objectType typeId="0f6e9dbc-7346-482c-b2f2-5a8225e93c6c" valueTypeId="dac6d11c-b6e8-4d8a-a6df-9ef41ffc6bc2"/>
+    <managerType typeId="bb05257f-673c-49ac-a5fe-99cc14b868b1" valueTypeId="7c3b2bc8-e371-46bc-87b4-bfa14c28627d"/>
+  </producedTypes>
+  <name>СМП_РедакторКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Редактор кода (СМП)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СМП_РедакторКода.Form.Форма</defaultForm>
+  <forms uuid="fef44efe-074a-4b6f-9659-c10be8743c6b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="1b946307-49dd-4477-be78-d5943544ff97">
+    <name>РедакторКодаCss</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор кода css</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="5b577d7c-2eca-4e51-b9a6-8632be55d987">
+    <name>РедакторКодаIndex</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор кода index</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="d1ad1064-e52f-4d96-9e81-23b5ee16c1c8">
+    <name>РедакторКодаLib</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор кода lib</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="dad54e95-3143-426f-91e6-658ba46434ee">
+    <name>РедакторКодаMode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор кода mode</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

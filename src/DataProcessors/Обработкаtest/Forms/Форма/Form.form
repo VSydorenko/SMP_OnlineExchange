@@ -39,7 +39,7 @@
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
           <picture xsi:type="core:PictureRef">
-            <picture>CommonPicture.леВыгрузить</picture>
+            <picture>StdPicture.SendMessage</picture>
           </picture>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>
@@ -72,7 +72,7 @@
           <autoMaxHeight>true</autoMaxHeight>
           <placementArea>UserCmds</placementArea>
           <picture xsi:type="core:PictureRef">
-            <picture>CommonPicture.леЗагрузить</picture>
+            <picture>StdPicture.WriteChanges</picture>
           </picture>
           <representationInContextMenu>Auto</representationInContextMenu>
         </items>

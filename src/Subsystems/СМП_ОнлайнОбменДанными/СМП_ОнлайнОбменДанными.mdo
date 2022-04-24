@@ -27,8 +27,8 @@
   <content>CommonModule.СМП_ОнлайнОбменУправлениеОчередями</content>
   <content>CommonModule.СМП_СобытияОтправкиДанных</content>
   <content>CommonPicture.леПиктограммаПодсистемы</content>
-  <content>CommonPicture.леЗагрузить</content>
-  <content>CommonPicture.леВыгрузить</content>
+  <content>10b9b159-df74-4dc4-a174-39e8b3353223</content>
+  <content>e0a8fbe8-d9c2-46ae-a4ca-bfb0bd14e8dd</content>
   <content>Enum.ВидыСвойств</content>
   <content>Enum.Приложения</content>
   <content>Enum.ПриоритетОбъектовОбмена</content>
@@ -36,6 +36,8 @@
   <content>Enum.СМП_НастройкиОбменов</content>
   <content>Enum.СМП_СтатусыОбработкиСообщений</content>
   <content>Enum.ТипыОбъектов</content>
-  <subsystems>СМП_НастройкаКонвертации</subsystems>
-  <subsystems>СМП_УправлениеОчередями</subsystems>
+  <subsystems>НастройкаКонвертации</subsystems>
+  <subsystems>УправлениеОчередями</subsystems>
+  <subsystems>ЗаимствованныеОбьекты</subsystems>
+  <subsystems>РедакторКода</subsystems>
 </mdclass:Subsystem>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:Configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" xmlns:mdclassExtension="http://g5.1c.ru/v8/dt/metadata/mdclass/extension" uuid="135b7f3c-dbc9-4a9e-a3f7-3c1120e2aaed">
-  <name>liteExchange2</name>
+  <name>СМП_ОнлайнОбменДанными</name>
   <synonym>
     <key>ru</key>
-    <value>liteExchange2</value>
+    <value>On-line Exchange</value>
   </synonym>
   <objectBelonging>Adopted</objectBelonging>
-  <extension xsi:type="mdclassExtension:ConfigurationExtension"/>
+  <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <commandInterface>Extended</commandInterface>
+  </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="c1b23587-22a9-481e-81a1-70286fe78539"/>
   <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="c375239a-3897-479f-a7ed-adc2eba1fb26"/>
   <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="f755824e-5524-4f72-b0d8-44d13fe3e095"/>
@@ -19,8 +21,8 @@
   <configurationExtensionCompatibilityMode>8.3.12</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
   <scriptVariant>Russian</scriptVariant>
-  <vendor>liteapps.ru</vendor>
-  <version>2.4.2.17</version>
+  <vendor>https://simplyunf.com.ua/</vendor>
+  <version>3.1.1.9</version>
   <compatibilityMode>8.3.22</compatibilityMode>
   <languages uuid="29121641-cb7f-4337-8581-342e00c818fd">
     <name>Русский</name>
@@ -31,31 +33,33 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.СМП_ОнлайнОбменДанными</subsystems>
+  <commonPictures>CommonPicture.ДлительнаяОперация80</commonPictures>
   <commonPictures>CommonPicture.леПиктограммаПодсистемы</commonPictures>
-  <commonPictures>CommonPicture.леЗагрузить</commonPictures>
-  <commonPictures>CommonPicture.леВыгрузить</commonPictures>
-  <commonPictures>CommonPicture.СМП_Содержание</commonPictures>
   <commonPictures>CommonPicture.СМП_ОбъектыМетаданных</commonPictures>
-  <commonPictures>CommonPicture.СМП_ДлительнаяОперация80</commonPictures>
+  <roles>Role.ПолныеПрава</roles>
+  <commonModules>CommonModule.ЗапретРедактированияРеквизитовОбъектовПереопределяемый</commonModules>
   <commonModules>CommonModule.леКоннекторHTTP</commonModules>
   <commonModules>CommonModule.леЛоггирование</commonModules>
   <commonModules>CommonModule.леПодключаемыеОбработчики</commonModules>
+  <commonModules>CommonModule.СМП_КоннекторHTTP</commonModules>
   <commonModules>CommonModule.СМП_ОнлайнОбменОбщегоНазначения</commonModules>
   <commonModules>CommonModule.СМП_ОнлайнОбменПовтИсп</commonModules>
   <commonModules>CommonModule.СМП_ОнлайнОбменСобытия</commonModules>
   <commonModules>CommonModule.СМП_ОнлайнОбменУправлениеОчередями</commonModules>
+  <commonModules>CommonModule.СМП_РедакторКодаКлиент</commonModules>
+  <commonModules>CommonModule.СМП_РедакторКодаСервер</commonModules>
   <commonModules>CommonModule.СМП_СобытияОтправкиДанных</commonModules>
   <httpServices>HTTPService.ex</httpServices>
   <eventSubscriptions>EventSubscription.СМП_ОнлайнОбменРегистрацияДокумента</eventSubscriptions>
-  <catalogs>Catalog.СМП_УчетныеЗаписиОбменов</catalogs>
-  <catalogs>Catalog.ПравилаКонвертацииОбъектов</catalogs>
-  <catalogs>Catalog.ПравилаКонвертацииСвойств</catalogs>
-  <catalogs>Catalog.ПравилаКонвертацииЗначений</catalogs>
+  <catalogs>Catalog.Алгоритмы</catalogs>
+  <catalogs>Catalog.Значения</catalogs>
   <catalogs>Catalog.Конфигурации</catalogs>
   <catalogs>Catalog.Объекты</catalogs>
+  <catalogs>Catalog.ПравилаКонвертацииЗначений</catalogs>
+  <catalogs>Catalog.ПравилаКонвертацииОбъектов</catalogs>
+  <catalogs>Catalog.ПравилаКонвертацииСвойств</catalogs>
   <catalogs>Catalog.Свойства</catalogs>
-  <catalogs>Catalog.Значения</catalogs>
-  <catalogs>Catalog.Алгоритмы</catalogs>
+  <catalogs>Catalog.СМП_УчетныеЗаписиОбменов</catalogs>
   <enums>Enum.ВидыСвойств</enums>
   <enums>Enum.Приложения</enums>
   <enums>Enum.ПриоритетОбъектовОбмена</enums>
@@ -63,22 +67,23 @@
   <enums>Enum.СМП_НастройкиОбменов</enums>
   <enums>Enum.СМП_СтатусыОбработкиСообщений</enums>
   <enums>Enum.ТипыОбъектов</enums>
-  <dataProcessors>DataProcessor.леLiteExchange2</dataProcessors>
-  <dataProcessors>DataProcessor.Обработкаtest</dataProcessors>
-  <dataProcessors>DataProcessor.леHTTPRequest</dataProcessors>
+  <dataProcessors>DataProcessor.liteExchange_ЗаданиеЗагрузкаФайлов</dataProcessors>
+  <dataProcessors>DataProcessor.liteExchange_ЗаданиеОчередьВходящих</dataProcessors>
+  <dataProcessors>DataProcessor.liteExchange_ЗаданиеОчередьОбработкиДанных</dataProcessors>
+  <dataProcessors>DataProcessor.liteExchange_правилаКонвертации</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаСтруктурыКонфигурации</dataProcessors>
   <dataProcessors>DataProcessor.леGZipОбработка</dataProcessors>
+  <dataProcessors>DataProcessor.леHTTPRequest</dataProcessors>
+  <dataProcessors>DataProcessor.леJSONКонвертер4</dataProcessors>
+  <dataProcessors>DataProcessor.леLiteExchange2</dataProcessors>
   <dataProcessors>DataProcessor.леАнализаторДанных</dataProcessors>
   <dataProcessors>DataProcessor.леЛоггирование</dataProcessors>
-  <dataProcessors>DataProcessor.леJSONКонвертер4</dataProcessors>
-  <dataProcessors>DataProcessor.liteExchange_ЗаданиеОчередьОбработкиДанных</dataProcessors>
-  <dataProcessors>DataProcessor.liteExchange_ЗаданиеОчередьВходящих</dataProcessors>
-  <dataProcessors>DataProcessor.liteExchange_ЗаданиеЗагрузкаФайлов</dataProcessors>
-  <dataProcessors>DataProcessor.liteExchange_правилаКонвертации</dataProcessors>
   <dataProcessors>DataProcessor.леТранспорт</dataProcessors>
-  <dataProcessors>DataProcessor.ЗагрузкаСтруктурыКонфигурации</dataProcessors>
+  <dataProcessors>DataProcessor.Обработкаtest</dataProcessors>
+  <dataProcessors>DataProcessor.СМП_РедакторКода</dataProcessors>
   <informationRegisters>InformationRegister.леНастройкиТранспортаОбменаДанными</informationRegisters>
-  <informationRegisters>InformationRegister.леОчередьОбработкиДанных</informationRegisters>
-  <informationRegisters>InformationRegister.СМП_ОчередьИсходящихСообщений</informationRegisters>
   <informationRegisters>InformationRegister.леОчередьВходящихСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.леОчередьОбработкиДанных</informationRegisters>
   <informationRegisters>InformationRegister.леОчередьОжидания</informationRegisters>
+  <informationRegisters>InformationRegister.СМП_ОчередьИсходящихСообщений</informationRegisters>
 </mdclass:Configuration>

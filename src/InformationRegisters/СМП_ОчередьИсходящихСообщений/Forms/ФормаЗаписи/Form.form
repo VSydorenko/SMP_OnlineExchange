@@ -305,19 +305,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>СообщениеОбОшибке</name>
-    <id>19</id>
+    <name>ДатаОбработки</name>
+    <id>25</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Запись.СообщениеОбОшибке</segments>
+      <segments>Запись.ДатаОбработки</segments>
     </dataPath>
     <extendedTooltip>
-      <name>СообщениеОбОшибкеРасширеннаяПодсказка</name>
-      <id>21</id>
+      <name>ДатаОбработкиРасширеннаяПодсказка</name>
+      <id>27</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -331,8 +331,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>СообщениеОбОшибкеКонтекстноеМеню</name>
-      <id>20</id>
+      <name>ДатаОбработкиКонтекстноеМеню</name>
+      <id>26</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -405,19 +405,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>ДатаОбработки</name>
-    <id>25</id>
+    <name>СообщениеОбОшибке</name>
+    <id>19</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>Запись.ДатаОбработки</segments>
+      <segments>Запись.СообщениеОбОшибке</segments>
     </dataPath>
     <extendedTooltip>
-      <name>ДатаОбработкиРасширеннаяПодсказка</name>
-      <id>27</id>
+      <name>СообщениеОбОшибкеРасширеннаяПодсказка</name>
+      <id>21</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -431,8 +431,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>ДатаОбработкиКонтекстноеМеню</name>
-      <id>26</id>
+      <name>СообщениеОбОшибкеКонтекстноеМеню</name>
+      <id>20</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -446,9 +446,15 @@
     <headerHorizontalAlign>Left</headerHorizontalAlign>
     <showInFooter>true</showInFooter>
     <extInfo xsi:type="form:InputFieldExtInfo">
+      <width>50</width>
       <autoMaxWidth>true</autoMaxWidth>
+      <height>10</height>
       <autoMaxHeight>true</autoMaxHeight>
+      <horizontalStretch>true</horizontalStretch>
+      <verticalStretch>true</verticalStretch>
       <wrap>true</wrap>
+      <multiLine>true</multiLine>
+      <openButton>true</openButton>
       <chooseType>true</chooseType>
       <typeDomainEnabled>true</typeDomainEnabled>
       <textEdit>true</textEdit>
@@ -469,7 +475,6 @@
     <event>OnCreateAtServer</event>
     <name>ПриСозданииНаСервере</name>
   </handlers>
-  <windowOpeningMode>LockOwnerWindow</windowOpeningMode>
   <autoTitle>true</autoTitle>
   <autoUrl>true</autoUrl>
   <group>Vertical</group>

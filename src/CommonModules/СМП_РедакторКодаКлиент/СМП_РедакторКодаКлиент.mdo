@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79927f8b-2f8e-4448-a109-209f053ae13c">
+  <name>СМП_РедакторКодаКлиент</name>
+  <synonym>
+    <key>ru</key>
+    <value>Редактор кода клиент</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+</mdclass:CommonModule>

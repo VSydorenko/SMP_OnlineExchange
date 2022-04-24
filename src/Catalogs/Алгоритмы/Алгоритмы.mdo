@@ -106,17 +106,14 @@
   <levelCount>2</levelCount>
   <foldersOnTop>true</foldersOnTop>
   <owners>Catalog.СМП_УчетныеЗаписиОбменов</owners>
-  <codeLength>9</codeLength>
+  <codeLength>50</codeLength>
   <codeType>String</codeType>
   <codeSeries>WithinOwnerSubordination</codeSeries>
   <checkUnique>true</checkUnique>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.Алгоритмы.Form.ФормаЭлемента</defaultObjectForm>
-  <defaultFolderForm>Catalog.Алгоритмы.Form.ФормаГруппы</defaultFolderForm>
   <defaultListForm>Catalog.Алгоритмы.Form.ФормаСписка</defaultListForm>
-  <defaultChoiceForm>Catalog.Алгоритмы.Form.ФормаВыбора</defaultChoiceForm>
-  <defaultFolderChoiceForm>Catalog.Алгоритмы.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
   <attributes uuid="e92e8e16-4d75-46e3-8d76-b8f82830bd01">
     <name>Алгоритм</name>
     <synonym>
@@ -183,53 +180,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="9fa763da-ff32-4e66-a551-33d62673bd19">
-    <name>ФормаВыбора</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма выбора</value>
-    </synonym>
-    <formType>Ordinary</formType>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="cc121b45-e709-411a-b934-13e0e7d10236">
-    <name>ФормаВыбораГруппы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма выбора группы</value>
-    </synonym>
-    <formType>Ordinary</formType>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="ffc63b56-0856-4a1d-ab19-0bbb63ae6fac">
-    <name>ФормаГруппы</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма группы</value>
-    </synonym>
-    <formType>Ordinary</formType>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="4df2f4cd-6013-4876-97f3-9ce4e3ce6deb">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <formType>Ordinary</formType>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="3a110e88-119e-4978-822b-6f00383f3a2f">
+  <forms uuid="c2dd81c2-c853-4572-aff9-453d082a4416">
     <name>ФормаЭлемента</name>
     <synonym>
       <key>ru</key>
       <value>Форма элемента</value>
     </synonym>
-    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e158af87-5eb3-414b-81aa-341cadefc85c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
