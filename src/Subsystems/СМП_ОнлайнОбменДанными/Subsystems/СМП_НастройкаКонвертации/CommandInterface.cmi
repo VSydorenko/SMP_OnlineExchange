@@ -29,5 +29,26 @@
       <commands>Catalog.Свойства.StandardCommand.OpenList</commands>
       <commands>Catalog.Значения.StandardCommand.OpenList</commands>
     </orderFragments>
+    <orderFragments>
+      <group>ActionsPanelCreate</group>
+      <commands>Catalog.Значения.StandardCommand.Create</commands>
+      <commands>Catalog.Конфигурации.StandardCommand.CreateFolder</commands>
+      <commands>Catalog.Конфигурации.StandardCommand.Create</commands>
+      <commands>Catalog.СМП_УчетныеЗаписиОбменов.StandardCommand.Create</commands>
+      <commands>Catalog.Объекты.StandardCommand.Create</commands>
+      <commands>Catalog.Объекты.StandardCommand.CreateFolder</commands>
+      <commands>Catalog.ПравилаКонвертацииЗначений.StandardCommand.Create</commands>
+      <commands>Catalog.ПравилаКонвертацииЗначений.StandardCommand.CreateFolder</commands>
+      <commands>Catalog.ПравилаКонвертацииОбъектов.StandardCommand.Create</commands>
+      <commands>Catalog.ПравилаКонвертацииОбъектов.StandardCommand.CreateFolder</commands>
+      <commands>Catalog.ПравилаКонвертацииСвойств.StandardCommand.Create</commands>
+      <commands>Catalog.ПравилаКонвертацииСвойств.StandardCommand.CreateFolder</commands>
+      <commands>Catalog.Свойства.StandardCommand.Create</commands>
+      <commands>Catalog.Свойства.StandardCommand.CreateFolder</commands>
+    </orderFragments>
+    <orderFragments>
+      <group>ActionsPanelTools</group>
+      <commands>DataProcessor.ЗагрузкаСтруктурыКонфигурации.StandardCommand.Open</commands>
+    </orderFragments>
   </commandsOrder>
 </cmi:CommandInterface>

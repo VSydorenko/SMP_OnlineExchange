@@ -18,5 +18,6 @@
   <content>Catalog.Алгоритмы</content>
   <content>CommonPicture.СМП_Содержание</content>
   <content>CommonPicture.СМП_ОбъектыМетаданных</content>
+  <content>DataProcessor.ЗагрузкаСтруктурыКонфигурации</content>
   <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
 </mdclass:Subsystem>

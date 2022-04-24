@@ -36,6 +36,7 @@
   <commonPictures>CommonPicture.леВыгрузить</commonPictures>
   <commonPictures>CommonPicture.СМП_Содержание</commonPictures>
   <commonPictures>CommonPicture.СМП_ОбъектыМетаданных</commonPictures>
+  <commonPictures>CommonPicture.СМП_ДлительнаяОперация80</commonPictures>
   <commonModules>CommonModule.леКоннекторHTTP</commonModules>
   <commonModules>CommonModule.леЛоггирование</commonModules>
   <commonModules>CommonModule.леПодключаемыеОбработчики</commonModules>
@@ -74,6 +75,7 @@
   <dataProcessors>DataProcessor.liteExchange_ЗаданиеЗагрузкаФайлов</dataProcessors>
   <dataProcessors>DataProcessor.liteExchange_правилаКонвертации</dataProcessors>
   <dataProcessors>DataProcessor.леТранспорт</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаСтруктурыКонфигурации</dataProcessors>
   <informationRegisters>InformationRegister.леНастройкиТранспортаОбменаДанными</informationRegisters>
   <informationRegisters>InformationRegister.леОчередьОбработкиДанных</informationRegisters>
   <informationRegisters>InformationRegister.СМП_ОчередьИсходящихСообщений</informationRegisters>
