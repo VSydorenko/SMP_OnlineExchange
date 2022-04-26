@@ -81,6 +81,7 @@
   <dataProcessors>DataProcessor.леТранспорт</dataProcessors>
   <dataProcessors>DataProcessor.Обработкаtest</dataProcessors>
   <dataProcessors>DataProcessor.СМП_РедакторКода</dataProcessors>
+  <dataProcessors>DataProcessor.СМП_НастройкаПравилОбмена</dataProcessors>
   <informationRegisters>InformationRegister.леНастройкиТранспортаОбменаДанными</informationRegisters>
   <informationRegisters>InformationRegister.леОчередьВходящихСообщений</informationRegisters>
   <informationRegisters>InformationRegister.леОчередьОбработкиДанных</informationRegisters>
