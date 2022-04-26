@@ -2248,7 +2248,7 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
-      <name>ГруппаОбработчикиСобытий</name>
+      <name>СтраницаОбработчикиСобытий</name>
       <id>353</id>
       <items xsi:type="form:FormGroup">
         <name>СтраницыАлгоритмы</name>
@@ -2352,6 +2352,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
+            <readOnly>true</readOnly>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -2379,6 +2380,7 @@
             <key>ru</key>
             <value>Страница алгоритм перед получением измененных объектов</value>
           </toolTip>
+          <enableContentChange>true</enableContentChange>
           <extendedTooltip>
             <name>СтраницаАлгоритмПередПолучениемИзмененныхОбъектовРасширеннаяПодсказка</name>
             <id>394</id>
@@ -2491,6 +2493,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
+            <readOnly>true</readOnly>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -2518,6 +2521,7 @@
             <key>ru</key>
             <value>Страница алгоритм перед конвертацией объекта</value>
           </toolTip>
+          <enableContentChange>true</enableContentChange>
           <extendedTooltip>
             <name>СтраницаАлгоритмПередКонвертациейОбъектаРасширеннаяПодсказка</name>
             <id>386</id>
@@ -2630,6 +2634,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
+            <readOnly>true</readOnly>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -2657,6 +2662,7 @@
             <key>ru</key>
             <value>Страница алгоритм перед загрузкой данных</value>
           </toolTip>
+          <enableContentChange>true</enableContentChange>
           <extendedTooltip>
             <name>СтраницаАлгоритмПередЗагрузкойДанныхРасширеннаяПодсказка</name>
             <id>382</id>
@@ -2769,6 +2775,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
+            <readOnly>true</readOnly>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -2796,6 +2803,7 @@
             <key>ru</key>
             <value>Страница алгоритм после загрузки параметров</value>
           </toolTip>
+          <enableContentChange>true</enableContentChange>
           <extendedTooltip>
             <name>СтраницаАлгоритмПослеЗагрузкиПараметровРасширеннаяПодсказка</name>
             <id>396</id>
@@ -2908,6 +2916,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
+            <readOnly>true</readOnly>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -2935,6 +2944,7 @@
             <key>ru</key>
             <value>Страница алгоритм перед загрузкой объекта</value>
           </toolTip>
+          <enableContentChange>true</enableContentChange>
           <extendedTooltip>
             <name>СтраницаАлгоритмПередЗагрузкойОбъектаРасширеннаяПодсказка</name>
             <id>388</id>
@@ -3047,6 +3057,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
+            <readOnly>true</readOnly>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -3074,6 +3085,7 @@
             <key>ru</key>
             <value>Страница алгоритм при получении информации об удалении</value>
           </toolTip>
+          <enableContentChange>true</enableContentChange>
           <extendedTooltip>
             <name>СтраницаАлгоритмПриПолученииИнформацииОбУдаленииРасширеннаяПодсказка</name>
             <id>392</id>
@@ -3186,6 +3198,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
+            <readOnly>true</readOnly>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -3213,6 +3226,7 @@
             <key>ru</key>
             <value>Страница алгоритм после загрузки объекта</value>
           </toolTip>
+          <enableContentChange>true</enableContentChange>
           <extendedTooltip>
             <name>СтраницаАлгоритмПослеЗагрузкиОбъектаРасширеннаяПодсказка</name>
             <id>390</id>
@@ -3325,6 +3339,7 @@
               <autoFill>true</autoFill>
             </contextMenu>
             <type>InputField</type>
+            <readOnly>true</readOnly>
             <editMode>Enter</editMode>
             <showInHeader>true</showInHeader>
             <headerHorizontalAlign>Left</headerHorizontalAlign>
@@ -3352,6 +3367,7 @@
             <key>ru</key>
             <value>Страница алгоритм после загрузки данных</value>
           </toolTip>
+          <enableContentChange>true</enableContentChange>
           <extendedTooltip>
             <name>СтраницаАлгоритмПослеЗагрузкиДанныхРасширеннаяПодсказка</name>
             <id>384</id>
@@ -3462,10 +3478,10 @@
       </title>
       <toolTip>
         <key>ru</key>
-        <value>Группа обработчики событий</value>
+        <value>Страница обработчики событий</value>
       </toolTip>
       <extendedTooltip>
-        <name>ГруппаОбработчикиСобытийРасширеннаяПодсказка</name>
+        <name>СтраницаОбработчикиСобытийРасширеннаяПодсказка</name>
         <id>354</id>
         <visible>true</visible>
         <enabled>true</enabled>

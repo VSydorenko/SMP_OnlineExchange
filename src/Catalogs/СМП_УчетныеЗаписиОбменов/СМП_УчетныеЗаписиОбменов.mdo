@@ -21,8 +21,12 @@
   <fullTextSearch>Use</fullTextSearch>
   <objectPresentation>
     <key>ru</key>
-    <value>Настройки онлайн-обмена</value>
+    <value>Учетные записи обменов данными</value>
   </objectPresentation>
+  <extendedObjectPresentation>
+    <key>ru</key>
+    <value>Учетная запись обмена данными</value>
+  </extendedObjectPresentation>
   <explanation>
     <key>ru</key>
     <value>Список настроек обменов данными</value>
