@@ -15,6 +15,7 @@
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.Свойства.StandardAttribute.Description</inputByString>
   <inputByString>Catalog.Свойства.StandardAttribute.Code</inputByString>
+  <searchStringModeOnInputByString>AnyPart</searchStringModeOnInputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <standardAttributes>
     <dataHistory>Use</dataHistory>

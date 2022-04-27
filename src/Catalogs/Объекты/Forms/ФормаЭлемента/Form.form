@@ -1875,17 +1875,13 @@
         <command>Catalog.Значения.StandardCommand.OpenByValue</command>
         <group>FormNavigationPanelGoTo</group>
         <index>1</index>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
+        <userVisible/>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>Catalog.Свойства.StandardCommand.OpenByValue</command>
         <group>FormNavigationPanelGoTo</group>
         <index>0</index>
-        <userVisible>
-          <common>true</common>
-        </userVisible>
+        <userVisible/>
       </cmiFragmentRecord>
     </navigationPanel>
     <commandBar/>

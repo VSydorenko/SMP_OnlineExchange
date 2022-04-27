@@ -12,7 +12,9 @@
     <key>ru</key>
     <value>Алгоритмы</value>
   </synonym>
+  <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.Алгоритмы.StandardAttribute.Code</inputByString>
+  <searchStringModeOnInputByString>AnyPart</searchStringModeOnInputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <standardAttributes>
     <dataHistory>Use</dataHistory>

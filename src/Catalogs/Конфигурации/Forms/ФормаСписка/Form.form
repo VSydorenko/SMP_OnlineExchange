@@ -449,7 +449,6 @@
     <useAlternationRowColor>true</useAlternationRowColor>
     <searchOnInput>Auto</searchOnInput>
     <initialListView>Auto</initialListView>
-    <initialTreeView>ExpandTopLevel</initialTreeView>
     <horizontalStretch>true</horizontalStretch>
     <verticalStretch>true</verticalStretch>
     <enableStartDrag>true</enableStartDrag>
@@ -465,7 +464,6 @@
         <endDate>0001-01-01T00:00:00</endDate>
       </period>
       <topLevelParent xsi:type="core:UndefinedValue"/>
-      <showRoot>true</showRoot>
       <allowGettingCurrentRowURL>true</allowGettingCurrentRowURL>
       <userSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</userSettingsGroup>
     </extInfo>

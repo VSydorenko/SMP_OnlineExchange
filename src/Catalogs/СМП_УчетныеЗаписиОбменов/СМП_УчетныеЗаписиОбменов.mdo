@@ -15,6 +15,7 @@
   <useStandardCommands>true</useStandardCommands>
   <inputByString>Catalog.СМП_УчетныеЗаписиОбменов.StandardAttribute.Description</inputByString>
   <inputByString>Catalog.СМП_УчетныеЗаписиОбменов.StandardAttribute.Code</inputByString>
+  <searchStringModeOnInputByString>AnyPart</searchStringModeOnInputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <createOnInput>Use</createOnInput>
   <dataLockControlMode>Managed</dataLockControlMode>
