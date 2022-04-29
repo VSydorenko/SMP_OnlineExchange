@@ -199,7 +199,6 @@
       <choiceButtonRepresentation>ShowInInputField</choiceButtonRepresentation>
       <clearButton>true</clearButton>
       <typeDomainEnabled>true</typeDomainEnabled>
-      <textEdit>true</textEdit>
     </extInfo>
   </items>
   <items xsi:type="form:FormGroup">
@@ -385,6 +384,12 @@
       <chooseType>true</chooseType>
       <typeDomainEnabled>true</typeDomainEnabled>
       <textEdit>true</textEdit>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <datapath xsi:type="form:DataPath">
+          <segments>УчетнаяЗаписьОбменаДанными</segments>
+        </datapath>
+      </choiceParameterLinks>
     </extInfo>
   </items>
   <items xsi:type="form:FormGroup">
@@ -1662,11 +1667,32 @@
       <common>true</common>
     </edit>
   </attributes>
+  <attributes>
+    <name>УчетнаяЗаписьОбменаДанными</name>
+    <title>
+      <key>ru</key>
+      <value>Учетная запись обмена данными</value>
+    </title>
+    <id>7</id>
+    <valueType>
+      <types>CatalogRef.СМП_УчетныеЗаписиОбменов</types>
+    </valueType>
+    <view>
+      <common>true</common>
+    </view>
+    <edit>
+      <common>true</common>
+    </edit>
+  </attributes>
   <commandInterface>
     <navigationPanel/>
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:CatalogFormExtInfo">
+    <handlers>
+      <event>OnReadAtServer</event>
+      <name>ПриЧтенииНаСервере</name>
+    </handlers>
     <handlers>
       <event>BeforeWrite</event>
       <name>ПередЗаписью</name>

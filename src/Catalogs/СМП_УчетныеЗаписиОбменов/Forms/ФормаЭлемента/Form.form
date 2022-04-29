@@ -2655,7 +2655,7 @@
               </userVisible>
               <autoFill>true</autoFill>
             </contextMenu>
-            <representation>HierarchicalList</representation>
+            <representation>Tree</representation>
             <changeRowSet>true</changeRowSet>
             <changeRowOrder>true</changeRowOrder>
             <autoMaxWidth>true</autoMaxWidth>

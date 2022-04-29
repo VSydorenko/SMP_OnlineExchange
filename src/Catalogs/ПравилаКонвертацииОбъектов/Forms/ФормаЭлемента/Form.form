@@ -3633,10 +3633,25 @@
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>
-    <navigationPanel/>
+    <navigationPanel>
+      <cmiFragmentRecord>
+        <command>Catalog.ПравилаКонвертацииСвойств.StandardCommand.OpenByValue</command>
+        <group>FormNavigationPanelGoTo</group>
+        <index>0</index>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.ПравилаКонвертацииЗначений.StandardCommand.OpenByValue</command>
+        <group>FormNavigationPanelGoTo</group>
+        <index>1</index>
+      </cmiFragmentRecord>
+    </navigationPanel>
     <commandBar/>
   </commandInterface>
   <extInfo xsi:type="form:CatalogFormExtInfo">
+    <handlers>
+      <event>OnReadAtServer</event>
+      <name>ПриЧтенииНаСервере</name>
+    </handlers>
     <handlers>
       <event>BeforeWrite</event>
       <name>ПередЗаписью</name>
