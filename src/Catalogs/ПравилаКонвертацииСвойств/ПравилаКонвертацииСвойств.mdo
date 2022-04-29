@@ -126,6 +126,7 @@
   <editType>BothWays</editType>
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.ПравилаКонвертацииСвойств.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultFolderForm>Catalog.ПравилаКонвертацииСвойств.Form.ФормаГруппы</defaultFolderForm>
   <attributes uuid="d912cddf-d2e1-4781-a6a5-80df1eef6b12">
     <name>АвтоматическиПриводитьЗначениеКДлинеПриемника</name>
     <synonym>
@@ -589,6 +590,15 @@
     <synonym>
       <key>ru</key>
       <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="15da8f5b-58b1-4871-89f7-f75b5359ea65">
+    <name>ФормаГруппы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма группы</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
