@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="672e42eb-6da4-4bb4-89be-df943c8ed2db">
+  <producedTypes>
+    <refType typeId="69e65506-cb0f-4d72-af8b-7994a500c5b7" valueTypeId="09c88999-16f0-482b-8b73-fdc0d962e1b3"/>
+    <listType typeId="00e79044-b3fc-4de0-8484-9ee540e22737" valueTypeId="841c377c-aa65-4513-a5f0-d261595a8618"/>
+    <managerType typeId="552b9def-0a09-4964-b964-3601f51f36db" valueTypeId="3342215e-f1ce-45fd-ab8c-03e606f48006"/>
+  </producedTypes>
+  <name>СМП_ВидыОбъектовОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>СМП виды объектов обмена</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="96a3d915-69f3-4537-94e6-f56594d6f6f8">
+    <name>ОбъектМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект метаданных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b362a972-4cf3-406b-8b98-0f2052f08272">
+    <name>СвойствоОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свойство объекта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e5862834-36c8-4b2e-b9b8-dc70e17a5c06">
+    <name>ГруппаСвойствОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Группа свойств объекта</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="26ac1c18-6a08-4627-97b6-8b5887dc20cd">
+    <name>ПредопределенноеЗначение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предопределенное значение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

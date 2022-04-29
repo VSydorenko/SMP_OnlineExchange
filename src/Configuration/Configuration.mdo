@@ -51,6 +51,7 @@
   <commonModules>CommonModule.СМП_СобытияОтправкиДанных</commonModules>
   <httpServices>HTTPService.ex</httpServices>
   <eventSubscriptions>EventSubscription.СМП_ОнлайнОбменРегистрацияДокумента</eventSubscriptions>
+  <commonForms>CommonForm.СМП_ФормаВыбораПриемника</commonForms>
   <catalogs>Catalog.Алгоритмы</catalogs>
   <catalogs>Catalog.Значения</catalogs>
   <catalogs>Catalog.Конфигурации</catalogs>
@@ -67,6 +68,7 @@
   <enums>Enum.СМП_НастройкиОбменов</enums>
   <enums>Enum.СМП_СтатусыОбработкиСообщений</enums>
   <enums>Enum.ТипыОбъектов</enums>
+  <enums>Enum.СМП_ВидыОбъектовОбмена</enums>
   <dataProcessors>DataProcessor.liteExchange_ЗаданиеЗагрузкаФайлов</dataProcessors>
   <dataProcessors>DataProcessor.liteExchange_ЗаданиеОчередьВходящих</dataProcessors>
   <dataProcessors>DataProcessor.liteExchange_ЗаданиеОчередьОбработкиДанных</dataProcessors>
