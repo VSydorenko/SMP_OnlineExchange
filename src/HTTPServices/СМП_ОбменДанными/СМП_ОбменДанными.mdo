@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ce3f8b2d-9c59-463a-b33c-62b33da1077a">
+  <name>СМП_ОбменДанными</name>
+  <synonym>
+    <key>ru</key>
+    <value>СМП обмен данными</value>
+  </synonym>
+  <rootURL>smp_exchange</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>5</sessionMaxAge>
+  <urlTemplates uuid="f1d0e2c5-0163-4230-b3e7-6e0eb2e24029">
+    <name>ОбменДанными</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмен данными</value>
+    </synonym>
+    <template>/data/{ИдентификаторОбмена}</template>
+    <methods uuid="42cdaac0-d22c-4882-81ee-01b66d17eaf8">
+      <name>DataPost</name>
+      <synonym>
+        <key>ru</key>
+        <value>Data post</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ОбменДаннымиDataPost</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f91086bc-2199-48e6-8495-6aa865d09462">
+    <name>ПроверкаСвязи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка связи</value>
+    </synonym>
+    <template>/ping/{ИдентификаторОбмена}</template>
+    <methods uuid="80ecd720-5de6-4ff7-8fdb-dc671a00bcaf">
+      <name>PingGet</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ping get</value>
+      </synonym>
+      <handler>ПроверкаСвязиPingGet</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="34fb0772-2030-4e77-9cd9-178c4a872e2f">
+    <name>ВыгрузкаОписанияМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгрузка описания метаданных</value>
+    </synonym>
+    <template>/metadata/</template>
+    <methods uuid="66f1dde2-0dab-4e15-8717-b568fee329d3">
+      <name>MetadataGet</name>
+      <synonym>
+        <key>ru</key>
+        <value>Metadata get</value>
+      </synonym>
+      <handler>ВыгрузкаОписанияМетаданныхMetadataGet</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

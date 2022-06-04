@@ -28,6 +28,7 @@
       <commands>Catalog.Объекты.StandardCommand.OpenList</commands>
       <commands>Catalog.Свойства.StandardCommand.OpenList</commands>
       <commands>Catalog.Значения.StandardCommand.OpenList</commands>
+      <commands>Catalog.Алгоритмы.StandardCommand.OpenList</commands>
     </orderFragments>
     <orderFragments>
       <group>ActionsPanelCreate</group>
@@ -45,10 +46,13 @@
       <commands>Catalog.ПравилаКонвертацииСвойств.StandardCommand.CreateFolder</commands>
       <commands>Catalog.Свойства.StandardCommand.Create</commands>
       <commands>Catalog.Свойства.StandardCommand.CreateFolder</commands>
+      <commands>Catalog.Алгоритмы.StandardCommand.Create</commands>
+      <commands>Catalog.Алгоритмы.StandardCommand.CreateFolder</commands>
     </orderFragments>
     <orderFragments>
       <group>ActionsPanelTools</group>
       <commands>DataProcessor.ЗагрузкаСтруктурыКонфигурации.StandardCommand.Open</commands>
+      <commands>DataProcessor.СМП_ОнлайнОбменКонвертацияОбъектов.StandardCommand.Open</commands>
     </orderFragments>
   </commandsOrder>
 </cmi:CommandInterface>

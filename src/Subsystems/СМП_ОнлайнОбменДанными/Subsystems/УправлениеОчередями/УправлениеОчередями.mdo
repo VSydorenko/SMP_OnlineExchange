@@ -7,9 +7,9 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
-  <content>InformationRegister.леОчередьОбработкиДанных</content>
+  <content>bd8cea13-e6f0-4ac1-8bc7-af9df1f6db31</content>
   <content>InformationRegister.СМП_ОчередьИсходящихСообщений</content>
-  <content>InformationRegister.леОчередьВходящихСообщений</content>
-  <content>InformationRegister.леОчередьОжидания</content>
+  <content>InformationRegister.СМП_ОчередьВходящихСообщений</content>
+  <content>4cfc551b-fc3b-4a4b-a723-3b9489848346</content>
   <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
 </mdclass:Subsystem>

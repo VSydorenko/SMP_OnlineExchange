@@ -211,6 +211,65 @@
         </choiceList>
       </extInfo>
     </items>
+    <items xsi:type="form:FormField">
+      <name>ИдентификаторОбмена</name>
+      <id>631</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <dataPath xsi:type="form:DataPath">
+        <segments>Объект.ИдентификаторОбмена</segments>
+      </dataPath>
+      <toolTip>
+        <key>ru</key>
+        <value>Используется для точного определения приемника при обмене через http-сервис или файл. Допускаются только цифры и буквы латинского алфавита</value>
+      </toolTip>
+      <toolTipRepresentation>Button</toolTipRepresentation>
+      <extendedTooltip>
+        <name>ИдентификаторОбменаРасширеннаяПодсказка</name>
+        <id>633</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <type>Label</type>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <extInfo xsi:type="form:LabelDecorationExtInfo">
+          <horizontalAlign>Left</horizontalAlign>
+        </extInfo>
+      </extendedTooltip>
+      <contextMenu>
+        <name>ИдентификаторОбменаКонтекстноеМеню</name>
+        <id>632</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <autoFill>true</autoFill>
+      </contextMenu>
+      <type>InputField</type>
+      <editMode>Enter</editMode>
+      <showInHeader>true</showInHeader>
+      <headerHorizontalAlign>Left</headerHorizontalAlign>
+      <showInFooter>true</showInFooter>
+      <extInfo xsi:type="form:InputFieldExtInfo">
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <wrap>true</wrap>
+        <chooseType>true</chooseType>
+        <typeDomainEnabled>true</typeDomainEnabled>
+        <textEdit>true</textEdit>
+        <inputHint>
+          <key>ru</key>
+          <value>a-z 0-9</value>
+        </inputHint>
+      </extInfo>
+    </items>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
@@ -430,8 +489,10 @@
           <wrap>true</wrap>
           <choiceButton>true</choiceButton>
           <clearButton>true</clearButton>
+          <autoMarkIncomplete>true</autoMarkIncomplete>
           <chooseType>true</chooseType>
           <typeDomainEnabled>true</typeDomainEnabled>
+          <textEdit>true</textEdit>
         </extInfo>
       </items>
       <items xsi:type="form:FormGroup">
@@ -483,6 +544,7 @@
             <autoMaxHeight>true</autoMaxHeight>
             <wrap>true</wrap>
             <clearButton>true</clearButton>
+            <autoMarkIncomplete>true</autoMarkIncomplete>
             <chooseType>true</chooseType>
             <typeDomainEnabled>true</typeDomainEnabled>
             <textEdit>true</textEdit>
@@ -743,6 +805,10 @@
           <dataPath xsi:type="form:DataPath">
             <segments>Объект.Источник</segments>
           </dataPath>
+          <handlers>
+            <event>OnChange</event>
+            <name>ИсточникПриИзменении</name>
+          </handlers>
           <extendedTooltip>
             <name>ИсточникРасширеннаяПодсказка</name>
             <id>346</id>

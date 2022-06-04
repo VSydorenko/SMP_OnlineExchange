@@ -697,7 +697,7 @@
       <segments>Список.УникальныйИдентификатор</segments>
     </notDefaultUseAlwaysAttributes>
     <extInfo xsi:type="form:DynamicListExtInfo">
-      <mainTable>InformationRegister.леОчередьОбработкиДанных</mainTable>
+      <mainTable>1:bd8cea13-e6f0-4ac1-8bc7-af9df1f6db31</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <autoSaveUserSettings>true</autoSaveUserSettings>

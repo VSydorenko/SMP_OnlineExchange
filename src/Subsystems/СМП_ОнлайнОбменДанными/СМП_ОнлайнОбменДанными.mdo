@@ -14,15 +14,15 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.леПиктограммаПодсистемы</picture>
   </picture>
-  <content>HTTPService.ex</content>
+  <content>HTTPService.СМП_ОбменДанными</content>
   <content>DataProcessor.Обработкаtest</content>
-  <content>CommonModule.леКоннекторHTTP</content>
-  <content>CommonModule.леПодключаемыеОбработчики</content>
+  <content>4ba39cde-687a-463d-b87b-9c599deca8d8</content>
+  <content>c6aadd71-c72d-4acc-86fe-92d69f28be1a</content>
   <content>DataProcessor.леТранспорт</content>
   <content>CommonModule.СМП_ОнлайнОбменПовтИсп</content>
   <content>EventSubscription.СМП_ОнлайнОбменРегистрацияДокумента</content>
-  <content>CommonModule.леЛоггирование</content>
-  <content>CommonModule.СМП_ОнлайнОбменОбщегоНазначения</content>
+  <content>3e7f84c2-1ded-49fd-b824-0d6907f2ede8</content>
+  <content>CommonModule.СМП_ОнлайнОбмен</content>
   <content>CommonModule.СМП_ОнлайнОбменСобытия</content>
   <content>CommonModule.СМП_ОнлайнОбменУправлениеОчередями</content>
   <content>CommonModule.СМП_СобытияОтправкиДанных</content>

@@ -4,9 +4,9 @@
     <orderFragments>
       <group>NavigationPanelOrdinary</group>
       <commands>InformationRegister.СМП_ОчередьИсходящихСообщений.StandardCommand.OpenList</commands>
-      <commands>InformationRegister.леОчередьВходящихСообщений.StandardCommand.OpenList</commands>
-      <commands>InformationRegister.леОчередьОбработкиДанных.StandardCommand.OpenList</commands>
-      <commands>InformationRegister.леОчередьОжидания.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СМП_ОчередьВходящихСообщений.StandardCommand.OpenList</commands>
+      <commands>0:bd8cea13-e6f0-4ac1-8bc7-af9df1f6db31</commands>
+      <commands>0:4cfc551b-fc3b-4a4b-a723-3b9489848346</commands>
     </orderFragments>
   </commandsOrder>
 </cmi:CommandInterface>

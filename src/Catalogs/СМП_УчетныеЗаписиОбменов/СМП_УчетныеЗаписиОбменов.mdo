@@ -417,6 +417,27 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="20f092ac-ae8c-4756-9741-0b9997fefb7f">
+    <name>ИдентификаторОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="9aca0e26-bb1d-45f2-9651-f3343fee9211">
     <producedTypes>
       <objectType typeId="fc3e6479-1e1e-4c2c-8ae3-bf705852f8d3" valueTypeId="5bf8c5b8-4ccd-4043-b5c5-c08a342dece6"/>
