@@ -44,10 +44,12 @@
   <commonModules>CommonModule.СМП_ОнлайнОбменСобытия</commonModules>
   <commonModules>CommonModule.СМП_ОнлайнОбменУправлениеОчередями</commonModules>
   <commonModules>CommonModule.СМП_РедакторКодаКлиент</commonModules>
+  <commonModules>CommonModule.СМП_РедакторКодаКлиентПовтИсп</commonModules>
   <commonModules>CommonModule.СМП_РедакторКодаСервер</commonModules>
   <commonModules>CommonModule.СМП_СобытияОтправкиДанных</commonModules>
   <httpServices>HTTPService.СМП_ОбменДанными</httpServices>
   <eventSubscriptions>EventSubscription.СМП_ОнлайнОбменРегистрацияДокумента</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.СМП_РегистрацияСправочника</eventSubscriptions>
   <commonForms>CommonForm.СМП_ФормаВыбораПриемника</commonForms>
   <catalogs>Catalog.Алгоритмы</catalogs>
   <catalogs>Catalog.Значения</catalogs>
@@ -68,6 +70,7 @@
   <enums>Enum.СМП_ВидыОбъектовОбмена</enums>
   <dataProcessors>DataProcessor.ЗагрузкаСтруктурыКонфигурации</dataProcessors>
   <dataProcessors>DataProcessor.СМП_JSONКонвертер</dataProcessors>
+  <dataProcessors>DataProcessor.СМП_КонсольКода</dataProcessors>
   <dataProcessors>DataProcessor.СМП_ОнлайнОбменКонвертацияОбъектов</dataProcessors>
   <dataProcessors>DataProcessor.СМП_РедакторКода</dataProcessors>
   <dataProcessors>DataProcessor.liteExchange_ЗаданиеЗагрузкаФайлов</dataProcessors>
@@ -82,4 +85,5 @@
   <dataProcessors>DataProcessor.УДАЛИТЬлеHTTPRequest</dataProcessors>
   <informationRegisters>InformationRegister.СМП_ОчередьВходящихСообщений</informationRegisters>
   <informationRegisters>InformationRegister.СМП_ОчередьИсходящихСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.СМП_ВыгруженныеСправочники</informationRegisters>
 </mdclass:Configuration>

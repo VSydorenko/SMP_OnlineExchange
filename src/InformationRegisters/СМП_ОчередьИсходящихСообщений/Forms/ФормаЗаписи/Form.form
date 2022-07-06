@@ -506,7 +506,7 @@
     </title>
     <id>2</id>
     <valueType>
-      <types>DocumentRef</types>
+      <types>AnyRef</types>
     </valueType>
     <view>
       <common>true</common>

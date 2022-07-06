@@ -4763,7 +4763,7 @@
           <name>СтраницаАлгоритмПередЗагрузкойОбъекта</name>
           <id>387</id>
           <items xsi:type="form:FormField">
-            <name>АлгоритмПередЗагрузкойОбъектавРедактор</name>
+            <name>АлгоритмПередЗагрузкойОбъектаРедактор</name>
             <id>412</id>
             <visible>true</visible>
             <enabled>true</enabled>
@@ -4771,11 +4771,11 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>АлгоритмПередЗагрузкойОбъектавРедактор</segments>
+              <segments>АлгоритмПередЗагрузкойОбъектаРедактор</segments>
             </dataPath>
             <titleLocation>None</titleLocation>
             <extendedTooltip>
-              <name>АлгоритмПередЗагрузкойОбъектавРедакторРасширеннаяПодсказка</name>
+              <name>АлгоритмПередЗагрузкойОбъектаРедакторРасширеннаяПодсказка</name>
               <id>414</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -4790,7 +4790,7 @@
               </extInfo>
             </extendedTooltip>
             <contextMenu>
-              <name>АлгоритмПередЗагрузкойОбъектавРедакторКонтекстноеМеню</name>
+              <name>АлгоритмПередЗагрузкойОбъектаРедакторКонтекстноеМеню</name>
               <id>413</id>
               <visible>true</visible>
               <enabled>true</enabled>
@@ -5935,10 +5935,10 @@
     <savedData>true</savedData>
   </attributes>
   <attributes>
-    <name>АлгоритмПередЗагрузкойОбъектавРедактор</name>
+    <name>АлгоритмПередЗагрузкойОбъектаРедактор</name>
     <title>
       <key>ru</key>
-      <value>Алгоритм перед загрузкой объектав редактор</value>
+      <value>Алгоритм перед загрузкой объекта редактор</value>
     </title>
     <id>11</id>
     <valueType>
@@ -6188,6 +6188,12 @@
       <cmiFragmentRecord>
         <command>Catalog.ПравилаКонвертацииОбъектов.StandardCommand.OpenByValue</command>
         <userVisible/>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.СМП_ВыгруженныеСправочники.StandardCommand.OpenByValue.УчетнаяЗаписьОбмена</command>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
       </cmiFragmentRecord>
     </navigationPanel>
     <commandBar/>

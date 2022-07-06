@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9eda6450-343b-4efc-8b85-d90b11f9c644">
+  <producedTypes>
+    <objectType typeId="cc98004c-6166-480b-9a27-d50cf729728c" valueTypeId="53d98636-4b38-475b-8ddb-9eb099b95de3"/>
+    <managerType typeId="a3a6d72d-7cf0-4415-8183-a761311eb310" valueTypeId="80f1fe00-c817-45d6-9a86-be030ff59d7e"/>
+  </producedTypes>
+  <name>СМП_КонсольКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>СМП консоль кода</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.СМП_КонсольКода.Form.Форма</defaultForm>
+  <attributes uuid="aaeb5e21-c940-4085-af43-662d4b907117">
+    <name>КаталогИсходногоКодаКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог исходного кода конфигурации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5126d681-f4e7-43f0-b3ef-5634f26e036e">
+    <name>ИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="9b6446d8-648d-406a-b54e-ebe88b31949d">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="fa42037f-3b67-4f45-b5f1-967ece2ad531">
+    <name>src</name>
+    <synonym>
+      <key>ru</key>
+      <value>src</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="da330e7b-20f6-436f-8ee2-2231e5fdfb5e">
+    <name>ПользовательскиеСниппеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользовательские сниппеты</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="66909b21-d413-4674-abd0-b10d9d641390">
+    <name>ПользовательскиеФункции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользовательские функции</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="3750b380-c105-482a-af34-0f306a2dc057">
+    <name>МакетЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет запроса</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="771aa054-91d4-4569-bbfb-d723ae77a6fe">
+    <name>РедакторКодаCss</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор кода css</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="c0804e5c-bb55-42ff-9615-6ec6a31135f2">
+    <name>РедакторКодаIndex</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор кода index</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="6d9ff08b-64c2-4d06-9e1e-be9f2259952c">
+    <name>РедакторКодаLib</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор кода lib</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="80a0c1a3-f18d-4e29-ab7b-54d17cbb6419">
+    <name>РедакторКодаMode</name>
+    <synonym>
+      <key>ru</key>
+      <value>Редактор кода mode</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+</mdclass:DataProcessor>

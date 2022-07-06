@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4c03675-2824-4d6c-a988-f8a4313ee142">
+  <producedTypes>
+    <selectionType typeId="9ce4386a-dd75-4dd6-adc9-79a90907d5a8" valueTypeId="317299fd-2b97-4ccd-8319-63f06b9e3c37"/>
+    <listType typeId="aca0a486-f158-405e-bba4-12c9fe559e96" valueTypeId="db64d7bc-ea59-4801-a63b-066e3aac55b0"/>
+    <managerType typeId="3928bcf7-2daa-4deb-8191-8e400ad6d94e" valueTypeId="2a33c8c9-ce02-4849-b436-737594f59fa4"/>
+    <recordSetType typeId="b7d36eca-70f4-4f29-a108-67c175e9c2c2" valueTypeId="c05d073b-acf4-40f9-95bf-3b6ca22690e2"/>
+    <recordKeyType typeId="126bc1b6-a153-40fb-93c0-38c7be339f58" valueTypeId="10470798-029e-4ac3-9557-aa5538a67b05"/>
+    <recordType typeId="ee6c8c4c-ab94-4c05-be5c-a5d60315b2e4" valueTypeId="a3f24ed5-08c5-407d-97d4-37cd4d9e2275"/>
+    <recordManagerType typeId="42a652d7-dc8c-4f82-a3b0-d69f8ebbfb07" valueTypeId="a8eec855-5b0d-4f7a-9963-533ec93b17b3"/>
+  </producedTypes>
+  <name>СМП_ВыгруженныеСправочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгруженные справочники</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.СМП_ВыгруженныеСправочники.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СМП_ВыгруженныеСправочники.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="4d04bd23-7d9c-429a-8d6f-93fdfb42fe86">
+    <name>УчетнаяЗаписьОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись обмена</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СМП_УчетныеЗаписиОбменов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="2063e332-7b6c-41fb-affd-53f4758816e2">
+    <name>ЭлементСправочника</name>
+    <synonym>
+      <key>ru</key>
+      <value>Элемент справочника</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="06450781-e274-46ce-9f4d-55bba5f50351">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="dbafa757-6bdb-4158-b887-e8f14b305069">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>
