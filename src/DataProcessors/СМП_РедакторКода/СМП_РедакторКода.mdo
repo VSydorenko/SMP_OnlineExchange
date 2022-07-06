@@ -1,17 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d75a156-29f9-453f-97a2-eebd72575f4e">
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9eda6450-343b-4efc-8b85-d90b11f9c644">
   <producedTypes>
-    <objectType typeId="0f6e9dbc-7346-482c-b2f2-5a8225e93c6c" valueTypeId="dac6d11c-b6e8-4d8a-a6df-9ef41ffc6bc2"/>
-    <managerType typeId="bb05257f-673c-49ac-a5fe-99cc14b868b1" valueTypeId="7c3b2bc8-e371-46bc-87b4-bfa14c28627d"/>
+    <objectType typeId="cc98004c-6166-480b-9a27-d50cf729728c" valueTypeId="53d98636-4b38-475b-8ddb-9eb099b95de3"/>
+    <managerType typeId="a3a6d72d-7cf0-4415-8183-a761311eb310" valueTypeId="80f1fe00-c817-45d6-9a86-be030ff59d7e"/>
   </producedTypes>
   <name>СМП_РедакторКода</name>
   <synonym>
     <key>ru</key>
-    <value>Редактор кода (СМП)</value>
+    <value>Редактор кода</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.СМП_РедакторКода.Form.Форма</defaultForm>
-  <forms uuid="fef44efe-074a-4b6f-9659-c10be8743c6b">
+  <attributes uuid="aaeb5e21-c940-4085-af43-662d4b907117">
+    <name>КаталогИсходногоКодаКонфигурации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог исходного кода конфигурации</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="5126d681-f4e7-43f0-b3ef-5634f26e036e">
+    <name>ИмяФайла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="9b6446d8-648d-406a-b54e-ebe88b31949d">
     <name>Форма</name>
     <synonym>
       <key>ru</key>
@@ -20,7 +46,39 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <templates uuid="1b946307-49dd-4477-be78-d5943544ff97">
+  <templates uuid="fa42037f-3b67-4f45-b5f1-967ece2ad531">
+    <name>src</name>
+    <synonym>
+      <key>ru</key>
+      <value>src</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+  <templates uuid="da330e7b-20f6-436f-8ee2-2231e5fdfb5e">
+    <name>ПользовательскиеСниппеты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользовательские сниппеты</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="66909b21-d413-4674-abd0-b10d9d641390">
+    <name>ПользовательскиеФункции</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользовательские функции</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="3750b380-c105-482a-af34-0f306a2dc057">
+    <name>МакетЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет запроса</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="771aa054-91d4-4569-bbfb-d723ae77a6fe">
     <name>РедакторКодаCss</name>
     <synonym>
       <key>ru</key>
@@ -28,7 +86,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="5b577d7c-2eca-4e51-b9a6-8632be55d987">
+  <templates uuid="c0804e5c-bb55-42ff-9615-6ec6a31135f2">
     <name>РедакторКодаIndex</name>
     <synonym>
       <key>ru</key>
@@ -36,7 +94,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="d1ad1064-e52f-4d96-9e81-23b5ee16c1c8">
+  <templates uuid="6d9ff08b-64c2-4d06-9e1e-be9f2259952c">
     <name>РедакторКодаLib</name>
     <synonym>
       <key>ru</key>
@@ -44,7 +102,7 @@
     </synonym>
     <templateType>TextDocument</templateType>
   </templates>
-  <templates uuid="dad54e95-3143-426f-91e6-658ba46434ee">
+  <templates uuid="80a0c1a3-f18d-4e29-ab7b-54d17cbb6419">
     <name>РедакторКодаMode</name>
     <synonym>
       <key>ru</key>

@@ -7,8 +7,7 @@
   </synonym>
   <includeHelpInContents>true</includeHelpInContents>
   <content>CommonModule.СМП_РедакторКодаКлиент</content>
-  <content>DataProcessor.СМП_РедакторКода</content>
   <content>CommonModule.СМП_РедакторКодаСервер</content>
-  <content>CommonModule.СМП_РедакторКодаКлиентПовтИсп</content>
+  <content>DataProcessor.СМП_РедакторКода</content>
   <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
 </mdclass:Subsystem>
