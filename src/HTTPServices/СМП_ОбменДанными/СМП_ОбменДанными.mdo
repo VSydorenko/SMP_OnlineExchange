@@ -7,7 +7,7 @@
   </synonym>
   <rootURL>smp_exchange</rootURL>
   <reuseSessions>AutoUse</reuseSessions>
-  <sessionMaxAge>5</sessionMaxAge>
+  <sessionMaxAge>20</sessionMaxAge>
   <urlTemplates uuid="f1d0e2c5-0163-4230-b3e7-6e0eb2e24029">
     <name>ОбменДанными</name>
     <synonym>
