@@ -57,4 +57,21 @@
       <handler>ВыгрузкаОписанияМетаданныхMetadataGet</handler>
     </methods>
   </urlTemplates>
+  <urlTemplates uuid="7ec24100-5fdf-4574-8842-b42c981eff24">
+    <name>ОписаниеВыгружаемыхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание выгружаемых данных</value>
+    </synonym>
+    <comment>получение структуры выгружаемых объектов</comment>
+    <template>/rules/{ИдентификаторОбмена}</template>
+    <methods uuid="82372aad-c7d5-4350-9747-ad5fd7c76e43">
+      <name>RulesGet</name>
+      <synonym>
+        <key>ru</key>
+        <value>Rules get</value>
+      </synonym>
+      <handler>ОписаниеВыгружаемыхДанныхRulesGet</handler>
+    </methods>
+  </urlTemplates>
 </mdclass:HTTPService>

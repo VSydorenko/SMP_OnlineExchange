@@ -3406,6 +3406,10 @@
   </commandInterface>
   <extInfo xsi:type="form:CatalogFormExtInfo">
     <handlers>
+      <event>AfterWrite</event>
+      <name>ПослеЗаписи</name>
+    </handlers>
+    <handlers>
       <event>OnReadAtServer</event>
       <name>ПриЧтенииНаСервере</name>
     </handlers>

@@ -7,6 +7,7 @@
   </synonym>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
+    <sessionModule>Extended</sessionModule>
     <commandInterface>Extended</commandInterface>
   </extension>
   <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="c1b23587-22a9-481e-81a1-70286fe78539"/>
