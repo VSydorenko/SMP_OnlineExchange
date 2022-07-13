@@ -5272,10 +5272,42 @@
       </extInfo>
     </items>
     <items xsi:type="form:FormGroup">
-      <name>СтраницаОписаниеПравил</name>
+      <name>СтраницаОписаниеВыгружаемыхДаных</name>
       <id>650</id>
+      <items xsi:type="form:Button">
+        <name>ПолучитьОписаниеВыгружаемыхДанных</name>
+        <id>655</id>
+        <visible>true</visible>
+        <enabled>true</enabled>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+        <extendedTooltip>
+          <name>ПолучитьОписаниеВыгружаемыхДанныхРасширеннаяПодсказка</name>
+          <id>656</id>
+          <visible>true</visible>
+          <enabled>true</enabled>
+          <userVisible>
+            <common>true</common>
+          </userVisible>
+          <type>Label</type>
+          <autoMaxWidth>true</autoMaxWidth>
+          <autoMaxHeight>true</autoMaxHeight>
+          <extInfo xsi:type="form:LabelDecorationExtInfo">
+            <horizontalAlign>Left</horizontalAlign>
+          </extInfo>
+        </extendedTooltip>
+        <type>UsualButton</type>
+        <commandName>Form.Command.ПолучитьОписаниеВыгружаемыхДанных</commandName>
+        <representation>Auto</representation>
+        <autoMaxWidth>true</autoMaxWidth>
+        <autoMaxHeight>true</autoMaxHeight>
+        <placementArea>UserCmds</placementArea>
+        <toolTipRepresentation>Button</toolTipRepresentation>
+        <representationInContextMenu>Auto</representationInContextMenu>
+      </items>
       <items xsi:type="form:FormField">
-        <name>ОписаниеПравилКонвертации</name>
+        <name>ОписаниеВыгружаемыхДанных</name>
         <id>652</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -5283,11 +5315,11 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ОписаниеПравилКонвертации</segments>
+          <segments>Объект.ОписаниеВыгружаемыхДанных</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <extendedTooltip>
-          <name>ОписаниеПравилКонвертацииРасширеннаяПодсказка</name>
+          <name>ОписаниеВыгружаемыхДанныхРасширеннаяПодсказка</name>
           <id>654</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -5302,7 +5334,7 @@
           </extInfo>
         </extendedTooltip>
         <contextMenu>
-          <name>ОписаниеПравилКонвертацииКонтекстноеМеню</name>
+          <name>ОписаниеВыгружаемыхДанныхКонтекстноеМеню</name>
           <id>653</id>
           <visible>true</visible>
           <enabled>true</enabled>
@@ -5332,14 +5364,14 @@
       </userVisible>
       <title>
         <key>ru</key>
-        <value>Описание правил конвертации</value>
+        <value>Описание выгружаемых даных</value>
       </title>
       <toolTip>
         <key>ru</key>
-        <value>Страница описание правил</value>
+        <value>Страница описание выгружаемых даных</value>
       </toolTip>
       <extendedTooltip>
-        <name>СтраницаОписаниеПравилРасширеннаяПодсказка</name>
+        <name>СтраницаОписаниеВыгружаемыхДаныхРасширеннаяПодсказка</name>
         <id>651</id>
         <visible>true</visible>
         <enabled>true</enabled>
@@ -6150,6 +6182,27 @@
       </handler>
     </action>
     <representation>Picture</representation>
+    <currentRowUse>Auto</currentRowUse>
+  </formCommands>
+  <formCommands>
+    <name>ПолучитьОписаниеВыгружаемыхДанных</name>
+    <title>
+      <key>ru</key>
+      <value>Получить описание</value>
+    </title>
+    <id>5</id>
+    <toolTip>
+      <key>ru</key>
+      <value>Запрашивает описание для выгружаемых данных согласно действующим правилам конвертации в базе-приемнике</value>
+    </toolTip>
+    <use>
+      <common>true</common>
+    </use>
+    <action xsi:type="form:FormCommandHandlerContainer">
+      <handler>
+        <name>ОписаниеВыгружаемыхДанных</name>
+      </handler>
+    </action>
     <currentRowUse>Auto</currentRowUse>
   </formCommands>
   <commandInterface>

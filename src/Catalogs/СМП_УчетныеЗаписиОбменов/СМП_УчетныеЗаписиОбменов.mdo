@@ -439,10 +439,10 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="eef39a2e-bc90-499d-9a28-6590d37d5969">
-    <name>ОписаниеПравилКонвертации</name>
+    <name>ОписаниеВыгружаемыхДанных</name>
     <synonym>
       <key>ru</key>
-      <value>Описание правил конвертации</value>
+      <value>Описание выгружаемых данных</value>
     </synonym>
     <type>
       <types>String</types>
