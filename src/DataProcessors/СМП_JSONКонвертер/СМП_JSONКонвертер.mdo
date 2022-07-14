@@ -9,7 +9,7 @@
     <key>ru</key>
     <value>JSON конвертер</value>
   </synonym>
-  <comment>Проебразовывает структуры данных в JSON и обратно // Проверсти рефакторинг!</comment>
+  <comment>Проебразовывает структуры данных в JSON и обратно // Провести рефакторинг!</comment>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.СМП_JSONКонвертер.Form.Форма</defaultForm>
   <attributes uuid="7ffca1c9-5e52-4f4d-9aa8-9fda5cad52ef">
