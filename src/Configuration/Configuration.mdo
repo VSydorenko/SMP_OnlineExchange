@@ -33,9 +33,9 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.СМП_ОнлайнОбменДанными</subsystems>
-  <commonPictures>CommonPicture.ДлительнаяОперация80</commonPictures>
   <commonPictures>CommonPicture.леПиктограммаПодсистемы</commonPictures>
   <commonPictures>CommonPicture.СМП_ОбъектыМетаданных</commonPictures>
+  <commonPictures>CommonPicture.СМП_ДлительнаяОперация80</commonPictures>
   <roles>Role.ПолныеПрава</roles>
   <commonModules>CommonModule.ЗапретРедактированияРеквизитовОбъектовПереопределяемый</commonModules>
   <commonModules>CommonModule.СМП_КоннекторHTTP</commonModules>

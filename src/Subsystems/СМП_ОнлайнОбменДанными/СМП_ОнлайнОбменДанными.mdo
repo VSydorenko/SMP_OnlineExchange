@@ -16,19 +16,14 @@
   </picture>
   <content>HTTPService.СМП_ОбменДанными</content>
   <content>DataProcessor.Обработкаtest</content>
-  <content>4ba39cde-687a-463d-b87b-9c599deca8d8</content>
-  <content>c6aadd71-c72d-4acc-86fe-92d69f28be1a</content>
   <content>DataProcessor.леТранспорт</content>
   <content>CommonModule.СМП_ОнлайнОбменПовтИсп</content>
   <content>EventSubscription.СМП_РегистрацияДокумента</content>
-  <content>3e7f84c2-1ded-49fd-b824-0d6907f2ede8</content>
   <content>CommonModule.СМП_ОнлайнОбмен</content>
   <content>CommonModule.СМП_ОнлайнОбменСобытия</content>
   <content>CommonModule.СМП_ОнлайнОбменУправлениеОчередями</content>
   <content>CommonModule.СМП_СобытияОтправкиДанных</content>
   <content>CommonPicture.леПиктограммаПодсистемы</content>
-  <content>10b9b159-df74-4dc4-a174-39e8b3353223</content>
-  <content>e0a8fbe8-d9c2-46ae-a4ca-bfb0bd14e8dd</content>
   <content>Enum.ВидыСвойств</content>
   <content>Enum.Приложения</content>
   <content>Enum.ПриоритетОбъектовОбмена</content>
@@ -36,6 +31,7 @@
   <content>Enum.СМП_НастройкиОбменов</content>
   <content>Enum.СМП_СтатусыОбработкиСообщений</content>
   <content>Enum.ТипыОбъектов</content>
+  <content>CommonPicture.СМП_ДлительнаяОперация80</content>
   <subsystems>НастройкаКонвертации</subsystems>
   <subsystems>УправлениеОчередями</subsystems>
   <subsystems>ЗаимствованныеОбьекты</subsystems>

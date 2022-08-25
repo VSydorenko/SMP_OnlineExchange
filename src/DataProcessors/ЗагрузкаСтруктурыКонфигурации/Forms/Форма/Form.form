@@ -318,7 +318,7 @@
         <autoMaxHeight>true</autoMaxHeight>
         <extInfo xsi:type="form:PictureDecorationExtInfo">
           <picture xsi:type="core:PictureRef">
-            <picture>CommonPicture.ДлительнаяОперация80</picture>
+            <picture>CommonPicture.СМП_ДлительнаяОперация80</picture>
           </picture>
         </extInfo>
       </items>
