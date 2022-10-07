@@ -10,5 +10,6 @@
   <content>InformationRegister.СМП_ОчередьИсходящихСообщений</content>
   <content>InformationRegister.СМП_ОчередьВходящихСообщений</content>
   <content>InformationRegister.СМП_ВыгруженныеСправочники</content>
+  <content>InformationRegister.СМП_ОчередьОбработкиДанных</content>
   <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
 </mdclass:Subsystem>

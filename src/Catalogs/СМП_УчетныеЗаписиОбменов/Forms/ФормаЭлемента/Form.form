@@ -6213,10 +6213,46 @@
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>Catalog.ПравилаКонвертацииОбъектов.StandardCommand.OpenByValue</command>
+        <group>FormNavigationPanelGoTo</group>
+        <index>5</index>
         <userVisible/>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
         <command>InformationRegister.СМП_ВыгруженныеСправочники.StandardCommand.OpenByValue.УчетнаяЗаписьОбмена</command>
+        <group>FormNavigationPanelGoTo</group>
+        <index>4</index>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.СМП_ОчередьОбработкиДанных.StandardCommand.OpenByValue.УчетнаяЗаписьОбмена</command>
+        <group>FormNavigationPanelGoTo</group>
+        <index>1</index>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>Catalog.Алгоритмы.StandardCommand.OpenByValue</command>
+        <group>FormNavigationPanelGoTo</group>
+        <index>0</index>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.СМП_ОчередьВходящихСообщений.StandardCommand.OpenByValue.УчетнаяЗаписьОбмена</command>
+        <group>FormNavigationPanelGoTo</group>
+        <index>3</index>
+        <userVisible>
+          <common>true</common>
+        </userVisible>
+      </cmiFragmentRecord>
+      <cmiFragmentRecord>
+        <command>InformationRegister.СМП_ОчередьИсходящихСообщений.StandardCommand.OpenByValue.УчетнаяЗаписьОбмена</command>
+        <group>FormNavigationPanelGoTo</group>
+        <index>2</index>
         <userVisible>
           <common>true</common>
         </userVisible>

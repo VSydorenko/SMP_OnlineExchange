@@ -84,4 +84,5 @@
   <informationRegisters>InformationRegister.СМП_ОчередьВходящихСообщений</informationRegisters>
   <informationRegisters>InformationRegister.СМП_ОчередьИсходящихСообщений</informationRegisters>
   <informationRegisters>InformationRegister.СМП_ВыгруженныеСправочники</informationRegisters>
+  <informationRegisters>InformationRegister.СМП_ОчередьОбработкиДанных</informationRegisters>
 </mdclass:Configuration>

@@ -1,58 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="67b76ccc-9e1a-4c63-83ad-b84227efc17e">
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10369abf-b55b-4e8d-bf48-c32dda65362c">
   <producedTypes>
-    <selectionType typeId="f6a37fda-15d8-4b83-a2c5-d300eb3fd899" valueTypeId="e16bc53b-f649-4baf-80d1-73068904d7a9"/>
-    <listType typeId="5b59b382-9508-4b5c-9b69-e2bb45a2fe78" valueTypeId="086acef7-29f1-404c-b702-233f8c1c83fe"/>
-    <managerType typeId="1aa002aa-1cc5-4846-8836-40033a4530aa" valueTypeId="04fee463-febc-44b7-ac2a-364e900dda89"/>
-    <recordSetType typeId="26ee9ad4-d3a6-42e6-a027-b3416c48b61a" valueTypeId="e89509fa-98b9-46c7-b418-3e42192d393d"/>
-    <recordKeyType typeId="e26601b8-d44a-435a-884d-8298989d376b" valueTypeId="46b6e839-b8d6-496b-a8b1-e1b2206abd39"/>
-    <recordType typeId="d0c14cf6-6942-48be-b361-d536d50b7986" valueTypeId="1de021a4-eac4-4cda-8b0a-484048eb8941"/>
-    <recordManagerType typeId="f3adb327-f4b6-428f-9c9e-b175dcef6760" valueTypeId="fb944086-8abb-48d5-b371-6d61990001bd"/>
+    <selectionType typeId="1945b9c8-660c-460c-b1ac-aa2e0f7d79cb" valueTypeId="22734985-75c4-4290-8a70-8248b467e21b"/>
+    <listType typeId="7261af6a-f108-4450-b003-2cb2e4422088" valueTypeId="86b0d2a5-3475-41fa-84f4-671fdb29d9e9"/>
+    <managerType typeId="ebb8badb-e6c4-4c7e-b9b8-a87a68784030" valueTypeId="706c065d-5f10-4a9f-b0c8-58c621740fda"/>
+    <recordSetType typeId="01862977-0daa-4658-b7d7-9335ed8c3152" valueTypeId="9e8375f9-39d3-4e22-b075-b2cd63035d73"/>
+    <recordKeyType typeId="22cfe8d6-c4b3-4d05-8a0d-470f5dd199d1" valueTypeId="2e9e396a-f474-47ae-b7e0-41b998a2a63b"/>
+    <recordType typeId="7996b72f-1735-42b5-959f-7dd2ccf1a50c" valueTypeId="f8361008-ac86-4d83-bbfb-4d4a450ee9d3"/>
+    <recordManagerType typeId="9125361d-5b19-4d7d-b63e-549665d63a78" valueTypeId="9bd7dfba-063b-441f-8c45-1ffc68fd2470"/>
   </producedTypes>
-  <name>СМП_ОчередьВходящихСообщений</name>
+  <name>СМП_ОчередьОбработкиДанных</name>
   <synonym>
     <key>ru</key>
-    <value>Очередь входящих сообщений</value>
+    <value>Очередь обработки данных</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <editType>InDialog</editType>
-  <defaultRecordForm>InformationRegister.СМП_ОчередьВходящихСообщений.Form.ФормаЗаписи</defaultRecordForm>
-  <defaultListForm>InformationRegister.СМП_ОчередьВходящихСообщений.Form.ФормаСписка</defaultListForm>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>Active</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>LineNumber</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>Recorder</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>Period</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
+  <defaultRecordForm>InformationRegister.СМП_ОчередьОбработкиДанных.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.СМП_ОчередьОбработкиДанных.Form.ФормаСписка</defaultListForm>
   <dataLockControlMode>Managed</dataLockControlMode>
-  <resources uuid="add07375-e1fd-4e31-a8c1-4735d493d48a">
+  <resources uuid="755009b1-9282-4df2-b588-e40ebf750540">
     <name>Статус</name>
     <synonym>
       <key>ru</key>
@@ -67,7 +34,7 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </resources>
-  <attributes uuid="0ae81b28-11f6-4cb3-a9ad-8c9b4cd1b2f4">
+  <attributes uuid="bdaa2805-5f4e-4192-a8ab-4f13383f6de4">
     <name>Данные</name>
     <synonym>
       <key>ru</key>
@@ -85,7 +52,7 @@
       <value></value>
     </fillValue>
   </attributes>
-  <attributes uuid="c823c549-9a73-4136-9a99-0154862c8672">
+  <attributes uuid="cdcfc71e-9896-4d27-96aa-990009f7da4b">
     <name>ДатаДобавления</name>
     <synonym>
       <key>ru</key>
@@ -101,7 +68,7 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <attributes uuid="25ff8b0f-b7b1-4642-b243-27515bd49266">
+  <attributes uuid="b2aff4a2-8db8-4eef-ab56-07e0a0478d3f">
     <name>СообщениеОбОшибке</name>
     <synonym>
       <key>ru</key>
@@ -119,7 +86,7 @@
       <value></value>
     </fillValue>
   </attributes>
-  <attributes uuid="ed1ae89a-7828-4417-8fdd-8e0d2c1af990">
+  <attributes uuid="4d8ed728-ae51-40a9-bca9-648ba9d0e8f0">
     <name>ДатаОбработки</name>
     <synonym>
       <key>ru</key>
@@ -135,7 +102,7 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
-  <dimensions uuid="8c72c15c-bf0b-410d-8b09-271b762754e6">
+  <dimensions uuid="a675188d-aca2-4a73-a5c4-22f697885816">
     <name>ИдентификаторПользователяИБ</name>
     <synonym>
       <key>ru</key>
@@ -156,7 +123,7 @@
     </fillValue>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <dimensions uuid="e34db99b-9eb4-4f0f-948a-d53c44541a2e">
+  <dimensions uuid="5f7491b3-bd0e-41e6-b040-1e86d004f00d">
     <name>УчетнаяЗаписьОбмена</name>
     <synonym>
       <key>ru</key>
@@ -167,6 +134,7 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
     <fillFromFillingValue>true</fillFromFillingValue>
@@ -174,7 +142,7 @@
     <master>true</master>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <dimensions uuid="3fb00400-0083-408d-b835-2ffa277ac6aa">
+  <dimensions uuid="0ae10db0-9274-49a0-9ec9-fef2ab0ba6c7">
     <name>УникальныйИдентификатор</name>
     <synonym>
       <key>ru</key>
@@ -195,16 +163,16 @@
     </fillValue>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <dimensions uuid="a2add26d-c238-4cda-ac6d-709c9bf4a5be">
+  <dimensions uuid="cbf386b0-72d0-4425-8d1f-1350c19bd612">
     <name>ТаймШтамп</name>
     <synonym>
       <key>ru</key>
-      <value>Тайм штамп</value>
+      <value>Отметка времени</value>
     </synonym>
     <type>
       <types>Number</types>
       <numberQualifiers>
-        <precision>14</precision>
+        <precision>20</precision>
         <nonNegative>true</nonNegative>
       </numberQualifiers>
     </type>
@@ -215,20 +183,20 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <mainFilter>true</mainFilter>
   </dimensions>
-  <forms uuid="6fb39db9-8d08-4c75-a879-4b4eb7d8d3a4">
-    <name>ФормаЗаписи</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма записи</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="15447670-ae6a-433b-93f2-cdf75fc8f5ea">
+  <forms uuid="688314ad-8ebc-4379-9db5-c2359e9c56fb">
     <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
       <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="f9158a31-2be5-4e4c-b913-ad45aea74ff2">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>

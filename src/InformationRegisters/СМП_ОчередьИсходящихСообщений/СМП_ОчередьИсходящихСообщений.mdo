@@ -119,26 +119,6 @@
       <value></value>
     </fillValue>
   </attributes>
-  <attributes uuid="cd3a8d3c-5188-4793-8f4b-96bb1f9af607">
-    <name>ПредставлениеДанных</name>
-    <synonym>
-      <key>ru</key>
-      <value>Представление данных</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-  </attributes>
   <attributes uuid="38740a6c-dcb4-4a12-9650-46eb390cc4b1">
     <name>ДатаОбработки</name>
     <synonym>
@@ -155,6 +135,27 @@
     <dataHistory>Use</dataHistory>
     <fillValue xsi:type="core:UndefinedValue"/>
   </attributes>
+  <dimensions uuid="40cc9c5f-8f0d-4600-b4b7-f3a639f0469e">
+    <name>ИдентификаторПользователяИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор пользователя ИБ</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>36</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
   <dimensions uuid="d6551afb-ab2e-4a0f-9835-2f9b129664c4">
     <name>УчетнаяЗаписьОбмена</name>
     <synonym>
