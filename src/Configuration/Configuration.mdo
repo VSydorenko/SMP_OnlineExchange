@@ -22,7 +22,7 @@
   <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
   <scriptVariant>Russian</scriptVariant>
   <vendor>https://simplyunf.com.ua/</vendor>
-  <version>3.1.1.9</version>
+  <version>3.1.1.33</version>
   <compatibilityMode>8.3.22</compatibilityMode>
   <languages uuid="29121641-cb7f-4337-8581-342e00c818fd">
     <name>Русский</name>
@@ -81,6 +81,7 @@
   <dataProcessors>DataProcessor.леТранспорт</dataProcessors>
   <dataProcessors>DataProcessor.Обработкаtest</dataProcessors>
   <dataProcessors>DataProcessor.УДАЛИТЬлеHTTPRequest</dataProcessors>
+  <dataProcessors>DataProcessor.ЗагрузкаКонвертацииXML</dataProcessors>
   <informationRegisters>InformationRegister.СМП_ОчередьВходящихСообщений</informationRegisters>
   <informationRegisters>InformationRegister.СМП_ОчередьИсходящихСообщений</informationRegisters>
   <informationRegisters>InformationRegister.СМП_ВыгруженныеСправочники</informationRegisters>

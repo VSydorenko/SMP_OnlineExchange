@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3822aca7-2190-4b23-aa40-0461b4931673">
+  <producedTypes>
+    <objectType typeId="c0377b1b-b660-4d80-9c4b-6be88ea5f819" valueTypeId="b312e140-4a07-4744-9a1c-213a51f1fa57"/>
+    <managerType typeId="71667a09-413f-4116-a00d-8957e3590bf6" valueTypeId="08c504e8-7dd9-4506-8f8f-87ee5d3593f5"/>
+  </producedTypes>
+  <name>ЗагрузкаКонвертацииXML</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка конвертации XML</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаКонвертацииXML.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="a0cb8da7-fed4-4fdb-9b3f-3962863a1c3e">
+    <name>ИмяФайлаПравил</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла правил</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+  </attributes>
+  <attributes uuid="e761f2c7-8f5e-4931-a811-79b74bcc6661">
+    <name>Конвертация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конвертация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СМП_УчетныеЗаписиОбменов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.ТипКонвертации</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>675dc283-7bb5-4c7c-a538-dd84d51e2c81.d97debf6-595d-44e0-af6c-da1e89775c8f</value>
+      </value>
+    </choiceParameters>
+  </attributes>
+  <attributes uuid="6b88beb2-113b-4cff-b0d7-4344c61ffffc">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Конфигурации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="cae28532-1e65-4a1c-8c62-36bf9bc6323e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>
