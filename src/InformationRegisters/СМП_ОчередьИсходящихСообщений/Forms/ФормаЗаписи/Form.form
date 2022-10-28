@@ -251,19 +251,19 @@
     </extInfo>
   </items>
   <items xsi:type="form:FormField">
-    <name>ДанныеПредставление</name>
-    <id>28</id>
+    <name>Данные</name>
+    <id>34</id>
     <visible>true</visible>
     <enabled>true</enabled>
     <userVisible>
       <common>true</common>
     </userVisible>
     <dataPath xsi:type="form:DataPath">
-      <segments>ДанныеПредставление</segments>
+      <segments>Запись.Данные</segments>
     </dataPath>
     <extendedTooltip>
-      <name>ДанныеПредставлениеРасширеннаяПодсказка</name>
-      <id>30</id>
+      <name>ДанныеРасширеннаяПодсказка</name>
+      <id>36</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -277,8 +277,8 @@
       </extInfo>
     </extendedTooltip>
     <contextMenu>
-      <name>ДанныеПредставлениеКонтекстноеМеню</name>
-      <id>29</id>
+      <name>ДанныеКонтекстноеМеню</name>
+      <id>35</id>
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
@@ -295,11 +295,7 @@
       <autoMaxWidth>true</autoMaxWidth>
       <autoMaxHeight>true</autoMaxHeight>
       <wrap>true</wrap>
-      <dropListButton>false</dropListButton>
-      <choiceButton>false</choiceButton>
-      <clearButton>false</clearButton>
-      <openButton>true</openButton>
-      <createButton>false</createButton>
+      <multiLine>true</multiLine>
       <chooseType>true</chooseType>
       <typeDomainEnabled>true</typeDomainEnabled>
     </extInfo>
@@ -412,9 +408,6 @@
     <userVisible>
       <common>true</common>
     </userVisible>
-    <dataPath xsi:type="form:DataPath">
-      <segments>1/0:cd3a8d3c-5188-4793-8f4b-96bb1f9af607</segments>
-    </dataPath>
     <extendedTooltip>
       <name>ПредставлениеДанныхРасширеннаяПодсказка</name>
       <id>24</id>
@@ -547,23 +540,6 @@
     </edit>
     <main>true</main>
     <savedData>true</savedData>
-  </attributes>
-  <attributes>
-    <name>ДанныеПредставление</name>
-    <title>
-      <key>ru</key>
-      <value>Данные</value>
-    </title>
-    <id>2</id>
-    <valueType>
-      <types>AnyRef</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
   </attributes>
   <commandInterface>
     <navigationPanel/>
