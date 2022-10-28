@@ -19,5 +19,6 @@
   <content>DataProcessor.ЗагрузкаСтруктурыКонфигурации</content>
   <content>Catalog.Алгоритмы</content>
   <content>DataProcessor.СМП_ОнлайнОбменКонвертацияОбъектов</content>
+  <content>DataProcessor.ЗагрузкаКонвертацииXML</content>
   <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
 </mdclass:Subsystem>
