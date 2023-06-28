@@ -541,6 +541,122 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
   </tabularSections>
+  <tabularSections uuid="1ea7b5c7-88f4-4851-a7d4-07d471d4bf79">
+    <producedTypes>
+      <objectType typeId="be7429db-db24-4911-904c-736f548fd8de" valueTypeId="9de2a378-6829-470a-b0eb-a01bc38f5120"/>
+      <rowType typeId="505f64a5-defb-476d-97e5-f9cccf7bcff9" valueTypeId="8037f1f4-d4bc-4c9d-ab6b-b04d7e09fbbd"/>
+    </producedTypes>
+    <name>ОписаниеВыгружаемыхОбъектов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание выгружаемых объектов</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="5a0d22a6-b9c6-4222-9a66-763756cc0446">
+      <name>ТипОбъекта</name>
+      <synonym>
+        <key>ru</key>
+        <value>Тип объекта</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f9a4f5f3-c0e1-42cb-bb15-44903ae90dbc">
+      <name>ОписаниеПравил</name>
+      <synonym>
+        <key>ru</key>
+        <value>Описание правил</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <multiLine>true</multiLine>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="b7d991c5-910c-4f45-b5cb-93d7835ba02a">
+      <name>ИменаПравил</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имена правил</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>200</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c505da16-196b-42cc-a0e4-3254bf54738d">
+      <name>НесколькоПравил</name>
+      <synonym>
+        <key>ru</key>
+        <value>Несколько правил</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="daed6e0f-8f65-47c4-8ecd-5d4972e7b92c">
+      <name>АлгоритмВыборИмениПравила</name>
+      <synonym>
+        <key>ru</key>
+        <value>Алгоритм выбор имени правила</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <multiLine>true</multiLine>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="7e58bc19-ca99-42e1-8d62-1060b7f34060">
+      <name>ИмяПравилаПоУмолчанию</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя правила по умолчанию</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
   <forms uuid="e91eb8ff-2240-4786-8a39-c6f0359ba41f">
     <name>ФормаЭлемента</name>
     <synonym>

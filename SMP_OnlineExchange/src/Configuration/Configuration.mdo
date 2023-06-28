@@ -47,7 +47,9 @@
   <commonModules>CommonModule.СМП_РедакторКодаСервер</commonModules>
   <commonModules>CommonModule.СМП_СобытияОтправкиДанных</commonModules>
   <httpServices>HTTPService.СМП_ОбменДанными</httpServices>
-  <eventSubscriptions>EventSubscription.СМП_РегистрацияДокумента</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаПередЗаписью</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаПриЗаписи</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаОбработкаПроведения</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СМП_РегистрацияСправочника</eventSubscriptions>
   <commonForms>CommonForm.СМП_ФормаВыбораПриемника</commonForms>
   <catalogs>Catalog.Алгоритмы</catalogs>

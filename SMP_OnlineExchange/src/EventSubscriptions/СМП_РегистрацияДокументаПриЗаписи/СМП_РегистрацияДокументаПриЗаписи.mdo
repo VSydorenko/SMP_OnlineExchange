@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3d1701f1-5ccd-4649-881e-921d74ccd988">
-  <name>СМП_РегистрацияДокумента</name>
+  <name>СМП_РегистрацияДокументаПриЗаписи</name>
   <synonym>
     <key>ru</key>
-    <value>СМП регистрация документа</value>
+    <value>СМП регистрация документа при записи</value>
   </synonym>
   <source>
     <types>DocumentObject</types>
   </source>
   <event>OnWrite</event>
-  <handler>CommonModule.СМП_ОнлайнОбменСобытия.СМП_ОнлайнОбменРегистрацияДокументаПриЗаписи</handler>
+  <handler>CommonModule.СМП_ОнлайнОбменСобытия.СМП_РегистрацияДокументаПриЗаписи</handler>
 </mdclass:EventSubscription>
