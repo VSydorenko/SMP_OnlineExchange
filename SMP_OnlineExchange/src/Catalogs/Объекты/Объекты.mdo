@@ -132,84 +132,11 @@
   <defaultListForm>Catalog.Объекты.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.Объекты.Form.ФормаВыбора</defaultChoiceForm>
   <defaultFolderChoiceForm>Catalog.Объекты.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
-  <attributes uuid="e8ffb539-b4b4-40ff-b9e7-9fc697f352ce">
-    <name>Имя</name>
+  <attributes uuid="be585b64-5787-4d6b-a348-9ea7396d10f3">
+    <name>АвтоНумерация</name>
     <synonym>
       <key>ru</key>
-      <value>Имя</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <use>ForFolderAndItem</use>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="0b125862-bade-4138-9fbb-fb51f5b2237e">
-    <name>Синоним</name>
-    <synonym>
-      <key>ru</key>
-      <value>Синоним</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <use>ForFolderAndItem</use>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="dfefe08f-0e97-4893-a54a-85bf396d5656">
-    <name>Комментарий</name>
-    <synonym>
-      <key>ru</key>
-      <value>Комментарий</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <use>ForFolderAndItem</use>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="f77e04a7-6bd7-4805-b243-fba7df1d5891">
-    <name>Тип</name>
-    <synonym>
-      <key>ru</key>
-      <value>Тип</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ТипыОбъектов</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
-    <fullTextSearch>Use</fullTextSearch>
-    <use>ForFolderAndItem</use>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="e57b49d6-b3b3-466c-bc5b-c92f8cfe1ae6">
-    <name>Иерархический</name>
-    <synonym>
-      <key>ru</key>
-      <value>Иерархический</value>
+      <value>Авто нумерация</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -238,11 +165,11 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="d3238c25-26be-41da-b608-6b73e4a21dcd">
-    <name>ОграничиватьКоличествоУровней</name>
+  <attributes uuid="e57b49d6-b3b3-466c-bc5b-c92f8cfe1ae6">
+    <name>Иерархический</name>
     <synonym>
       <key>ru</key>
-      <value>Ограничивать количество уровней</value>
+      <value>Иерархический</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -251,6 +178,26 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e8ffb539-b4b4-40ff-b9e7-9fc697f352ce">
+    <name>Имя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="81b6bb08-cc77-4af4-b514-c914fbcb0908">
@@ -272,22 +219,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="cc1496a4-a0cc-4c4b-9123-ac6262d8b77a">
-    <name>СерииКодов</name>
+  <attributes uuid="dfefe08f-0e97-4893-a54a-85bf396d5656">
+    <name>Комментарий</name>
     <synonym>
       <key>ru</key>
-      <value>Серии кодов</value>
+      <value>Комментарий</value>
     </synonym>
     <type>
       <types>String</types>
-      <stringQualifiers>
-        <length>29</length>
-      </stringQualifiers>
+      <stringQualifiers/>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="b70110ae-791e-4d6c-9c94-f62cd95e2554">
@@ -305,11 +251,11 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="be585b64-5787-4d6b-a348-9ea7396d10f3">
-    <name>АвтоНумерация</name>
+  <attributes uuid="d3238c25-26be-41da-b608-6b73e4a21dcd">
+    <name>ОграничиватьКоличествоУровней</name>
     <synonym>
       <key>ru</key>
-      <value>Авто нумерация</value>
+      <value>Ограничивать количество уровней</value>
     </synonym>
     <type>
       <types>Boolean</types>
@@ -351,6 +297,60 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cc1496a4-a0cc-4c4b-9123-ac6262d8b77a">
+    <name>СерииКодов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Серии кодов</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>29</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0b125862-bade-4138-9fbb-fb51f5b2237e">
+    <name>Синоним</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синоним</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f77e04a7-6bd7-4805-b243-fba7df1d5891">
+    <name>Тип</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыОбъектов</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
   <forms uuid="965f84a0-c560-4884-8353-401ce4aeb9c7">

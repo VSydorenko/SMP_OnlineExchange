@@ -122,24 +122,6 @@
   <defaultObjectForm>Catalog.Значения.Form.ФормаЭлемента</defaultObjectForm>
   <defaultListForm>Catalog.Значения.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.Значения.Form.ФормаВыбора</defaultChoiceForm>
-  <attributes uuid="9d917ab2-9146-4b01-be1e-1b400e5d7a0f">
-    <name>Синоним</name>
-    <synonym>
-      <key>ru</key>
-      <value>Синоним</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>200</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <attributes uuid="b80d3c3c-8aca-494b-ab61-3a363758ad2e">
     <name>Комментарий</name>
     <synonym>
@@ -165,6 +147,24 @@
     </synonym>
     <type>
       <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9d917ab2-9146-4b01-be1e-1b400e5d7a0f">
+    <name>Синоним</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синоним</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>200</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

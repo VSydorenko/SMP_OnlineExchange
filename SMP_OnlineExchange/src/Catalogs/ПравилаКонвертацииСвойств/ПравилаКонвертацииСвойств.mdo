@@ -159,6 +159,25 @@
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="d3255f15-0e9f-4814-a38a-a7750ce75159">
+    <name>АлгоритмПередЗагрузкойСвойства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Алгоритм перед загрузкой свойства</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="5030c639-33ed-40d5-962c-c0ae931ef6ce">
     <name>АлгоритмПередОбработкойВыгрузки</name>
     <synonym>
@@ -193,6 +212,25 @@
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="eb4a7249-bae6-48fc-a145-e2b19a4e5a5e">
+    <name>АлгоритмПослеЗагрузкиСвойства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Алгоритм после загрузки свойства</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="3f657be3-26a3-4ea5-8d33-bb00ccef67ea">
     <name>АлгоритмПослеОбработкиВыгрузки</name>
     <synonym>
@@ -223,6 +261,25 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9224a023-6387-4f14-913a-55f22d44a4b5">
+    <name>АлгоритмПриЗагрузкеСвойства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Алгоритм при загрузке свойства</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
@@ -581,63 +638,6 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <use>ForFolderAndItem</use>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="d3255f15-0e9f-4814-a38a-a7750ce75159">
-    <name>АлгоритмПередЗагрузкойСвойства</name>
-    <synonym>
-      <key>ru</key>
-      <value>Алгоритм перед загрузкой свойства</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <use>ForFolderAndItem</use>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="9224a023-6387-4f14-913a-55f22d44a4b5">
-    <name>АлгоритмПриЗагрузкеСвойства</name>
-    <synonym>
-      <key>ru</key>
-      <value>Алгоритм при загрузке свойства</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <use>ForFolderAndItem</use>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="eb4a7249-bae6-48fc-a145-e2b19a4e5a5e">
-    <name>АлгоритмПослеЗагрузкиСвойства</name>
-    <synonym>
-      <key>ru</key>
-      <value>Алгоритм после загрузки свойства</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>

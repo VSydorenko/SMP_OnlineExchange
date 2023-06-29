@@ -134,40 +134,56 @@
   <defaultListForm>Catalog.Свойства.Form.ФормаСписка</defaultListForm>
   <defaultChoiceForm>Catalog.Свойства.Form.ФормаВыбора</defaultChoiceForm>
   <defaultFolderChoiceForm>Catalog.Свойства.Form.ФормаВыбораГруппы</defaultFolderChoiceForm>
-  <attributes uuid="9fef558b-3b78-4041-b548-51b672a9fc7d">
-    <name>Синоним</name>
+  <attributes uuid="622b5324-5469-4168-bd67-89905bef0de5">
+    <name>Авторегистрация</name>
     <synonym>
       <key>ru</key>
-      <value>Синоним</value>
+      <value>Авторегистрация</value>
+    </synonym>
+    <comment>Признак авторегистрации элемента состава плана обмена; Истина – авторегистрация разрешена; Ложь – запрещена</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <editFormat>
+      <key>ru</key>
+      <value>БЛ=Запретить; БИ=Разрешить</value>
+    </editFormat>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="869c6bc5-1072-4c1e-a54f-70b3f4212660">
+    <name>Вид</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>100</length>
-      </stringQualifiers>
+      <types>EnumRef.ВидыСвойств</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="c904d12b-58fd-4063-af10-a6ac096b5373">
-    <name>Комментарий</name>
+  <attributes uuid="dc796b69-8d35-400a-beed-d6512940ab30">
+    <name>Индексирование</name>
     <synonym>
       <key>ru</key>
-      <value>Комментарий</value>
+      <value>Индексирование</value>
     </synonym>
     <type>
-      <types>String</types>
-      <stringQualifiers/>
+      <types>Boolean</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
-    <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="5c06e9fc-e9f6-4ad1-986f-c53df79c699e">
@@ -188,67 +204,17 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="dc796b69-8d35-400a-beed-d6512940ab30">
-    <name>Индексирование</name>
+  <attributes uuid="2d5942a5-0c4c-4baa-8a3c-babaea343719">
+    <name>КвалификаторыДаты_Состав</name>
     <synonym>
       <key>ru</key>
-      <value>Индексирование</value>
+      <value>Квалификаторы даты (состав)</value>
     </synonym>
     <type>
-      <types>Boolean</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="7dbc9b9d-edcf-4f84-b599-0458cbcde8b1">
-    <name>КвалификаторыЧисла_Длина</name>
-    <synonym>
-      <key>ru</key>
-      <value>Квалификаторы числа (длина)</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>3</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="385ee31f-b1ea-4956-a65b-3acfc3116394">
-    <name>КвалификаторыЧисла_Точность</name>
-    <synonym>
-      <key>ru</key>
-      <value>Квалификаторы числа (точность)</value>
-    </synonym>
-    <type>
-      <types>Number</types>
-      <numberQualifiers>
-        <precision>2</precision>
-        <nonNegative>true</nonNegative>
-      </numberQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="5a2bb443-3eba-4636-bf58-b5f6e9c087f3">
-    <name>КвалификаторыЧисла_Неотрицательное</name>
-    <synonym>
-      <key>ru</key>
-      <value>Квалификаторы числа (неотрицательное)</value>
-    </synonym>
-    <type>
-      <types>Boolean</types>
+      <types>String</types>
+      <stringQualifiers>
+        <length>12</length>
+      </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -290,57 +256,91 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="2d5942a5-0c4c-4baa-8a3c-babaea343719">
-    <name>КвалификаторыДаты_Состав</name>
+  <attributes uuid="7dbc9b9d-edcf-4f84-b599-0458cbcde8b1">
+    <name>КвалификаторыЧисла_Длина</name>
     <synonym>
       <key>ru</key>
-      <value>Квалификаторы даты (состав)</value>
+      <value>Квалификаторы числа (длина)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>3</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a2bb443-3eba-4636-bf58-b5f6e9c087f3">
+    <name>КвалификаторыЧисла_Неотрицательное</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квалификаторы числа (неотрицательное)</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="385ee31f-b1ea-4956-a65b-3acfc3116394">
+    <name>КвалификаторыЧисла_Точность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Квалификаторы числа (точность)</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>2</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c904d12b-58fd-4063-af10-a6ac096b5373">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9fef558b-3b78-4041-b548-51b672a9fc7d">
+    <name>Синоним</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синоним</value>
     </synonym>
     <type>
       <types>String</types>
       <stringQualifiers>
-        <length>12</length>
+        <length>100</length>
       </stringQualifiers>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="622b5324-5469-4168-bd67-89905bef0de5">
-    <name>Авторегистрация</name>
-    <synonym>
-      <key>ru</key>
-      <value>Авторегистрация</value>
-    </synonym>
-    <comment>Признак авторегистрации элемента состава плана обмена; Истина – авторегистрация разрешена; Ложь – запрещена</comment>
-    <type>
-      <types>Boolean</types>
-    </type>
-    <editFormat>
-      <key>ru</key>
-      <value>БЛ=Запретить; БИ=Разрешить</value>
-    </editFormat>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="869c6bc5-1072-4c1e-a54f-70b3f4212660">
-    <name>Вид</name>
-    <synonym>
-      <key>ru</key>
-      <value>Вид</value>
-    </synonym>
-    <type>
-      <types>EnumRef.ВидыСвойств</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <indexing>Index</indexing>
     <fullTextSearch>Use</fullTextSearch>
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>

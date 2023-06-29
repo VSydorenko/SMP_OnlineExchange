@@ -3,7 +3,7 @@
   <name>СМП_ОнлайнОбменДанными</name>
   <synonym>
     <key>ru</key>
-    <value>On-line Exchange</value>
+    <value>simplyExchange</value>
   </synonym>
   <objectBelonging>Adopted</objectBelonging>
   <extension xsi:type="mdclassExtension:ConfigurationExtension">
@@ -21,8 +21,8 @@
   <configurationExtensionCompatibilityMode>8.3.12</configurationExtensionCompatibilityMode>
   <configurationExtensionPurpose>AddOn</configurationExtensionPurpose>
   <scriptVariant>Russian</scriptVariant>
-  <vendor>https://simplyunf.com.ua/</vendor>
-  <version>3.1.1.9</version>
+  <vendor>https://simplySOFT.com.ua/</vendor>
+  <version>3.1.1.38</version>
   <compatibilityMode>8.3.22</compatibilityMode>
   <languages uuid="29121641-cb7f-4337-8581-342e00c818fd">
     <name>Русский</name>
@@ -33,9 +33,9 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.СМП_ОнлайнОбменДанными</subsystems>
-  <commonPictures>CommonPicture.леПиктограммаПодсистемы</commonPictures>
-  <commonPictures>CommonPicture.СМП_ОбъектыМетаданных</commonPictures>
   <commonPictures>CommonPicture.СМП_ДлительнаяОперация80</commonPictures>
+  <commonPictures>CommonPicture.СМП_ОбъектыМетаданных</commonPictures>
+  <commonPictures>CommonPicture.СМП_ОнлайнОбменДанными</commonPictures>
   <roles>Role.ПолныеПрава</roles>
   <commonModules>CommonModule.ЗапретРедактированияРеквизитовОбъектовПереопределяемый</commonModules>
   <commonModules>CommonModule.СМП_КоннекторHTTP</commonModules>
@@ -47,9 +47,9 @@
   <commonModules>CommonModule.СМП_РедакторКодаСервер</commonModules>
   <commonModules>CommonModule.СМП_СобытияОтправкиДанных</commonModules>
   <httpServices>HTTPService.СМП_ОбменДанными</httpServices>
+  <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаОбработкаПроведения</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаПередЗаписью</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаПриЗаписи</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаОбработкаПроведения</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СМП_РегистрацияСправочника</eventSubscriptions>
   <commonForms>CommonForm.СМП_ФормаВыбораПриемника</commonForms>
   <catalogs>Catalog.Алгоритмы</catalogs>
@@ -64,28 +64,18 @@
   <enums>Enum.ВидыСвойств</enums>
   <enums>Enum.Приложения</enums>
   <enums>Enum.ПриоритетОбъектовОбмена</enums>
+  <enums>Enum.ТипыОбъектов</enums>
+  <enums>Enum.СМП_ВидыОбъектовОбмена</enums>
   <enums>Enum.СМП_ВидыТранспортовОбмена</enums>
   <enums>Enum.СМП_НастройкиОбменов</enums>
   <enums>Enum.СМП_СтатусыОбработкиСообщений</enums>
-  <enums>Enum.ТипыОбъектов</enums>
-  <enums>Enum.СМП_ВидыОбъектовОбмена</enums>
+  <dataProcessors>DataProcessor.ЗагрузкаКонвертацииXML</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаСтруктурыКонфигурации</dataProcessors>
   <dataProcessors>DataProcessor.СМП_JSONКонвертер</dataProcessors>
-  <dataProcessors>DataProcessor.СМП_РедакторКода</dataProcessors>
   <dataProcessors>DataProcessor.СМП_ОнлайнОбменКонвертацияОбъектов</dataProcessors>
-  <dataProcessors>DataProcessor.liteExchange_ЗаданиеЗагрузкаФайлов</dataProcessors>
-  <dataProcessors>DataProcessor.liteExchange_ЗаданиеОчередьВходящих</dataProcessors>
-  <dataProcessors>DataProcessor.liteExchange_ЗаданиеОчередьОбработкиДанных</dataProcessors>
-  <dataProcessors>DataProcessor.liteExchange_правилаКонвертации</dataProcessors>
-  <dataProcessors>DataProcessor.леGZipОбработка</dataProcessors>
-  <dataProcessors>DataProcessor.леLiteExchange2</dataProcessors>
-  <dataProcessors>DataProcessor.леАнализаторДанных</dataProcessors>
-  <dataProcessors>DataProcessor.леТранспорт</dataProcessors>
-  <dataProcessors>DataProcessor.Обработкаtest</dataProcessors>
-  <dataProcessors>DataProcessor.УДАЛИТЬлеHTTPRequest</dataProcessors>
-  <dataProcessors>DataProcessor.ЗагрузкаКонвертацииXML</dataProcessors>
+  <dataProcessors>DataProcessor.СМП_РедакторКода</dataProcessors>
+  <informationRegisters>InformationRegister.СМП_ВыгруженныеСправочники</informationRegisters>
   <informationRegisters>InformationRegister.СМП_ОчередьВходящихСообщений</informationRegisters>
   <informationRegisters>InformationRegister.СМП_ОчередьИсходящихСообщений</informationRegisters>
-  <informationRegisters>InformationRegister.СМП_ВыгруженныеСправочники</informationRegisters>
   <informationRegisters>InformationRegister.СМП_ОчередьОбработкиДанных</informationRegisters>
 </mdclass:Configuration>

@@ -191,6 +191,27 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="20f092ac-ae8c-4756-9741-0b9997fefb7f">
+    <name>ИдентификаторОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>ID обмена</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="b419d207-0a5f-49e4-a8a2-b1f14e831d04">
     <name>ИмяПользователя</name>
     <synonym>
@@ -313,6 +334,25 @@
     <use>ForFolderAndItem</use>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="eef39a2e-bc90-499d-9a28-6590d37d5969">
+    <name>ОписаниеВыгружаемыхДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание выгружаемых данных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="0797a0a0-42a0-4ea0-8481-c58e4d881f8f">
     <name>ПарольПользователя</name>
     <synonym>
@@ -417,46 +457,6 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <attributes uuid="20f092ac-ae8c-4756-9741-0b9997fefb7f">
-    <name>ИдентификаторОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>ID обмена</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>10</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillChecking>ShowError</fillChecking>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
-  <attributes uuid="eef39a2e-bc90-499d-9a28-6590d37d5969">
-    <name>ОписаниеВыгружаемыхДанных</name>
-    <synonym>
-      <key>ru</key>
-      <value>Описание выгружаемых данных</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers/>
-    </type>
-    <multiLine>true</multiLine>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-  </attributes>
   <tabularSections uuid="9aca0e26-bb1d-45f2-9651-f3343fee9211">
     <producedTypes>
       <objectType typeId="fc3e6479-1e1e-4c2c-8ae3-bf705852f8d3" valueTypeId="5bf8c5b8-4ccd-4043-b5c5-c08a342dece6"/>
@@ -482,11 +482,11 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="0596884c-2b5d-4f0c-9359-a97a85fc02c2">
-      <name>Синоним</name>
+    <attributes uuid="11424e1d-58b7-49c8-aed6-7037bd581f72">
+      <name>ПолноеИмяОбъекта</name>
       <synonym>
         <key>ru</key>
-        <value>Синоним</value>
+        <value>Полное имя объекта</value>
       </synonym>
       <type>
         <types>String</types>
@@ -497,11 +497,11 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="d7db2a65-6a08-4ebf-a9a0-e17a00fa6d07">
-      <name>СтрокаОтбор</name>
+    <attributes uuid="0596884c-2b5d-4f0c-9359-a97a85fc02c2">
+      <name>Синоним</name>
       <synonym>
         <key>ru</key>
-        <value>Отбор</value>
+        <value>Синоним</value>
       </synonym>
       <type>
         <types>String</types>
@@ -525,11 +525,11 @@
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
     </attributes>
-    <attributes uuid="11424e1d-58b7-49c8-aed6-7037bd581f72">
-      <name>ПолноеИмяОбъекта</name>
+    <attributes uuid="d7db2a65-6a08-4ebf-a9a0-e17a00fa6d07">
+      <name>СтрокаОтбор</name>
       <synonym>
         <key>ru</key>
-        <value>Полное имя объекта</value>
+        <value>Отбор</value>
       </synonym>
       <type>
         <types>String</types>
@@ -559,28 +559,11 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
     </standardAttributes>
-    <attributes uuid="5a0d22a6-b9c6-4222-9a66-763756cc0446">
-      <name>ТипОбъекта</name>
+    <attributes uuid="daed6e0f-8f65-47c4-8ecd-5d4972e7b92c">
+      <name>АлгоритмВыборИмениПравила</name>
       <synonym>
         <key>ru</key>
-        <value>Тип объекта</value>
-      </synonym>
-      <type>
-        <types>String</types>
-        <stringQualifiers>
-          <length>150</length>
-        </stringQualifiers>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="f9a4f5f3-c0e1-42cb-bb15-44903ae90dbc">
-      <name>ОписаниеПравил</name>
-      <synonym>
-        <key>ru</key>
-        <value>Описание правил</value>
+        <value>Алгоритм выбор имени правила</value>
       </synonym>
       <type>
         <types>String</types>
@@ -609,6 +592,23 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
+    <attributes uuid="7e58bc19-ca99-42e1-8d62-1060b7f34060">
+      <name>ИмяПравилаПоУмолчанию</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя правила по умолчанию</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>50</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
     <attributes uuid="c505da16-196b-42cc-a0e4-3254bf54738d">
       <name>НесколькоПравил</name>
       <synonym>
@@ -623,11 +623,11 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="daed6e0f-8f65-47c4-8ecd-5d4972e7b92c">
-      <name>АлгоритмВыборИмениПравила</name>
+    <attributes uuid="f9a4f5f3-c0e1-42cb-bb15-44903ae90dbc">
+      <name>ОписаниеПравил</name>
       <synonym>
         <key>ru</key>
-        <value>Алгоритм выбор имени правила</value>
+        <value>Описание правил</value>
       </synonym>
       <type>
         <types>String</types>
@@ -639,16 +639,16 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="7e58bc19-ca99-42e1-8d62-1060b7f34060">
-      <name>ИмяПравилаПоУмолчанию</name>
+    <attributes uuid="5a0d22a6-b9c6-4222-9a66-763756cc0446">
+      <name>ТипОбъекта</name>
       <synonym>
         <key>ru</key>
-        <value>Имя правила по умолчанию</value>
+        <value>Тип объекта</value>
       </synonym>
       <type>
         <types>String</types>
         <stringQualifiers>
-          <length>50</length>
+          <length>150</length>
         </stringQualifiers>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>

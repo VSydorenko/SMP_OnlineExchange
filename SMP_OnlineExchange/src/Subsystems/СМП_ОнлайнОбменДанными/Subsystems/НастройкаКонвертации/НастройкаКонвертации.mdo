@@ -15,10 +15,12 @@
   <content>Catalog.ПравилаКонвертацииОбъектов</content>
   <content>Catalog.ПравилаКонвертацииЗначений</content>
   <content>Catalog.ПравилаКонвертацииСвойств</content>
-  <content>CommonPicture.СМП_ОбъектыМетаданных</content>
   <content>DataProcessor.ЗагрузкаСтруктурыКонфигурации</content>
   <content>Catalog.Алгоритмы</content>
-  <content>DataProcessor.СМП_ОнлайнОбменКонвертацияОбъектов</content>
   <content>DataProcessor.ЗагрузкаКонвертацииXML</content>
+  <content>Enum.ВидыСвойств</content>
+  <content>Enum.Приложения</content>
+  <content>Enum.ПриоритетОбъектовОбмена</content>
+  <content>Enum.ТипыОбъектов</content>
   <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
 </mdclass:Subsystem>

@@ -2,11 +2,11 @@
 <cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
   <commandsVisibility>
     <visibilityFragments>
-      <command>DataProcessor.Обработкаtest.StandardCommand.Open</command>
+      <command>0:e44b94b2-3dde-4909-ac35-da3247325dfa</command>
       <visible/>
     </visibilityFragments>
     <visibilityFragments>
-      <command>DataProcessor.леТранспорт.StandardCommand.Open</command>
+      <command>0:8a340a8c-7c5a-4dfe-9007-384240d21b1d</command>
       <visible/>
     </visibilityFragments>
   </commandsVisibility>
