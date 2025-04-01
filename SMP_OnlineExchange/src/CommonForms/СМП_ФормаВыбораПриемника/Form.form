@@ -581,7 +581,7 @@
       </title>
       <id>6</id>
       <valueType>
-        <types>EnumRef.ВидыСвойств</types>
+        <types>EnumRef.СМП_ВидыСвойств</types>
       </valueType>
       <view>
         <common>true</common>

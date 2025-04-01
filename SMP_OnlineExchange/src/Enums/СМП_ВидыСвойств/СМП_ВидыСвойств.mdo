@@ -5,10 +5,10 @@
     <listType typeId="17f600d4-14e5-4fda-a113-d263dceefdc8" valueTypeId="818b6020-c3b4-408e-b297-e684ffee65fc"/>
     <managerType typeId="bbcb7d9b-c202-4a33-ae76-70930e540a35" valueTypeId="54e534fb-b0e2-4488-b4e5-58852e82e60a"/>
   </producedTypes>
-  <name>ВидыСвойств</name>
+  <name>СМП_ВидыСвойств</name>
   <synonym>
     <key>ru</key>
-    <value>Виды свойств</value>
+    <value>СМП виды свойств</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <standardAttributes>

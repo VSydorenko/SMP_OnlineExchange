@@ -18,9 +18,10 @@
   <content>DataProcessor.ЗагрузкаСтруктурыКонфигурации</content>
   <content>Catalog.Алгоритмы</content>
   <content>DataProcessor.ЗагрузкаКонвертацииXML</content>
-  <content>Enum.ВидыСвойств</content>
+  <content>Enum.СМП_ВидыСвойств</content>
   <content>Enum.Приложения</content>
   <content>Enum.ПриоритетОбъектовОбмена</content>
   <content>Enum.ТипыОбъектов</content>
+  <content>DataProcessor.ВыгрузкаКонвертации</content>
   <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
 </mdclass:Subsystem>

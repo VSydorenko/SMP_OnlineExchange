@@ -13,7 +13,7 @@
   <commandsOrder>
     <orderFragments>
       <group>NavigationPanelOrdinary</group>
-      <commands>Enum.ВидыСвойств.StandardCommand.OpenList</commands>
+      <commands>Enum.СМП_ВидыСвойств.StandardCommand.OpenList</commands>
       <commands>Enum.Приложения.StandardCommand.OpenList</commands>
       <commands>Enum.ПриоритетОбъектовОбмена.StandardCommand.OpenList</commands>
       <commands>Enum.ТипыОбъектов.StandardCommand.OpenList</commands>
