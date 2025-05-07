@@ -18,5 +18,6 @@
   <subsystems>ОбщиеОбъекты</subsystems>
   <subsystems>НастройкаКонвертации</subsystems>
   <subsystems>РедакторКода</subsystems>
+  <subsystems>Подсистема1</subsystems>
   <subsystems>УправлениеОчередями</subsystems>
 </mdclass:Subsystem>

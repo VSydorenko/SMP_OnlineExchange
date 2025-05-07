@@ -34,8 +34,8 @@
     <languageCode>ru</languageCode>
   </languages>
   <subsystems>Subsystem.СМП_ОнлайнОбменДанными</subsystems>
-  <commonPictures>CommonPicture.СМП_ДлительнаяОперация80</commonPictures>
   <commonPictures>CommonPicture.СМП_ОбъектыМетаданных</commonPictures>
+  <commonPictures>CommonPicture.СМП_ДлительнаяОперация80</commonPictures>
   <commonPictures>CommonPicture.СМП_ОнлайнОбменДанными</commonPictures>
   <roles>Role.ПолныеПрава</roles>
   <commonModules>CommonModule.ЗапретРедактированияРеквизитовОбъектовПереопределяемый</commonModules>
@@ -49,10 +49,10 @@
   <commonModules>CommonModule.СМП_СобытияОтправкиДанных</commonModules>
   <commonModules>CommonModule.СМП_ОбщегоНазначения</commonModules>
   <httpServices>HTTPService.СМП_ОбменДанными</httpServices>
-  <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаОбработкаПроведения</eventSubscriptions>
-  <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаПередЗаписью</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаПриЗаписи</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаОбработкаПроведения</eventSubscriptions>
   <eventSubscriptions>EventSubscription.СМП_РегистрацияСправочника</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.СМП_РегистрацияДокументаПередЗаписью</eventSubscriptions>
   <commonForms>CommonForm.СМП_ФормаВыбораПриемника</commonForms>
   <catalogs>Catalog.Алгоритмы</catalogs>
   <catalogs>Catalog.Значения</catalogs>
@@ -66,11 +66,11 @@
   <enums>Enum.СМП_ВидыСвойств</enums>
   <enums>Enum.Приложения</enums>
   <enums>Enum.ПриоритетОбъектовОбмена</enums>
-  <enums>Enum.ТипыОбъектов</enums>
-  <enums>Enum.СМП_ВидыОбъектовОбмена</enums>
   <enums>Enum.СМП_ВидыТранспортовОбмена</enums>
   <enums>Enum.СМП_НастройкиОбменов</enums>
   <enums>Enum.СМП_СтатусыОбработкиСообщений</enums>
+  <enums>Enum.ТипыОбъектов</enums>
+  <enums>Enum.СМП_ВидыОбъектовОбмена</enums>
   <dataProcessors>DataProcessor.ЗагрузкаКонвертацииXML</dataProcessors>
   <dataProcessors>DataProcessor.ЗагрузкаСтруктурыКонфигурации</dataProcessors>
   <dataProcessors>DataProcessor.СМП_JSONКонвертер</dataProcessors>
