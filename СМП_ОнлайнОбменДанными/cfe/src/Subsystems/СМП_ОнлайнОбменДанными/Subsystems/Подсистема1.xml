@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="c407bb59-24e1-4d8f-8571-b26a29c744cf">
+		<Properties>
+			<Name>Подсистема1</Name>
+			<Synonym/>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СМП_КоннекторHTTP</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СМП_РегистрацияСправочника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.СМП_ФормаВыбораПриемника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СМП_ВидыОбъектовОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СМП_JSONКонвертер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">a3d1714f-077d-4a24-a22e-4c3b4219b1b1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">1e54e883-51bc-4962-83e4-e07685a49840</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">f7f6d341-4396-4d8c-bcfb-cf6902842201</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">6c8b3866-7b04-4dbb-94fb-666856cfaf4d</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">fc263634-7ba6-419f-8c23-282c1e909026</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">4dafd88c-ada5-464a-b182-debd24238fab</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">dfc0c369-d92e-4b18-8a65-c55c01a3817b</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">52b6c907-7251-4f87-90f7-0cb6f17ee92d</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Catalog.СМП_УчетныеЗаписиОбменов.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Catalog.СМП_УчетныеЗаписиОбменов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Catalog.СМП_УчетныеЗаписиОбменов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelImportant</CommandGroup>
+		</Command>
+		<Command name="Catalog.Конфигурации.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ПравилаКонвертацииОбъектов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ПравилаКонвертацииСвойств.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ПравилаКонвертацииЗначений.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Объекты.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Свойства.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Значения.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Алгоритмы.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Значения.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Конфигурации.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Конфигурации.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.СМП_УчетныеЗаписиОбменов.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Объекты.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Объекты.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.ПравилаКонвертацииЗначений.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.ПравилаКонвертацииЗначений.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.ПравилаКонвертацииОбъектов.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.ПравилаКонвертацииОбъектов.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.ПравилаКонвертацииСвойств.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.ПравилаКонвертацииСвойств.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Свойства.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Свойства.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Алгоритмы.StandardCommand.Create">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="Catalog.Алгоритмы.StandardCommand.CreateFolder">
+			<CommandGroup>ActionsPanelCreate</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаСтруктурыКонфигурации.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.СМП_ОнлайнОбменКонвертацияОбъектов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>NavigationPanelImportant</Group>
+		<Group>NavigationPanelOrdinary</Group>
+		<Group>ActionsPanelCreate</Group>
+		<Group>ActionsPanelTools</Group>
+	</GroupsOrder>
+</CommandInterface>

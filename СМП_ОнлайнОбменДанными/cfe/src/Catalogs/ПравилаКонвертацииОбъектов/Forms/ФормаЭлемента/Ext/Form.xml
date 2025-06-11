@@ -1,0 +1,1268 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаШапка" id="121">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="122"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаИмяПравила" id="195">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя правила</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа имя правила</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИмяПравилаРасширеннаяПодсказка" id="196"/>
+					<ChildItems>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Имя правила</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<Button name="СформироватьИмяПравила" id="202">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СформироватьИмяПравила</CommandName>
+							<ExtendedTooltip name="СформироватьИмяПравилаРасширеннаяПодсказка" id="203"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Владелец" id="7">
+					<DataPath>Объект.Owner</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен данными</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ВладелецКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<UsualGroup name="ГруппаИсточникПриемник" id="197">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа источник приемник</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа источник приемник</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИсточникПриемникРасширеннаяПодсказка" id="198"/>
+					<ChildItems>
+						<InputField name="Источник" id="13">
+							<DataPath>Объект.Источник</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChooseType>false</ChooseType>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.Владелец</xr:Name>
+									<xr:DataPath xsi:type="xs:string">КонфигурацияИсточник</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ContextMenu name="ИсточникКонтекстноеМеню" id="14"/>
+							<ExtendedTooltip name="ИсточникРасширеннаяПодсказка" id="15"/>
+							<Events>
+								<Event name="OnChange">ИсточникПриИзменении</Event>
+								<Event name="StartChoice">ИсточникНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<InputField name="Приемник" id="199">
+							<DataPath>Объект.Приемник</DataPath>
+							<ChooseType>false</ChooseType>
+							<TextEdit>false</TextEdit>
+							<ChoiceParameterLinks>
+								<xr:Link>
+									<xr:Name>Отбор.Владелец</xr:Name>
+									<xr:DataPath xsi:type="xs:string">КонфигурацияПриемник</xr:DataPath>
+									<xr:ValueChange>Clear</xr:ValueChange>
+								</xr:Link>
+							</ChoiceParameterLinks>
+							<ContextMenu name="ПриемникКонтекстноеМеню" id="200"/>
+							<ExtendedTooltip name="ПриемникРасширеннаяПодсказка" id="201"/>
+							<Events>
+								<Event name="OnChange">ПриемникПриИзменении</Event>
+								<Event name="StartChoice">ПриемникНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="СтраницыНастройки" id="119">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыНастройкиРасширеннаяПодсказка" id="120"/>
+			<ChildItems>
+				<Page name="СтраницаОбработчикиСобытий" id="123">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработчики</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обработчики событий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОбработчикиСобытийРасширеннаяПодсказка" id="124"/>
+					<ChildItems>
+						<Pages name="СтраницыАлгоритмы" id="125">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы алгоритмы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы алгоритмы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыАлгоритмыРасширеннаяПодсказка" id="126"/>
+							<Events>
+								<Event name="OnCurrentPageChange">СтраницыАлгоритмыПриСменеСтраницы</Event>
+							</Events>
+							<ChildItems>
+								<Page name="СтраницаАлгоритмПередВыгрузкойОбъекта" id="135">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перед выгрузкой</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алгоритм перед выгрузкой объекта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПередВыгрузкойОбъектаРасширеннаяПодсказка" id="136"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода4" id="220">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода4РасширеннаяПодсказка" id="221"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПередВыгрузкойОбъектаРедактор" id="151">
+											<DataPath>АлгоритмПередВыгрузкойОбъектаРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПередВыгрузкойОбъектаРедакторКонтекстноеМеню" id="152"/>
+											<ExtendedTooltip name="АлгоритмПередВыгрузкойОбъектаРедакторРасширеннаяПодсказка" id="153"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПриВыгрузкеОбъекта" id="137">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При выгрузке</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алгоритм при выгрузке объекта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПриВыгрузкеОбъектаРасширеннаяПодсказка" id="138"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода5" id="222">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода5РасширеннаяПодсказка" id="223"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПриВыгрузкеОбъектаРедактор" id="154">
+											<DataPath>АлгоритмПриВыгрузкеОбъектаРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПриВыгрузкеОбъектаРедакторКонтекстноеМеню" id="155"/>
+											<ExtendedTooltip name="АлгоритмПриВыгрузкеОбъектаРедакторРасширеннаяПодсказка" id="156"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПослеВыгрузкиОбъекта" id="139">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>После выгрузки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алгоритм после выгрузки объекта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПослеВыгрузкиОбъектаРасширеннаяПодсказка" id="140"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода7" id="226">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода7РасширеннаяПодсказка" id="227"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПослеВыгрузкиОбъектаРедактор" id="157">
+											<DataPath>АлгоритмПослеВыгрузкиОбъектаРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПослеВыгрузкиОбъектаРедакторКонтекстноеМеню" id="158"/>
+											<ExtendedTooltip name="АлгоритмПослеВыгрузкиОбъектаРедакторРасширеннаяПодсказка" id="159"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПослеВыгрузкиОбъектаВФайлОбмена" id="149">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>После выгрузки в файл</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алгоритм после выгрузки объекта в файл обмена</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПослеВыгрузкиОбъектаВФайлОбменаРасширеннаяПодсказка" id="150"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода6" id="224">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода6РасширеннаяПодсказка" id="225"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПослеВыгрузкиОбъектаВФайлОбменаРедактор" id="172">
+											<DataPath>АлгоритмПослеВыгрузкиОбъектаВФайлОбменаРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПослеВыгрузкиОбъектаВФайлОбменаРедакторКонтекстноеМеню" id="173"/>
+											<ExtendedTooltip name="АлгоритмПослеВыгрузкиОбъектаВФайлОбменаРедакторРасширеннаяПодсказка" id="174"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПоследовательностьПолейПоиска" id="147">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Поля поиска</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алгоритм последовательность полей поиска</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПоследовательностьПолейПоискаРасширеннаяПодсказка" id="148"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода" id="212">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКодаРасширеннаяПодсказка" id="213"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПоследовательностьПолейПоискаРедактор" id="169">
+											<DataPath>АлгоритмПоследовательностьПолейПоискаРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПоследовательностьПолейПоискаРедакторКонтекстноеМеню" id="170"/>
+											<ExtendedTooltip name="АлгоритмПоследовательностьПолейПоискаРедакторРасширеннаяПодсказка" id="171"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПередЗагрузкойОбъекта" id="141">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перед загрузкой</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алгоритм перед загрузкой объекта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПередЗагрузкойОбъектаРасширеннаяПодсказка" id="142"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода1" id="214">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода1РасширеннаяПодсказка" id="215"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПередЗагрузкойОбъектаРедактор" id="160">
+											<DataPath>АлгоритмПередЗагрузкойОбъектаРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПередЗагрузкойОбъектаРедакторКонтекстноеМеню" id="161"/>
+											<ExtendedTooltip name="АлгоритмПередЗагрузкойОбъектаРедакторРасширеннаяПодсказка" id="162"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПриЗагрузкеОбъекта" id="143">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При загрузке</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алгоритм при загрузке объекта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПриЗагрузкеОбъектаРасширеннаяПодсказка" id="144"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода2" id="216">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода2РасширеннаяПодсказка" id="217"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПриЗагрузкеОбъектаРедактор" id="163">
+											<DataPath>АлгоритмПриЗагрузкеОбъектаРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПриЗагрузкеОбъектаРедакторКонтекстноеМеню" id="164"/>
+											<ExtendedTooltip name="АлгоритмПриЗагрузкеОбъектаРедакторРасширеннаяПодсказка" id="165"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПослеЗагрузкиОбъекта" id="145">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>После загрузки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алгоритм после загрузки объекта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПослеЗагрузкиОбъектаРасширеннаяПодсказка" id="146"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода3" id="218">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода3РасширеннаяПодсказка" id="219"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПослеЗагрузкиОбъектаРедактор" id="166">
+											<DataPath>АлгоритмПослеЗагрузкиОбъектаРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПослеЗагрузкиОбъектаРедакторКонтекстноеМеню" id="167"/>
+											<ExtendedTooltip name="АлгоритмПослеЗагрузкиОбъектаРедакторРасширеннаяПодсказка" id="168"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНастройки" id="178">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаНастройкиРасширеннаяПодсказка" id="179"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаЗагрузкаДанных" id="185">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загрузка данных</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа загрузка данных</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаЗагрузкаДанныхРасширеннаяПодсказка" id="186"/>
+							<ChildItems>
+								<CheckBoxField name="СинхронизироватьПоИдентификатору" id="58">
+									<DataPath>Объект.СинхронизироватьПоИдентификатору</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Искать объект приемника по внутреннему идентификатору объекта источника</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Флаг определяет, что поиск объекта приемника будет производиться по уникальному идентификатору объекта приемника</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СинхронизироватьПоИдентификаторуКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="СинхронизироватьПоИдентификаторуРасширеннаяПодсказка" id="60"/>
+									<Events>
+										<Event name="OnChange">СинхронизироватьПоИдентификаторуПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<UsualGroup name="ГруппаПродолжитьПоискПоПолямПоискаЕслиПоИдентификаторуНеНашли" id="180">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа продолжить поиск по полям поиска если по идентификатору не нашли</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа продолжить поиск по полям поиска если по идентификатору не нашли</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПродолжитьПоискПоПолямПоискаЕслиПоИдентификаторуНеНашлиРасширеннаяПодсказка" id="181"/>
+									<ChildItems>
+										<PictureDecoration name="ДекорацияОтступ" id="182">
+											<Width>1</Width>
+											<Height>1</Height>
+											<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="183"/>
+											<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="184"/>
+										</PictureDecoration>
+										<CheckBoxField name="ПродолжитьПоискПоПолямПоискаЕслиПоИдентификаторуНеНашли" id="64">
+											<DataPath>Объект.ПродолжитьПоискПоПолямПоискаЕслиПоИдентификаторуНеНашли</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Продолжить поиск по полям поиска, если по идентификатору объект приемник не найден</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>Right</TitleLocation>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Флаг определяет, нужно ли продолжить поиск объекта приемника по полям поиска, если по внутреннему идентификатору объект не был найден</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ToolTipRepresentation>Button</ToolTipRepresentation>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПродолжитьПоискПоПолямПоискаЕслиПоИдентификаторуНеНашлиКонтекстноеМеню" id="65"/>
+											<ExtendedTooltip name="ПродолжитьПоискПоПолямПоискаЕслиПоИдентификаторуНеНашлиРасширеннаяПодсказка" id="66"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+								<CheckBoxField name="НеЗамещать" id="52">
+									<DataPath>Объект.НеЗамещать</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Не замещать существующие объекты в приемнике при загрузке, а только создавать новые и заполнять их</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Флаг определяет нужно ли изменять существующие объекты в информационной базе приемнике</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НеЗамещатьКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="НеЗамещатьРасширеннаяПодсказка" id="54"/>
+								</CheckBoxField>
+								<CheckBoxField name="НеСоздаватьОбъектВПриемникеЕслиНеНайденПоПолямПоиска" id="70">
+									<DataPath>Объект.НеСоздаватьОбъектВПриемникеЕслиНеНайденПоПолямПоиска</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Не создавать новый объект в приемнике, если он НЕ найден</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Флаг определяет, нужно ли создавать новые объекты в приемнике, если поиск их не дал положительного результата</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НеСоздаватьОбъектВПриемникеЕслиНеНайденПоПолямПоискаКонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="НеСоздаватьОбъектВПриемникеЕслиНеНайденПоПолямПоискаРасширеннаяПодсказка" id="72"/>
+								</CheckBoxField>
+								<CheckBoxField name="ПриПереносеОбъектаПоСсылкеУстанавливатьТолькоGIUD" id="82">
+									<DataPath>Объект.ПриПереносеОбъектаПоСсылкеУстанавливатьТолькоGIUD</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При переносе объекта по ссылке НЕ создавать новый объект, а только переносить ссылку</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При переносе объекта, если он был выгружен по ссылке, то устанавливать только ссылку. Если объект был выгружен по правилам выгрузки - переносить всю информацию об объекте</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПриПереносеОбъектаПоСсылкеУстанавливатьТолькоGIUDКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="ПриПереносеОбъектаПоСсылкеУстанавливатьТолькоGIUDРасширеннаяПодсказка" id="84"/>
+								</CheckBoxField>
+								<CheckBoxField name="ГенерироватьНовыйНомерИлиКодЕслиНеУказан" id="76">
+									<DataPath>Объект.ГенерироватьНовыйНомерИлиКодЕслиНеУказан</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Автоматически генерировать номер или код, если он не задан</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Флаг определяет, нужно ли автоматически генерировать номер или код, если он не задан.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ГенерироватьНовыйНомерИлиКодЕслиНеУказанКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="ГенерироватьНовыйНомерИлиКодЕслиНеУказанРасширеннаяПодсказка" id="78"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВыгрузкаДанных" id="187">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгрузка данных</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа выгрузка данных</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаВыгрузкаДанныхРасширеннаяПодсказка" id="188"/>
+							<ChildItems>
+								<CheckBoxField name="НеВыгружатьОбъектыСвойствПоСсылкам" id="61">
+									<DataPath>Объект.НеВыгружатьОбъектыСвойствПоСсылкам</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Не выгружать объекты свойств источника по ссылкам</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Флаг определяет нужно ли переносить все подчиненные объекты для источника. Если флаг не установлен, то в месте с одним объектом источником будут выгружены все объекты, на которые он ссылается</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НеВыгружатьОбъектыСвойствПоСсылкамКонтекстноеМеню" id="62"/>
+									<ExtendedTooltip name="НеВыгружатьОбъектыСвойствПоСсылкамРасширеннаяПодсказка" id="63"/>
+								</CheckBoxField>
+								<CheckBoxField name="НеЗапоминатьВыгруженные" id="55">
+									<DataPath>Объект.НеЗапоминатьВыгруженные</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Не запоминать выгруженные объекты</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Не запоминать выгруженные объекты. Если флаг не взведен, то программа будет запоминать выгруженные ссылки, тем самым процесс выгрузки и загрузки может быть ускорен</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НеЗапоминатьВыгруженныеКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="НеЗапоминатьВыгруженныеРасширеннаяПодсказка" id="57"/>
+								</CheckBoxField>
+								<CheckBoxField name="ИспользоватьБыстрыйПоискПриЗагрузке" id="73">
+									<DataPath>Объект.ИспользоватьБыстрыйПоискПриЗагрузке</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Использовать быстрый поиск объекта при выгрузке и загрузке</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Сохранять информацию о загруженном объекте для быстрого поиска при загрузке. При этом на этапе выгрузки полностью КЭШируются все объекты данного типа, а на этапе загрузки запоминаются все ссылки на загруженные объекты данного типа. Режим рекомендуется для</v8:content>
+										</v8:item>
+									</ToolTip>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИспользоватьБыстрыйПоискПриЗагрузкеКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="ИспользоватьБыстрыйПоискПриЗагрузкеРасширеннаяПодсказка" id="75"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНастройкиOnLine" id="189">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>On-line обмен</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница настройки on line</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаНастройкиOnLineРасширеннаяПодсказка" id="190"/>
+					<ChildItems>
+						<CheckBoxField name="ВыгружатьОбъектТолькоПриНаличииНаНегоСсылки" id="79">
+							<DataPath>Объект.ВыгружатьОбъектТолькоПриНаличииНаНегоСсылки</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгружать объект (полностью), только при наличии на него ссылки</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгружать объект только если на него есть ссылки.</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыгружатьОбъектТолькоПриНаличииНаНегоСсылкиКонтекстноеМеню" id="80"/>
+							<ExtendedTooltip name="ВыгружатьОбъектТолькоПриНаличииНаНегоСсылкиРасширеннаяПодсказка" id="81"/>
+						</CheckBoxField>
+						<CheckBoxField name="НеЗамещатьОбъектСозданныйВИнформационнойБазеПриемнике" id="88">
+							<DataPath>Объект.НеЗамещатьОбъектСозданныйВИнформационнойБазеПриемнике</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не замещать объект созданный в информационной базе приемнике при загрузке</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При загрузке данных, в том случае если объект был изначально создан в информационной базе приемнике, не замещать его</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеЗамещатьОбъектСозданныйВИнформационнойБазеПриемникеКонтекстноеМеню" id="89"/>
+							<ExtendedTooltip name="НеЗамещатьОбъектСозданныйВИнформационнойБазеПриемникеРасширеннаяПодсказка" id="90"/>
+						</CheckBoxField>
+						<InputField name="ПриоритетОбъектовОбмена" id="85">
+							<DataPath>Объект.ПриоритетОбъектовОбмена</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В случае коллизии при обмене приоритет объекта загрузки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Определяет приоритет объекта при загрузке данных для On-Line обмена. В том случае если объект одновременно был изменен в двух информационных базах (при коллизии) приоритет определяет какая версия объекта должна быть записани в информационную базу</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ПриоритетОбъектовОбменаКонтекстноеМеню" id="86"/>
+							<ExtendedTooltip name="ПриоритетОбъектовОбменаРасширеннаяПодсказка" id="87"/>
+						</InputField>
+						<UsualGroup name="ГруппаВариантыНастроекПолейПоиска" id="191">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Варианты настроек полей поиска</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа варианты настроек полей поиска</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<ExtendedTooltip name="ГруппаВариантыНастроекПолейПоискаРасширеннаяПодсказка" id="192"/>
+							<ChildItems>
+								<Table name="НастройкаВариантовПоискаОбъектов" id="94">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.НастройкаВариантовПоискаОбъектов</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="НастройкаВариантовПоискаОбъектовКонтекстноеМеню" id="95"/>
+									<AutoCommandBar name="НастройкаВариантовПоискаОбъектовКоманднаяПанель" id="96"/>
+									<ExtendedTooltip name="НастройкаВариантовПоискаОбъектовРасширеннаяПодсказка" id="97"/>
+									<SearchStringAddition name="НастройкаВариантовПоискаОбъектовСтрокаПоиска" id="98">
+										<AdditionSource>
+											<Item>НастройкаВариантовПоискаОбъектов</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НастройкаВариантовПоискаОбъектовСтрокаПоискаКонтекстноеМеню" id="99"/>
+										<ExtendedTooltip name="НастройкаВариантовПоискаОбъектовСтрокаПоискаРасширеннаяПодсказка" id="100"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="НастройкаВариантовПоискаОбъектовСостояниеПросмотра" id="101">
+										<AdditionSource>
+											<Item>НастройкаВариантовПоискаОбъектов</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="НастройкаВариантовПоискаОбъектовСостояниеПросмотраКонтекстноеМеню" id="102"/>
+										<ExtendedTooltip name="НастройкаВариантовПоискаОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="103"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="НастройкаВариантовПоискаОбъектовУправлениеПоиском" id="104">
+										<AdditionSource>
+											<Item>НастройкаВариантовПоискаОбъектов</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="НастройкаВариантовПоискаОбъектовУправлениеПоискомКонтекстноеМеню" id="105"/>
+										<ExtendedTooltip name="НастройкаВариантовПоискаОбъектовУправлениеПоискомРасширеннаяПодсказка" id="106"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="НастройкаВариантовПоискаОбъектовНомерСтроки" id="107">
+											<DataPath>Объект.НастройкаВариантовПоискаОбъектов.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НастройкаВариантовПоискаОбъектовНомерСтрокиКонтекстноеМеню" id="108"/>
+											<ExtendedTooltip name="НастройкаВариантовПоискаОбъектовНомерСтрокиРасширеннаяПодсказка" id="109"/>
+										</LabelField>
+										<InputField name="НастройкаВариантовПоискаОбъектовИмяНастройкиДляАлгоритма" id="110">
+											<DataPath>Объект.НастройкаВариантовПоискаОбъектов.ИмяНастройкиДляАлгоритма</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НастройкаВариантовПоискаОбъектовИмяНастройкиДляАлгоритмаКонтекстноеМеню" id="111"/>
+											<ExtendedTooltip name="НастройкаВариантовПоискаОбъектовИмяНастройкиДляАлгоритмаРасширеннаяПодсказка" id="112"/>
+										</InputField>
+										<InputField name="НастройкаВариантовПоискаОбъектовИмяНастройкиДляПользователя" id="113">
+											<DataPath>Объект.НастройкаВариантовПоискаОбъектов.ИмяНастройкиДляПользователя</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НастройкаВариантовПоискаОбъектовИмяНастройкиДляПользователяКонтекстноеМеню" id="114"/>
+											<ExtendedTooltip name="НастройкаВариантовПоискаОбъектовИмяНастройкиДляПользователяРасширеннаяПодсказка" id="115"/>
+										</InputField>
+										<InputField name="НастройкаВариантовПоискаОбъектовОписаниеНастройкиДляПользователя" id="116">
+											<DataPath>Объект.НастройкаВариантовПоискаОбъектов.ОписаниеНастройкиДляПользователя</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="НастройкаВариантовПоискаОбъектовОписаниеНастройкиДляПользователяКонтекстноеМеню" id="117"/>
+											<ExtendedTooltip name="НастройкаВариантовПоискаОбъектовОписаниеНастройкиДляПользователяРасширеннаяПодсказка" id="118"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаДополнительно" id="193">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаДополнительноРасширеннаяПодсказка" id="194"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНаименование" id="204">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа наименование</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа наименование</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНаименованиеРасширеннаяПодсказка" id="205"/>
+							<ChildItems>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<Button name="СформироватьНаименованиеПравила" id="206">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СформироватьНаименованиеПравила</CommandName>
+									<ExtendedTooltip name="СформироватьНаименованиеПравилаРасширеннаяПодсказка" id="207"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаГруппаПравила" id="208">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа группа правила</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа группа правила</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаГруппаПравилаРасширеннаяПодсказка" id="209"/>
+							<ChildItems>
+								<InputField name="Родитель" id="10">
+									<DataPath>Объект.Parent</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="РодительКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="12"/>
+								</InputField>
+								<Button name="УстановитьГруппуПравила" id="210">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьГруппуПравила</CommandName>
+									<ExtendedTooltip name="УстановитьГруппуПравилаРасширеннаяПодсказка" id="211"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Порядок" id="25">
+							<DataPath>Объект.Порядок</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Приоритет</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<SpinButton>true</SpinButton>
+							<ContextMenu name="ПорядокКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="27"/>
+						</InputField>
+						<InputField name="Описание" id="31">
+							<DataPath>Объект.Описание</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОписаниеКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="33"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="175">
+			<DataPath>Объект.Комментарий</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>48</MaxWidth>
+			<Height>1</Height>
+			<MultiLine>true</MultiLine>
+			<ChoiceButton>true</ChoiceButton>
+			<BorderColor>style:BorderColor</BorderColor>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="176"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="177"/>
+			<Events>
+				<Event name="StartChoice">КомментарийНачалоВыбора</Event>
+			</Events>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПравилаКонвертацииОбъектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПередВыгрузкойОбъектаРедактор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм перед выгрузкой объекта редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПриВыгрузкеОбъектаРедактор" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм при выгрузке объекта редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПослеВыгрузкиОбъектаРедактор" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм после выгрузки объекта редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПередЗагрузкойОбъектаРедактор" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм перед загрузкой объекта редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПриЗагрузкеОбъектаРедактор" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм при загрузке объекта редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПослеЗагрузкиОбъектаРедактор" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм после загрузки объекта редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПоследовательностьПолейПоискаРедактор" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм последовательность полей поиска редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПослеВыгрузкиОбъектаВФайлОбменаРедактор" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм после выгрузки объекта в файл обмена редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КонфигурацияИсточник" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация источник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Конфигурации</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийАктивныйОбработчик" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий активный обработчик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонфигурацияПриемник" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация приемник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Конфигурации</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СформироватьИмяПравила" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать имя правила</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СформироватьИмяПравила</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="СформироватьНаименованиеПравила" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать наименование правила</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СформироватьНаименованиеПравила</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="УстановитьГруппуПравила" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить группу правила</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УстановитьГруппуПравила</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ОткрытьРедакторКода" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть редактор кода</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть редактор кода</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРедакторКода</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>Catalog.ПравилаКонвертацииСвойств.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+			</Item>
+			<Item>
+				<Command>Catalog.ПравилаКонвертацииЗначений.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>1</Index>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

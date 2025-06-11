@@ -1,0 +1,764 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Правило конвертации группы свойств (ПКГС)</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<UseForFoldersAndItems>Folders</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаИсточник" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа источник</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа источник</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаИсточникРасширеннаяПодсказка" id="82"/>
+			<ChildItems>
+				<InputField name="Источник" id="46">
+					<DataPath>Объект.Источник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
+					<ChoiceButton>true</ChoiceButton>
+					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+					<ChoiceForm>Catalog.Свойства.Form.ФормаВыбораГруппы</ChoiceForm>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">ОбъектИсточник</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ChoiceParameters>
+						<app:item name="Отбор.Вид">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СМП_ВидыСвойств.EnumValue.ТабличнаяЧасть</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<ContextMenu name="ИсточникКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ИсточникРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ТипИсточника" id="73">
+					<DataPath>Объект.ТипИсточника</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТипИсточникаКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ТипИсточникаРасширеннаяПодсказка" id="75"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<CheckBoxField name="ПолучитьИзВходящихДанных" id="61">
+			<DataPath>Объект.ПолучитьИзВходящихДанных</DataPath>
+			<TitleLocation>Right</TitleLocation>
+			<EditMode>EnterOnInput</EditMode>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ПолучитьИзВходящихДанныхКонтекстноеМеню" id="62"/>
+			<ExtendedTooltip name="ПолучитьИзВходящихДанныхРасширеннаяПодсказка" id="63"/>
+		</CheckBoxField>
+		<UsualGroup name="ГруппаПриемник" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа приемник</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа приемник</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаПриемникРасширеннаяПодсказка" id="84"/>
+			<ChildItems>
+				<InputField name="Приемник" id="70">
+					<DataPath>Объект.Приемник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ChoiceFoldersAndItems>Folders</ChoiceFoldersAndItems>
+					<ChooseType>false</ChooseType>
+					<ChoiceParameterLinks>
+						<xr:Link>
+							<xr:Name>Отбор.Владелец</xr:Name>
+							<xr:DataPath xsi:type="xs:string">ОбъектПриемник</xr:DataPath>
+							<xr:ValueChange>Clear</xr:ValueChange>
+						</xr:Link>
+					</ChoiceParameterLinks>
+					<ChoiceParameters>
+						<app:item name="Отбор.Вид">
+							<app:value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xr:DesignTimeRef">Enum.СМП_ВидыСвойств.EnumValue.ТабличнаяЧасть</Value>
+							</app:value>
+						</app:item>
+					</ChoiceParameters>
+					<ContextMenu name="ПриемникКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ПриемникРасширеннаяПодсказка" id="72"/>
+					<Events>
+						<Event name="StartChoice">ПриемникНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТипПриемника" id="76">
+					<DataPath>Объект.ТипПриемника</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТипПриемникаКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="ТипПриемникаРасширеннаяПодсказка" id="78"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="ГруппаНастройки" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="86"/>
+			<ChildItems>
+				<Page name="СтраницаОбработчикиСобытий" id="89">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обработчики</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница обработчики событий</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОбработчикиСобытийРасширеннаяПодсказка" id="90"/>
+					<ChildItems>
+						<Pages name="СтраницыАлгоритмы" id="91">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы алгоритмы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Страницы алгоритмы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
+							<ExtendedTooltip name="СтраницыАлгоритмыРасширеннаяПодсказка" id="92"/>
+							<Events>
+								<Event name="OnCurrentPageChange">СтраницыАлгоритмыПриСменеСтраницы</Event>
+							</Events>
+							<ChildItems>
+								<Page name="СтраницаАлгоритмПередОбработкойВыгрузки" id="126">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перед обработкой</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПередОбработкойВыгрузкиРасширеннаяПодсказка" id="127"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода" id="149">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКодаРасширеннаяПодсказка" id="150"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПередОбработкойВыгрузкиРедактор" id="128">
+											<DataPath>АлгоритмПередОбработкойВыгрузкиРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПередОбработкойВыгрузкиРедакторКонтекстноеМеню" id="129"/>
+											<ExtendedTooltip name="АлгоритмПередОбработкойВыгрузкиРедакторРасширеннаяПодсказка" id="130"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПередВыгрузкойСвойства" id="93">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перед выгрузкой</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПередВыгрузкойСвойстваРасширеннаяПодсказка" id="94"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода1" id="151">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода1РасширеннаяПодсказка" id="152"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПередВыгрузкойСвойстваРедактор" id="95">
+											<DataPath>АлгоритмПередВыгрузкойСвойстваРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПередВыгрузкойСвойстваРедакторКонтекстноеМеню" id="96"/>
+											<ExtendedTooltip name="АлгоритмПередВыгрузкойСвойстваРедакторРасширеннаяПодсказка" id="97"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПриВыгрузкеСвойства" id="101">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При выгрузке</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПриВыгрузкеСвойстваРасширеннаяПодсказка" id="102"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода2" id="153">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода2РасширеннаяПодсказка" id="154"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПриВыгрузкеСвойстваРедактор" id="103">
+											<DataPath>АлгоритмПриВыгрузкеСвойстваРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПриВыгрузкеСвойстваРедакторКонтекстноеМеню" id="104"/>
+											<ExtendedTooltip name="АлгоритмПриВыгрузкеСвойстваРедакторРасширеннаяПодсказка" id="105"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПослеВыгрузкиСвойства" id="109">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>После выгрузки</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПослеВыгрузкиСвойстваРасширеннаяПодсказка" id="110"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода3" id="155">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода3РасширеннаяПодсказка" id="156"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПослеВыгрузкиСвойстваРедактор" id="111">
+											<DataPath>АлгоритмПослеВыгрузкиСвойстваРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПослеВыгрузкиСвойстваРедакторКонтекстноеМеню" id="112"/>
+											<ExtendedTooltip name="АлгоритмПослеВыгрузкиСвойстваРедакторРасширеннаяПодсказка" id="113"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПослеОбработкиВыгрузки" id="134">
+									<EnableContentChange>true</EnableContentChange>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>После обработки</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<ExtendedTooltip name="СтраницаАлгоритмПослеОбработкиВыгрузкиРасширеннаяПодсказка" id="135"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода4" id="157">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода4РасширеннаяПодсказка" id="158"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПослеОбработкиВыгрузкиРедактор" id="136">
+											<DataPath>АлгоритмПослеОбработкиВыгрузкиРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="АлгоритмПослеОбработкиВыгрузкиРедакторКонтекстноеМеню" id="137"/>
+											<ExtendedTooltip name="АлгоритмПослеОбработкиВыгрузкиРедакторРасширеннаяПодсказка" id="138"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПередЗагрузкойСвойства" id="159">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Перед загрузкой</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алгоритм перед загрузкой свойства</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<BackColor>web:LightGreen</BackColor>
+									<ExtendedTooltip name="СтраницаАлгоритмПередЗагрузкойСвойстваРасширеннаяПодсказка" id="160"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода5" id="164">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода5РасширеннаяПодсказка" id="165"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПередЗагрузкойСвойстваРедактор" id="161">
+											<DataPath>АлгоритмПередЗагрузкойСвойстваРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="АлгоритмПередЗагрузкойСвойстваРедакторКонтекстноеМеню" id="162"/>
+											<ExtendedTooltip name="АлгоритмПередЗагрузкойСвойстваРедакторРасширеннаяПодсказка" id="163"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПриЗагрузкеСвойства" id="166">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При загрузке</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алгоритм при загрузке свойства</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<BackColor>web:LightGreen</BackColor>
+									<ExtendedTooltip name="СтраницаАлгоритмПриЗагрузкеСвойстваРасширеннаяПодсказка" id="167"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода6" id="171">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода6РасширеннаяПодсказка" id="172"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПриЗагрузкеСвойстваРедактор" id="168">
+											<DataPath>АлгоритмПриЗагрузкеСвойстваРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="АлгоритмПриЗагрузкеСвойстваРедакторКонтекстноеМеню" id="169"/>
+											<ExtendedTooltip name="АлгоритмПриЗагрузкеСвойстваРедакторРасширеннаяПодсказка" id="170"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+								<Page name="СтраницаАлгоритмПослеЗагрузкиСвойства" id="173">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>После загрузки</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страница алгоритм после загрузки свойства</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>HorizontalIfPossible</Group>
+									<BackColor>web:LightGreen</BackColor>
+									<ExtendedTooltip name="СтраницаАлгоритмПослеЗагрузкиСвойстваРасширеннаяПодсказка" id="174"/>
+									<ChildItems>
+										<Button name="ОткрытьРедакторКода7" id="178">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+											<ExtendedTooltip name="ОткрытьРедакторКода7РасширеннаяПодсказка" id="179"/>
+										</Button>
+										<HTMLDocumentField name="АлгоритмПослеЗагрузкиСвойстваРедактор" id="175">
+											<DataPath>АлгоритмПослеЗагрузкиСвойстваРедактор</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ContextMenu name="АлгоритмПослеЗагрузкиСвойстваРедакторКонтекстноеМеню" id="176"/>
+											<ExtendedTooltip name="АлгоритмПослеЗагрузкиСвойстваРедакторРасширеннаяПодсказка" id="177"/>
+										</HTMLDocumentField>
+									</ChildItems>
+								</Page>
+							</ChildItems>
+						</Pages>
+						<CheckBoxField name="Отключить" id="117">
+							<DataPath>Объект.Отключить</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отключить обработку правила</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отключить обработку данного правила</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ОтключитьКонтекстноеМеню" id="118"/>
+							<ExtendedTooltip name="ОтключитьРасширеннаяПодсказка" id="119"/>
+						</CheckBoxField>
+						<CheckBoxField name="НеЗамещать" id="120">
+							<DataPath>Объект.НеЗамещать</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не замещать значение свойства у существующих объектов в приемнике</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не замещать значение данного свойства у существующих объектов в приемнике</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеЗамещатьКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="НеЗамещатьРасширеннаяПодсказка" id="122"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаДополнительно" id="145">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительно</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаДополнительноРасширеннаяПодсказка" id="146"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНаименованиеКод" id="147">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа наименование код</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа наименование код</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаНаименованиеКодРасширеннаяПодсказка" id="148"/>
+							<ChildItems>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<InputField name="Код" id="1">
+									<DataPath>Объект.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Родитель" id="10">
+							<DataPath>Объект.Parent</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РодительКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="РодительРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Порядок" id="64">
+							<DataPath>Объект.Порядок</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<SpinButton>true</SpinButton>
+							<ContextMenu name="ПорядокКонтекстноеМеню" id="65"/>
+							<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="66"/>
+						</InputField>
+						<CheckBoxField name="ВыгружатьГруппуЧерезФайл" id="34">
+							<DataPath>Объект.ВыгружатьГруппуЧерезФайл</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выгружать элементы группы через промежуточный файл</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Рекомендуется при большом количестве строк в выгружаемой группе. При этом каждая строка будет выгружена в промежуточный файл и занимать места в оперативной памяти не будет</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыгружатьГруппуЧерезФайлКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="ВыгружатьГруппуЧерезФайлРасширеннаяПодсказка" id="36"/>
+						</CheckBoxField>
+						<InputField name="Описание" id="55">
+							<DataPath>Объект.Описание</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОписаниеКонтекстноеМеню" id="56"/>
+							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="57"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="142">
+			<DataPath>Объект.Комментарий</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<MaxWidth>48</MaxWidth>
+			<Height>1</Height>
+			<MultiLine>true</MultiLine>
+			<ChoiceButton>true</ChoiceButton>
+			<BorderColor>style:BorderColor</BorderColor>
+			<InputHint>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</InputHint>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="143"/>
+			<ExtendedTooltip name="КомментарийExtendedTooltip" id="144"/>
+			<Events>
+				<Event name="StartChoice">КомментарийНачалоВыбора</Event>
+			</Events>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.ПравилаКонвертацииСвойств</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПередВыгрузкойСвойстваРедактор" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм перед выгрузкой свойства редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПослеВыгрузкиСвойстваРедактор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм после выгрузки свойства редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПриВыгрузкеСвойстваРедактор" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм при выгрузке свойства редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПередОбработкойВыгрузкиРедактор" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм перед обработкой выгрузки редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПослеОбработкиВыгрузкиРедактор" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм после обработки выгрузки редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ОбъектИсточник" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект источник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Объекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбъектПриемник" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект приемник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Объекты</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийАктивныйОбработчик" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий активный обработчик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АлгоритмПередЗагрузкойСвойстваРедактор" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм перед загрузкой свойства редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПриЗагрузкеСвойстваРедактор" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм при загрузке свойства редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="АлгоритмПослеЗагрузкиСвойстваРедактор" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Алгоритм после загрузки свойства редактор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьРедакторКода" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть редактор кода</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть редактор кода</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРедакторКода</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<HTTPService uuid="ce3f8b2d-9c59-463a-b33c-62b33da1077a">
+		<Properties>
+			<Name>СМП_ОбменДанными</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СМП обмен данными</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<RootURL>smp_exchange</RootURL>
+			<ReuseSessions>AutoUse</ReuseSessions>
+			<SessionMaxAge>20</SessionMaxAge>
+		</Properties>
+		<ChildObjects>
+			<URLTemplate uuid="f1d0e2c5-0163-4230-b3e7-6e0eb2e24029">
+				<Properties>
+					<Name>ОбменДанными</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен данными</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/data/{ИдентификаторОбмена}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="42cdaac0-d22c-4882-81ee-01b66d17eaf8">
+						<Properties>
+							<Name>DataPost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Data post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>ОбменДаннымиDataPost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="f91086bc-2199-48e6-8495-6aa865d09462">
+				<Properties>
+					<Name>ПроверкаСвязи</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проверка связи</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/ping/{ИдентификаторОбмена}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="80ecd720-5de6-4ff7-8fdb-dc671a00bcaf">
+						<Properties>
+							<Name>PingGet</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ping get</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ПроверкаСвязиPingGet</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="34fb0772-2030-4e77-9cd9-178c4a872e2f">
+				<Properties>
+					<Name>ВыгрузкаОписанияМетаданных</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгрузка описания метаданных</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/metadata/</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="66f1dde2-0dab-4e15-8717-b568fee329d3">
+						<Properties>
+							<Name>MetadataGet</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Metadata get</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ВыгрузкаОписанияМетаданныхMetadataGet</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+			<URLTemplate uuid="7ec24100-5fdf-4574-8842-b42c981eff24">
+				<Properties>
+					<Name>ОписаниеВыгружаемыхДанных</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Описание выгружаемых данных</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>получение структуры выгружаемых объектов</Comment>
+					<Template>/rules/{ИдентификаторОбмена}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="82372aad-c7d5-4350-9747-ad5fd7c76e43">
+						<Properties>
+							<Name>RulesGet</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Rules get</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>GET</HTTPMethod>
+							<Handler>ОписаниеВыгружаемыхДанныхRulesGet</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
+		</ChildObjects>
+	</HTTPService>
+</MetaDataObject>
