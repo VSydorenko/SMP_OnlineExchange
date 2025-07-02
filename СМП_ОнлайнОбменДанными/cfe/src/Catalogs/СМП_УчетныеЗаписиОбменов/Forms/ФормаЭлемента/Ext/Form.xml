@@ -1067,6 +1067,18 @@
 													<ContextMenu name="СписокПКСПриемникКонтекстноеМеню" id="572"/>
 													<ExtendedTooltip name="СписокПКСПриемникРасширеннаяПодсказка" id="573"/>
 												</LabelField>
+												<LabelField name="СписокПКСИмяПараметраДляПередачи" id="787">
+													<DataPath>СписокПКС.ИмяПараметраДляПередачи</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Имя параметра</v8:content>
+														</v8:item>
+													</Title>
+													<Width>17</Width>
+													<ContextMenu name="СписокПКСИмяПараметраДляПередачиКонтекстноеМеню" id="788"/>
+													<ExtendedTooltip name="СписокПКСИмяПараметраДляПередачиРасширеннаяПодсказка" id="789"/>
+												</LabelField>
 												<LabelField name="СписокПКСПравилоКонвертации" id="568">
 													<DataPath>СписокПКС.ПравилоКонвертации</DataPath>
 													<ContextMenu name="СписокПКСПравилоКонвертацииКонтекстноеМеню" id="569"/>
