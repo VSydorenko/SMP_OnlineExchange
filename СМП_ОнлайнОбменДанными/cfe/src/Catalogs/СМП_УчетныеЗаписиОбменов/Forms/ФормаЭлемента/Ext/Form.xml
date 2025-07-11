@@ -1062,6 +1062,12 @@
 													<ContextMenu name="СписокПКСИсточникКонтекстноеМеню" id="575"/>
 													<ExtendedTooltip name="СписокПКСИсточникРасширеннаяПодсказка" id="576"/>
 												</LabelField>
+												<CheckBoxField name="СписокПКСПолучитьИзВходящихДанных" id="790">
+													<DataPath>СписокПКС.ПолучитьИзВходящихДанных</DataPath>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="СписокПКСПолучитьИзВходящихДанныхКонтекстноеМеню" id="791"/>
+													<ExtendedTooltip name="СписокПКСПолучитьИзВходящихДанныхРасширеннаяПодсказка" id="792"/>
+												</CheckBoxField>
 												<LabelField name="СписокПКСПриемник" id="571">
 													<DataPath>СписокПКС.Приемник</DataPath>
 													<ContextMenu name="СписокПКСПриемникКонтекстноеМеню" id="572"/>
