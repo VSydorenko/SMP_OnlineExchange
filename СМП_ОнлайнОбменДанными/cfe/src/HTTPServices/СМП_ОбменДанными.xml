@@ -102,35 +102,6 @@
 					</Method>
 				</ChildObjects>
 			</URLTemplate>
-			<URLTemplate uuid="7ec24100-5fdf-4574-8842-b42c981eff24">
-				<Properties>
-					<Name>ОписаниеВыгружаемыхДанных</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Описание выгружаемых данных</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment>получение структуры выгружаемых объектов</Comment>
-					<Template>/rules/{ИдентификаторОбмена}</Template>
-				</Properties>
-				<ChildObjects>
-					<Method uuid="82372aad-c7d5-4350-9747-ad5fd7c76e43">
-						<Properties>
-							<Name>RulesGet</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Rules get</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<HTTPMethod>GET</HTTPMethod>
-							<Handler>ОписаниеВыгружаемыхДанныхRulesGet</Handler>
-						</Properties>
-					</Method>
-				</ChildObjects>
-			</URLTemplate>
 		</ChildObjects>
 	</HTTPService>
 </MetaDataObject>

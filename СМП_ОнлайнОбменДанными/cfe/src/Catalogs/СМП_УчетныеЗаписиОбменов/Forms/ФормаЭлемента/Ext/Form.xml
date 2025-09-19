@@ -1730,207 +1730,6 @@
 						</CheckBoxField>
 					</ChildItems>
 				</Page>
-				<Page name="СтраницаОписаниеВыгружаемыхДаных" id="650">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Описание выгружаемых даных</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страница описание выгружаемых даных</v8:content>
-						</v8:item>
-					</ToolTip>
-					<ExtendedTooltip name="СтраницаОписаниеВыгружаемыхДаныхРасширеннаяПодсказка" id="651"/>
-					<ChildItems>
-						<Button name="ПолучитьОписаниеВыгружаемыхДанных" id="655">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ПолучитьОписаниеВыгружаемыхДанных</CommandName>
-							<ToolTipRepresentation>Button</ToolTipRepresentation>
-							<ExtendedTooltip name="ПолучитьОписаниеВыгружаемыхДанныхРасширеннаяПодсказка" id="656"/>
-						</Button>
-						<InputField name="ОписаниеВыгружаемыхДанных" id="652">
-							<DataPath>Объект.ОписаниеВыгружаемыхДанных</DataPath>
-							<Visible>false</Visible>
-							<TitleLocation>None</TitleLocation>
-							<ContextMenu name="ОписаниеВыгружаемыхДанныхКонтекстноеМеню" id="653"/>
-							<ExtendedTooltip name="ОписаниеВыгружаемыхДанныхРасширеннаяПодсказка" id="654"/>
-						</InputField>
-						<UsualGroup name="ГруппаОтправитель" id="676">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа отправитель</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа отправитель</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаОтправительРасширеннаяПодсказка" id="677"/>
-							<ChildItems>
-								<Table name="ОписаниеВыгружаемыхОбъектов" id="680">
-									<AutoInsertNewRow>true</AutoInsertNewRow>
-									<EnableStartDrag>true</EnableStartDrag>
-									<EnableDrag>true</EnableDrag>
-									<DataPath>Объект.ОписаниеВыгружаемыхОбъектов</DataPath>
-									<RowFilter xsi:nil="true"/>
-									<ContextMenu name="ОписаниеВыгружаемыхОбъектовКонтекстноеМеню" id="681"/>
-									<AutoCommandBar name="ОписаниеВыгружаемыхОбъектовКоманднаяПанель" id="682"/>
-									<ExtendedTooltip name="ОписаниеВыгружаемыхОбъектовРасширеннаяПодсказка" id="683"/>
-									<SearchStringAddition name="ОписаниеВыгружаемыхОбъектовСтрокаПоиска" id="684">
-										<AdditionSource>
-											<Item>ОписаниеВыгружаемыхОбъектов</Item>
-											<Type>SearchStringRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ОписаниеВыгружаемыхОбъектовСтрокаПоискаКонтекстноеМеню" id="685"/>
-										<ExtendedTooltip name="ОписаниеВыгружаемыхОбъектовСтрокаПоискаРасширеннаяПодсказка" id="686"/>
-									</SearchStringAddition>
-									<ViewStatusAddition name="ОписаниеВыгружаемыхОбъектовСостояниеПросмотра" id="687">
-										<AdditionSource>
-											<Item>ОписаниеВыгружаемыхОбъектов</Item>
-											<Type>ViewStatusRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ОписаниеВыгружаемыхОбъектовСостояниеПросмотраКонтекстноеМеню" id="688"/>
-										<ExtendedTooltip name="ОписаниеВыгружаемыхОбъектовСостояниеПросмотраРасширеннаяПодсказка" id="689"/>
-									</ViewStatusAddition>
-									<SearchControlAddition name="ОписаниеВыгружаемыхОбъектовУправлениеПоиском" id="690">
-										<AdditionSource>
-											<Item>ОписаниеВыгружаемыхОбъектов</Item>
-											<Type>SearchControl</Type>
-										</AdditionSource>
-										<ContextMenu name="ОписаниеВыгружаемыхОбъектовУправлениеПоискомКонтекстноеМеню" id="691"/>
-										<ExtendedTooltip name="ОписаниеВыгружаемыхОбъектовУправлениеПоискомРасширеннаяПодсказка" id="692"/>
-									</SearchControlAddition>
-									<ChildItems>
-										<LabelField name="ОписаниеВыгружаемыхОбъектовНомерСтроки" id="693">
-											<DataPath>Объект.ОписаниеВыгружаемыхОбъектов.LineNumber</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ОписаниеВыгружаемыхОбъектовНомерСтрокиКонтекстноеМеню" id="694"/>
-											<ExtendedTooltip name="ОписаниеВыгружаемыхОбъектовНомерСтрокиРасширеннаяПодсказка" id="695"/>
-										</LabelField>
-										<InputField name="ОписаниеВыгружаемыхОбъектовТипОбъекта" id="696">
-											<DataPath>Объект.ОписаниеВыгружаемыхОбъектов.ТипОбъекта</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ОписаниеВыгружаемыхОбъектовТипОбъектаКонтекстноеМеню" id="697"/>
-											<ExtendedTooltip name="ОписаниеВыгружаемыхОбъектовТипОбъектаРасширеннаяПодсказка" id="698"/>
-										</InputField>
-										<InputField name="ОписаниеВыгружаемыхОбъектовОписаниеПравил" id="699">
-											<DataPath>Объект.ОписаниеВыгружаемыхОбъектов.ОписаниеПравил</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ОписаниеВыгружаемыхОбъектовОписаниеПравилКонтекстноеМеню" id="700"/>
-											<ExtendedTooltip name="ОписаниеВыгружаемыхОбъектовОписаниеПравилРасширеннаяПодсказка" id="701"/>
-										</InputField>
-										<InputField name="ОписаниеВыгружаемыхОбъектовИменаПравил" id="702">
-											<DataPath>Объект.ОписаниеВыгружаемыхОбъектов.ИменаПравил</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ОписаниеВыгружаемыхОбъектовИменаПравилКонтекстноеМеню" id="703"/>
-											<ExtendedTooltip name="ОписаниеВыгружаемыхОбъектовИменаПравилРасширеннаяПодсказка" id="704"/>
-										</InputField>
-										<CheckBoxField name="ОписаниеВыгружаемыхОбъектовНесколькоПравил" id="705">
-											<DataPath>Объект.ОписаниеВыгружаемыхОбъектов.НесколькоПравил</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ОписаниеВыгружаемыхОбъектовНесколькоПравилКонтекстноеМеню" id="706"/>
-											<ExtendedTooltip name="ОписаниеВыгружаемыхОбъектовНесколькоПравилРасширеннаяПодсказка" id="707"/>
-										</CheckBoxField>
-										<InputField name="ОписаниеВыгружаемыхОбъектовАлгоритмВыборИмениПравила" id="708">
-											<DataPath>Объект.ОписаниеВыгружаемыхОбъектов.АлгоритмВыборИмениПравила</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ОписаниеВыгружаемыхОбъектовАлгоритмВыборИмениПравилаКонтекстноеМеню" id="709"/>
-											<ExtendedTooltip name="ОписаниеВыгружаемыхОбъектовАлгоритмВыборИмениПравилаРасширеннаяПодсказка" id="710"/>
-										</InputField>
-										<InputField name="ОписаниеВыгружаемыхОбъектовИмяПравилаПоУмолчанию" id="711">
-											<DataPath>Объект.ОписаниеВыгружаемыхОбъектов.ИмяПравилаПоУмолчанию</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ОписаниеВыгружаемыхОбъектовИмяПравилаПоУмолчаниюКонтекстноеМеню" id="712"/>
-											<ExtendedTooltip name="ОписаниеВыгружаемыхОбъектовИмяПравилаПоУмолчаниюРасширеннаяПодсказка" id="713"/>
-										</InputField>
-									</ChildItems>
-								</Table>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="ГруппаПолучатель" id="678">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа получатель</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа получатель</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Behavior>Usual</Behavior>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаПолучательРасширеннаяПодсказка" id="679"/>
-							<ChildItems>
-								<Table name="ОписаниеВыгружаемыхДанныхДерево" id="657">
-									<Representation>Tree</Representation>
-									<CommandBarLocation>None</CommandBarLocation>
-									<ReadOnly>true</ReadOnly>
-									<ChangeRowSet>false</ChangeRowSet>
-									<ChangeRowOrder>false</ChangeRowOrder>
-									<AutoInsertNewRow>true</AutoInsertNewRow>
-									<EnableStartDrag>true</EnableStartDrag>
-									<EnableDrag>true</EnableDrag>
-									<DataPath>ОписаниеВыгружаемыхДанныхДерево</DataPath>
-									<ContextMenu name="ОписаниеВыгружаемыхДанныхДеревоКонтекстноеМеню" id="658"/>
-									<AutoCommandBar name="ОписаниеВыгружаемыхДанныхДеревоКоманднаяПанель" id="659"/>
-									<ExtendedTooltip name="ОписаниеВыгружаемыхДанныхДеревоРасширеннаяПодсказка" id="660"/>
-									<SearchStringAddition name="ОписаниеВыгружаемыхДанныхДеревоСтрокаПоиска" id="661">
-										<AdditionSource>
-											<Item>ОписаниеВыгружаемыхДанныхДерево</Item>
-											<Type>SearchStringRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ОписаниеВыгружаемыхДанныхДеревоСтрокаПоискаКонтекстноеМеню" id="662"/>
-										<ExtendedTooltip name="ОписаниеВыгружаемыхДанныхДеревоСтрокаПоискаРасширеннаяПодсказка" id="663"/>
-									</SearchStringAddition>
-									<ViewStatusAddition name="ОписаниеВыгружаемыхДанныхДеревоСостояниеПросмотра" id="664">
-										<AdditionSource>
-											<Item>ОписаниеВыгружаемыхДанныхДерево</Item>
-											<Type>ViewStatusRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="ОписаниеВыгружаемыхДанныхДеревоСостояниеПросмотраКонтекстноеМеню" id="665"/>
-										<ExtendedTooltip name="ОписаниеВыгружаемыхДанныхДеревоСостояниеПросмотраРасширеннаяПодсказка" id="666"/>
-									</ViewStatusAddition>
-									<SearchControlAddition name="ОписаниеВыгружаемыхДанныхДеревоУправлениеПоиском" id="667">
-										<AdditionSource>
-											<Item>ОписаниеВыгружаемыхДанныхДерево</Item>
-											<Type>SearchControl</Type>
-										</AdditionSource>
-										<ContextMenu name="ОписаниеВыгружаемыхДанныхДеревоУправлениеПоискомКонтекстноеМеню" id="668"/>
-										<ExtendedTooltip name="ОписаниеВыгружаемыхДанныхДеревоУправлениеПоискомРасширеннаяПодсказка" id="669"/>
-									</SearchControlAddition>
-									<ChildItems>
-										<InputField name="ОписаниеВыгружаемыхДанныхДеревоНаименование" id="670">
-											<DataPath>ОписаниеВыгружаемыхДанныхДерево.Наименование</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ОписаниеВыгружаемыхДанныхДеревоНаименованиеКонтекстноеМеню" id="671"/>
-											<ExtendedTooltip name="ОписаниеВыгружаемыхДанныхДеревоНаименованиеРасширеннаяПодсказка" id="672"/>
-										</InputField>
-										<InputField name="ОписаниеВыгружаемыхДанныхДеревоСвойствоИмяПКО" id="673">
-											<DataPath>ОписаниеВыгружаемыхДанныхДерево.СвойствоИмяПКО</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="ОписаниеВыгружаемыхДанныхДеревоСвойствоИмяПКОКонтекстноеМеню" id="674"/>
-											<ExtendedTooltip name="ОписаниеВыгружаемыхДанныхДеревоСвойствоИмяПКОРасширеннаяПодсказка" id="675"/>
-										</InputField>
-									</ChildItems>
-								</Table>
-							</ChildItems>
-						</UsualGroup>
-					</ChildItems>
-				</Page>
 			</ChildItems>
 		</Pages>
 		<UsualGroup name="ГруппаПодвал" id="438">
@@ -2584,6 +2383,15 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="СписокАлгоритмов" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список алгоритмов</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ПроверитьПодключение" id="1">
@@ -2660,21 +2468,6 @@
 			</Picture>
 			<Action>ОткрытьРедакторКода</Action>
 			<Representation>Picture</Representation>
-		</Command>
-		<Command name="ПолучитьОписаниеВыгружаемыхДанных" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Получить описание</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Запрашивает описание для выгружаемых данных согласно действующим правилам конвертации в базе-приемнике</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОписаниеВыгружаемыхДанных</Action>
 		</Command>
 		<Command name="ПКСВверх" id="6">
 			<Title>
