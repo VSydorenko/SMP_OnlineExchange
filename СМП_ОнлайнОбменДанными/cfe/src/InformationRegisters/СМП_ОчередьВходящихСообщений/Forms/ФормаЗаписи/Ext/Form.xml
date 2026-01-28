@@ -47,6 +47,7 @@
 		</InputField>
 		<CheckBoxField name="ПоказатьДанные" id="25">
 			<DataPath>ПоказатьДанные</DataPath>
+			<Visible>false</Visible>
 			<CheckBoxType>Auto</CheckBoxType>
 			<ContextMenu name="ПоказатьДанныеКонтекстноеМеню" id="26"/>
 			<ExtendedTooltip name="ПоказатьДанныеРасширеннаяПодсказка" id="27"/>
@@ -63,7 +64,6 @@
 		</InputField>
 		<InputField name="Данные" id="10">
 			<DataPath>Запись.Данные</DataPath>
-			<Visible>false</Visible>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
 			<ContextMenu name="ДанныеКонтекстноеМеню" id="11"/>
@@ -71,6 +71,7 @@
 		</InputField>
 		<InputField name="ДанныеКратко" id="28">
 			<DataPath>ДанныеКратко</DataPath>
+			<Visible>false</Visible>
 			<AutoMaxWidth>false</AutoMaxWidth>
 			<MultiLine>true</MultiLine>
 			<ContextMenu name="ДанныеКраткоКонтекстноеМеню" id="29"/>
