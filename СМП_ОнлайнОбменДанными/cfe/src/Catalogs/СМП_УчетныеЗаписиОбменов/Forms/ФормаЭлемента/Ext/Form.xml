@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
@@ -26,6 +28,9 @@
 			</ToolTip>
 			<PagesRepresentation>TabsOnTop</PagesRepresentation>
 			<ExtendedTooltip name="СтраницыНастроекРасширеннаяПодсказка" id="41"/>
+			<Events>
+				<Event name="OnCurrentPageChange">СтраницыНастроекПриСменеСтраницы</Event>
+			</Events>
 			<ChildItems>
 				<Page name="СтраницаНастройки" id="42">
 					<Title>
@@ -720,7 +725,6 @@
 							<VerticalScrollBar>UseAlways</VerticalScrollBar>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<DataPath>СписокПКО</DataPath>
-							<RowPictureDataPath>СписокПКО.DefaultPicture</RowPictureDataPath>
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>
@@ -732,7 +736,7 @@
 								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 							</Period>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<RestoreCurrentRow>true</RestoreCurrentRow>
 							<TopLevelParent xsi:nil="true"/>
 							<ShowRoot>false</ShowRoot>
 							<AllowRootChoice>false</AllowRootChoice>
@@ -830,31 +834,137 @@
 								<ExtendedTooltip name="СписокПКОУправлениеПоискомРасширеннаяПодсказка" id="452"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="Selection">СписокПКОВыбор</Event>
 								<Event name="BeforeAddRow">СписокПКОПередНачаломДобавления</Event>
 								<Event name="OnActivateRow">СписокПКОПриАктивизацииСтроки</Event>
+								<Event name="OnGetDataAtServer">СписокПКОПриПолученииДанныхНаСервере</Event>
 							</Events>
 							<ChildItems>
-								<LabelField name="СписокПКОКод" id="453">
-									<DataPath>СписокПКО.Code</DataPath>
+								<ColumnGroup name="СписокПКОГруппаКод" id="802">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Имя</v8:content>
+											<v8:content>Список ПКОГруппа код</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="СписокПКОКодКонтекстноеМеню" id="454"/>
-									<ExtendedTooltip name="СписокПКОКодРасширеннаяПодсказка" id="455"/>
-								</LabelField>
-								<LabelField name="СписокПКОИсточник" id="456">
-									<DataPath>СписокПКО.Источник</DataPath>
-									<ContextMenu name="СписокПКОИсточникКонтекстноеМеню" id="457"/>
-									<ExtendedTooltip name="СписокПКОИсточникРасширеннаяПодсказка" id="458"/>
-								</LabelField>
-								<LabelField name="СписокПКОПриемник" id="459">
-									<DataPath>СписокПКО.Приемник</DataPath>
-									<ContextMenu name="СписокПКОПриемникКонтекстноеМеню" id="460"/>
-									<ExtendedTooltip name="СписокПКОПриемникРасширеннаяПодсказка" id="461"/>
-								</LabelField>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список ПКОГруппа код</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="СписокПКОГруппаКодРасширеннаяПодсказка" id="803"/>
+									<ChildItems>
+										<PictureField name="СписокПКОИндексКартинкиСтроки" id="799">
+											<DataPath>СписокПКО.ИндексКартинкиСтроки</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ValuesPicture>
+												<xr:Ref>CommonPicture.СМП_КоллекцияПКО</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</ValuesPicture>
+											<ContextMenu name="СписокПКОИндексКартинкиСтрокиКонтекстноеМеню" id="800"/>
+											<ExtendedTooltip name="СписокПКОИндексКартинкиСтрокиРасширеннаяПодсказка" id="801"/>
+										</PictureField>
+										<LabelField name="СписокПКОКод" id="453">
+											<DataPath>СписокПКО.Код</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Имя</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="СписокПКОКодКонтекстноеМеню" id="454"/>
+											<ExtendedTooltip name="СписокПКОКодРасширеннаяПодсказка" id="455"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="СписокПКОГруппаИсточник" id="804">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список ПКОГруппа источник</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список ПКОГруппа источник</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="СписокПКОГруппаИсточникРасширеннаяПодсказка" id="805"/>
+									<ChildItems>
+										<PictureField name="СписокПКОИндексКартинкиИсточникАлгоритмы" id="806">
+											<DataPath>СписокПКО.ИндексКартинкиИсточникАлгоритмы</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ValuesPicture>
+												<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</ValuesPicture>
+											<ContextMenu name="СписокПКОИндексКартинкиИсточникАлгоритмыКонтекстноеМеню" id="807"/>
+											<ExtendedTooltip name="СписокПКОИндексКартинкиИсточникАлгоритмыРасширеннаяПодсказка" id="808"/>
+										</PictureField>
+										<LabelField name="СписокПКОИсточник" id="456">
+											<DataPath>СписокПКО.Источник</DataPath>
+											<ContextMenu name="СписокПКОИсточникКонтекстноеМеню" id="457"/>
+											<ExtendedTooltip name="СписокПКОИсточникРасширеннаяПодсказка" id="458"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<ColumnGroup name="СписокПКОГруппаПриемник" id="809">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список ПКОГруппа приемник</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список ПКОГруппа приемник</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>InCell</Group>
+									<ExtendedTooltip name="СписокПКОГруппаПриемникРасширеннаяПодсказка" id="810"/>
+									<ChildItems>
+										<PictureField name="СписокПКОИндексКартинкиПриемникАлгоритмы" id="811">
+											<DataPath>СписокПКО.ИндексКартинкиПриемникАлгоритмы</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<ValuesPicture>
+												<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</ValuesPicture>
+											<ContextMenu name="СписокПКОИндексКартинкиПриемникАлгоритмыКонтекстноеМеню" id="812"/>
+											<ExtendedTooltip name="СписокПКОИндексКартинкиПриемникАлгоритмыРасширеннаяПодсказка" id="813"/>
+										</PictureField>
+										<LabelField name="СписокПКОПриемник" id="459">
+											<DataPath>СписокПКО.Приемник</DataPath>
+											<ContextMenu name="СписокПКОПриемникКонтекстноеМеню" id="460"/>
+											<ExtendedTooltip name="СписокПКОПриемникРасширеннаяПодсказка" id="461"/>
+										</LabelField>
+									</ChildItems>
+								</ColumnGroup>
+								<PictureField name="СписокПКОНеЗапоминатьВыгруженные" id="793">
+									<DataPath>СписокПКО.НеЗапоминатьВыгруженные</DataPath>
+									<CellHyperlink>true</CellHyperlink>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.СМП_УстановитьСнятьГалку</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="СписокПКОНеЗапоминатьВыгруженныеКонтекстноеМеню" id="794"/>
+									<ExtendedTooltip name="СписокПКОНеЗапоминатьВыгруженныеРасширеннаяПодсказка" id="795"/>
+								</PictureField>
+								<PictureField name="СписокПКОНеСоздаватьОбъектВПриемникеЕслиНеНайденПоПолямПоиска" id="796">
+									<DataPath>СписокПКО.НеСоздаватьОбъектВПриемникеЕслиНеНайденПоПолямПоиска</DataPath>
+									<CellHyperlink>true</CellHyperlink>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.СМП_УстановитьСнятьГалку</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="СписокПКОНеСоздаватьОбъектВПриемникеЕслиНеНайденПоПолямПоискаКонтекстноеМеню" id="797"/>
+									<ExtendedTooltip name="СписокПКОНеСоздаватьОбъектВПриемникеЕслиНеНайденПоПолямПоискаРасширеннаяПодсказка" id="798"/>
+								</PictureField>
 							</ChildItems>
 						</Table>
 						<Pages name="СтраницыКонвертаций" id="244">
@@ -920,7 +1030,7 @@
 												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 											</Period>
 											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<RestoreCurrentRow>true</RestoreCurrentRow>
 											<TopLevelParent xsi:nil="true"/>
 											<ShowRoot>false</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
@@ -1028,39 +1138,82 @@
 												<ExtendedTooltip name="СписокПКСУправлениеПоискомРасширеннаяПодсказка" id="492"/>
 											</SearchControlAddition>
 											<Events>
+												<Event name="Selection">СписокПКСВыбор</Event>
 												<Event name="BeforeAddRow">СписокПКСПередНачаломДобавления</Event>
 											</Events>
 											<ChildItems>
-												<PictureField name="СписокПКССтандартнаяКартинка" id="628">
-													<DataPath>СписокПКС.DefaultPicture</DataPath>
-													<Visible>false</Visible>
-													<TitleLocation>None</TitleLocation>
-													<ContextMenu name="СписокПКССтандартнаяКартинкаКонтекстноеМеню" id="629"/>
-													<ExtendedTooltip name="СписокПКССтандартнаяКартинкаРасширеннаяПодсказка" id="630"/>
-												</PictureField>
-												<CheckBoxField name="СписокПКСОтключить" id="553">
-													<DataPath>СписокПКС.Отключить</DataPath>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="СписокПКСОтключитьКонтекстноеМеню" id="554"/>
-													<ExtendedTooltip name="СписокПКСОтключитьРасширеннаяПодсказка" id="555"/>
-												</CheckBoxField>
-												<CheckBoxField name="СписокПКСПоиск" id="556">
-													<DataPath>СписокПКС.Поиск</DataPath>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="СписокПКСПоискКонтекстноеМеню" id="557"/>
-													<ExtendedTooltip name="СписокПКСПоискРасширеннаяПодсказка" id="558"/>
-												</CheckBoxField>
 												<LabelField name="СписокПКСНаименование" id="720">
-													<DataPath>СписокПКС.Description</DataPath>
+													<DataPath>СписокПКС.Наименование</DataPath>
 													<Width>2</Width>
 													<ContextMenu name="СписокПКСНаименованиеКонтекстноеМеню" id="721"/>
 													<ExtendedTooltip name="СписокПКСНаименованиеРасширеннаяПодсказка" id="722"/>
 												</LabelField>
-												<LabelField name="СписокПКСИсточник" id="574">
-													<DataPath>СписокПКС.Источник</DataPath>
-													<ContextMenu name="СписокПКСИсточникКонтекстноеМеню" id="575"/>
-													<ExtendedTooltip name="СписокПКСИсточникРасширеннаяПодсказка" id="576"/>
-												</LabelField>
+												<PictureField name="СписокПКСОтключить" id="822">
+													<DataPath>СписокПКС.Отключить</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Откл.</v8:content>
+														</v8:item>
+													</Title>
+													<CellHyperlink>true</CellHyperlink>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.СМП_УстановитьСнятьГалку</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</ValuesPicture>
+													<ContextMenu name="СписокПКСОтключитьКонтекстноеМеню" id="823"/>
+													<ExtendedTooltip name="СписокПКСОтключитьРасширеннаяПодсказка" id="824"/>
+												</PictureField>
+												<PictureField name="СписокПКСПоиск" id="819">
+													<DataPath>СписокПКС.Поиск</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<EditMode>Directly</EditMode>
+													<CellHyperlink>true</CellHyperlink>
+													<HeaderPicture>
+														<xr:Ref>CommonPicture.СМП_Поиск</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</HeaderPicture>
+													<Hyperlink>true</Hyperlink>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.СМП_УстановитьСнятьГалку</xr:Ref>
+														<xr:LoadTransparent>true</xr:LoadTransparent>
+													</ValuesPicture>
+													<ContextMenu name="СписокПКСПоискКонтекстноеМеню" id="820"/>
+													<ExtendedTooltip name="СписокПКСПоискРасширеннаяПодсказка" id="821"/>
+												</PictureField>
+												<ColumnGroup name="СписокПКСГруппаИсточник" id="817">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Список ПКСГруппа источник</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Список ПКСГруппа источник</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>InCell</Group>
+													<ExtendedTooltip name="СписокПКСГруппаИсточникРасширеннаяПодсказка" id="818"/>
+													<ChildItems>
+														<PictureField name="СписокПКСИндексКартинкиЕстьОбработчик" id="814">
+															<DataPath>СписокПКС.ИндексКартинкиЕстьОбработчик</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ValuesPicture>
+																<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</ValuesPicture>
+															<ContextMenu name="СписокПКСИндексКартинкиЕстьОбработчикКонтекстноеМеню" id="815"/>
+															<ExtendedTooltip name="СписокПКСИндексКартинкиЕстьОбработчикРасширеннаяПодсказка" id="816"/>
+														</PictureField>
+														<LabelField name="СписокПКСИсточник" id="574">
+															<DataPath>СписокПКС.Источник</DataPath>
+															<ContextMenu name="СписокПКСИсточникКонтекстноеМеню" id="575"/>
+															<ExtendedTooltip name="СписокПКСИсточникРасширеннаяПодсказка" id="576"/>
+														</LabelField>
+													</ChildItems>
+												</ColumnGroup>
 												<CheckBoxField name="СписокПКСПолучитьИзВходящихДанных" id="790">
 													<DataPath>СписокПКС.ПолучитьИзВходящихДанных</DataPath>
 													<CheckBoxType>Auto</CheckBoxType>
@@ -1129,7 +1282,7 @@
 												<v8:endDate>0001-01-01T00:00:00</v8:endDate>
 											</Period>
 											<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-											<RestoreCurrentRow>false</RestoreCurrentRow>
+											<RestoreCurrentRow>true</RestoreCurrentRow>
 											<TopLevelParent xsi:nil="true"/>
 											<ShowRoot>false</ShowRoot>
 											<AllowRootChoice>false</AllowRootChoice>
@@ -1139,6 +1292,11 @@
 											<AutoCommandBar name="СписокПКЗКоманднаяПанель" id="585">
 												<Autofill>false</Autofill>
 												<ChildItems>
+													<Button name="СписокПКЗСинхронизацияЗначений" id="825">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.СинхронизацияЗначений</CommandName>
+														<ExtendedTooltip name="СписокПКЗСинхронизацияЗначенийРасширеннаяПодсказка" id="826"/>
+													</Button>
 													<Button name="СписокПКЗСоздать" id="618">
 														<Type>CommandBarButton</Type>
 														<Representation>PictureAndText</Representation>
@@ -2076,12 +2234,108 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<UseAlways>
-				<Field>СписокПКО.IsFolder</Field>
-				<Field>СписокПКО.Ref</Field>
+				<Field>СписокПКО.ИндексКартинкиИсточникАлгоритмы</Field>
+				<Field>СписокПКО.ИндексКартинкиПриемникАлгоритмы</Field>
+				<Field>СписокПКО.ИндексКартинкиСтроки</Field>
+				<Field>СписокПКО.Ссылка</Field>
+				<Field>СписокПКО.ЭтоГруппа</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникПравилаКонвертацииОбъектов.Ссылка КАК Ссылка,
+	СправочникПравилаКонвертацииОбъектов.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникПравилаКонвертацииОбъектов.Владелец КАК Владелец,
+	СправочникПравилаКонвертацииОбъектов.Родитель КАК Родитель,
+	СправочникПравилаКонвертацииОбъектов.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникПравилаКонвертацииОбъектов.Код КАК Код,
+	СправочникПравилаКонвертацииОбъектов.Наименование КАК Наименование,
+	СправочникПравилаКонвертацииОбъектов.Источник КАК Источник,
+	СправочникПравилаКонвертацииОбъектов.Приемник КАК Приемник,
+	СправочникПравилаКонвертацииОбъектов.ТипИсточника КАК ТипИсточника,
+	СправочникПравилаКонвертацииОбъектов.ТипПриемника КАК ТипПриемника,
+	СправочникПравилаКонвертацииОбъектов.Порядок КАК Порядок,
+	СправочникПравилаКонвертацииОбъектов.Комментарий КАК Комментарий,
+	СправочникПравилаКонвертацииОбъектов.Описание КАК Описание,
+	СправочникПравилаКонвертацииОбъектов.АлгоритмПередВыгрузкойОбъекта КАК АлгоритмПередВыгрузкойОбъекта,
+	СправочникПравилаКонвертацииОбъектов.АлгоритмПриВыгрузкеОбъекта КАК АлгоритмПриВыгрузкеОбъекта,
+	СправочникПравилаКонвертацииОбъектов.АлгоритмПослеВыгрузкиОбъекта КАК АлгоритмПослеВыгрузкиОбъекта,
+	СправочникПравилаКонвертацииОбъектов.АлгоритмПередЗагрузкойОбъекта КАК АлгоритмПередЗагрузкойОбъекта,
+	СправочникПравилаКонвертацииОбъектов.АлгоритмПриЗагрузкеОбъекта КАК АлгоритмПриЗагрузкеОбъекта,
+	СправочникПравилаКонвертацииОбъектов.АлгоритмПослеЗагрузкиОбъекта КАК АлгоритмПослеЗагрузкиОбъекта,
+	СправочникПравилаКонвертацииОбъектов.НеЗамещать КАК НеЗамещать,
+	ВЫБОР
+		КОГДА СправочникПравилаКонвертацииОбъектов.ЭтоГруппа
+			ТОГДА 2
+		КОГДА СправочникПравилаКонвертацииОбъектов.НеЗапоминатьВыгруженные
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК НеЗапоминатьВыгруженные,
+	СправочникПравилаКонвертацииОбъектов.СинхронизироватьПоИдентификатору КАК СинхронизироватьПоИдентификатору,
+	СправочникПравилаКонвертацииОбъектов.НеВыгружатьОбъектыСвойствПоСсылкам КАК НеВыгружатьОбъектыСвойствПоСсылкам,
+	СправочникПравилаКонвертацииОбъектов.ПродолжитьПоискПоПолямПоискаЕслиПоИдентификаторуНеНашли КАК ПродолжитьПоискПоПолямПоискаЕслиПоИдентификаторуНеНашли,
+	СправочникПравилаКонвертацииОбъектов.АлгоритмПоследовательностьПолейПоиска КАК АлгоритмПоследовательностьПолейПоиска,
+	ВЫБОР
+		КОГДА СправочникПравилаКонвертацииОбъектов.ЭтоГруппа
+			ТОГДА 2
+		КОГДА СправочникПравилаКонвертацииОбъектов.НеСоздаватьОбъектВПриемникеЕслиНеНайденПоПолямПоиска
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК НеСоздаватьОбъектВПриемникеЕслиНеНайденПоПолямПоиска,
+	СправочникПравилаКонвертацииОбъектов.ИспользоватьБыстрыйПоискПриЗагрузке КАК ИспользоватьБыстрыйПоискПриЗагрузке,
+	СправочникПравилаКонвертацииОбъектов.ГенерироватьНовыйНомерИлиКодЕслиНеУказан КАК ГенерироватьНовыйНомерИлиКодЕслиНеУказан,
+	СправочникПравилаКонвертацииОбъектов.ВыгружатьОбъектТолькоПриНаличииНаНегоСсылки КАК ВыгружатьОбъектТолькоПриНаличииНаНегоСсылки,
+	СправочникПравилаКонвертацииОбъектов.ПриПереносеОбъектаПоСсылкеУстанавливатьТолькоGIUD КАК ПриПереносеОбъектаПоСсылкеУстанавливатьТолькоGIUD,
+	СправочникПравилаКонвертацииОбъектов.ПриоритетОбъектовОбмена КАК ПриоритетОбъектовОбмена,
+	СправочникПравилаКонвертацииОбъектов.НеЗамещатьОбъектСозданныйВИнформационнойБазеПриемнике КАК НеЗамещатьОбъектСозданныйВИнформационнойБазеПриемнике,
+	СправочникПравилаКонвертацииОбъектов.АлгоритмПослеВыгрузкиОбъектаВФайлОбмена КАК АлгоритмПослеВыгрузкиОбъектаВФайлОбмена,
+	СправочникПравилаКонвертацииОбъектов.НастройкаВариантовПоискаОбъектов.(
+		Ссылка КАК Ссылка,
+		НомерСтроки КАК НомерСтроки,
+		ИмяНастройкиДляАлгоритма КАК ИмяНастройкиДляАлгоритма,
+		ИмяНастройкиДляПользователя КАК ИмяНастройкиДляПользователя,
+		ОписаниеНастройкиДляПользователя КАК ОписаниеНастройкиДляПользователя
+	) КАК НастройкаВариантовПоискаОбъектов,
+	СправочникПравилаКонвертацииОбъектов.Предопределенный КАК Предопределенный,
+	СправочникПравилаКонвертацииОбъектов.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ВЫБОР
+		КОГДА СправочникПравилаКонвертацииОбъектов.ЭтоГруппа
+			ТОГДА ВЫБОР
+					КОГДА СправочникПравилаКонвертацииОбъектов.ПометкаУдаления
+						ТОГДА 2
+					ИНАЧЕ 0
+				КОНЕЦ
+		ИНАЧЕ ВЫБОР
+				КОГДА СправочникПравилаКонвертацииОбъектов.ПометкаУдаления
+					ТОГДА 3
+				КОГДА СправочникПравилаКонвертацииОбъектов.СинхронизироватьПоИдентификатору
+						И СправочникПравилаКонвертацииОбъектов.ПродолжитьПоискПоПолямПоискаЕслиПоИдентификаторуНеНашли
+					ТОГДА 5
+				КОГДА СправочникПравилаКонвертацииОбъектов.СинхронизироватьПоИдентификатору
+						И НЕ СправочникПравилаКонвертацииОбъектов.ПродолжитьПоискПоПолямПоискаЕслиПоИдентификаторуНеНашли
+					ТОГДА 4
+				ИНАЧЕ 1
+			КОНЕЦ
+	КОНЕЦ КАК ИндексКартинкиСтроки,
+	ВЫБОР
+		КОГДА (ВЫРАЗИТЬ(СправочникПравилаКонвертацииОбъектов.АлгоритмПередВыгрузкойОбъекта КАК СТРОКА(1024))) &lt;&gt; ""
+				ИЛИ (ВЫРАЗИТЬ(СправочникПравилаКонвертацииОбъектов.АлгоритмПриВыгрузкеОбъекта КАК СТРОКА(1024))) &lt;&gt; ""
+				ИЛИ (ВЫРАЗИТЬ(СправочникПравилаКонвертацииОбъектов.АлгоритмПослеВыгрузкиОбъекта КАК СТРОКА(1024))) &lt;&gt; ""
+				ИЛИ (ВЫРАЗИТЬ(СправочникПравилаКонвертацииОбъектов.АлгоритмПослеВыгрузкиОбъектаВФайлОбмена КАК СТРОКА(1024))) &lt;&gt; ""
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК ИндексКартинкиИсточникАлгоритмы,
+	ВЫБОР
+		КОГДА (ВЫРАЗИТЬ(СправочникПравилаКонвертацииОбъектов.АлгоритмПередЗагрузкойОбъекта КАК СТРОКА(1024))) &lt;&gt; ""
+				ИЛИ (ВЫРАЗИТЬ(СправочникПравилаКонвертацииОбъектов.АлгоритмПриЗагрузкеОбъекта КАК СТРОКА(1024))) &lt;&gt; ""
+				ИЛИ (ВЫРАЗИТЬ(СправочникПравилаКонвертацииОбъектов.АлгоритмПослеЗагрузкиОбъекта КАК СТРОКА(1024))) &lt;&gt; ""
+				ИЛИ (ВЫРАЗИТЬ(СправочникПравилаКонвертацииОбъектов.АлгоритмПоследовательностьПолейПоиска КАК СТРОКА(1024))) &lt;&gt; ""
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК ИндексКартинкиПриемникАлгоритмы
+ИЗ
+	Справочник.ПравилаКонвертацииОбъектов КАК СправочникПравилаКонвертацииОбъектов</QueryText>
 				<MainTable>Catalog.ПравилаКонвертацииОбъектов</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -2116,11 +2370,80 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<UseAlways>
-				<Field>СписокПКС.Ref</Field>
+				<Field>СписокПКС.DefaultPicture</Field>
+				<Field>СписокПКС.Ссылка</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникПравилаКонвертацииСвойств.Ссылка КАК Ссылка,
+	СправочникПравилаКонвертацииСвойств.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникПравилаКонвертацииСвойств.Владелец КАК Владелец,
+	СправочникПравилаКонвертацииСвойств.Родитель КАК Родитель,
+	СправочникПравилаКонвертацииСвойств.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникПравилаКонвертацииСвойств.Код КАК Код,
+	СправочникПравилаКонвертацииСвойств.Наименование КАК Наименование,
+	СправочникПравилаКонвертацииСвойств.Источник КАК Источник,
+	СправочникПравилаКонвертацииСвойств.Приемник КАК Приемник,
+	СправочникПравилаКонвертацииСвойств.ИмяИсточника КАК ИмяИсточника,
+	СправочникПравилаКонвертацииСвойств.ИмяПриемника КАК ИмяПриемника,
+	ВЫБОР
+		КОГДА СправочникПравилаКонвертацииСвойств.ЭтоГруппа
+			ТОГДА СправочникПравилаКонвертацииСвойств.ВидИсточника
+		КОГДА СправочникПравилаКонвертацииСвойств.Источник &lt;&gt; ЗНАЧЕНИЕ(Справочник.Свойства.ПустаяСсылка)
+			ТОГДА СправочникПравилаКонвертацииСвойств.Источник.ТипыСтрокой
+		ИНАЧЕ СправочникПравилаКонвертацииСвойств.ТипИсточника
+	КОНЕЦ КАК ТипИсточника,
+	ВЫБОР
+		КОГДА СправочникПравилаКонвертацииСвойств.ЭтоГруппа
+			ТОГДА СправочникПравилаКонвертацииСвойств.ВидПриемника
+		КОГДА СправочникПравилаКонвертацииСвойств.Приемник &lt;&gt; ЗНАЧЕНИЕ(Справочник.Свойства.ПустаяСсылка)
+			ТОГДА СправочникПравилаКонвертацииСвойств.Приемник.ТипыСтрокой
+		ИНАЧЕ СправочникПравилаКонвертацииСвойств.ТипПриемника
+	КОНЕЦ КАК ТипПриемника,
+	СправочникПравилаКонвертацииСвойств.ВидИсточника КАК ВидИсточника,
+	СправочникПравилаКонвертацииСвойств.ВидПриемника КАК ВидПриемника,
+	СправочникПравилаКонвертацииСвойств.Порядок КАК Порядок,
+	СправочникПравилаКонвертацииСвойств.ПравилоКонвертации КАК ПравилоКонвертации,
+	СправочникПравилаКонвертацииСвойств.ИмяПравилаКонвертации КАК ИмяПравилаКонвертации,
+	СправочникПравилаКонвертацииСвойств.Комментарий КАК Комментарий,
+	СправочникПравилаКонвертацииСвойств.Описание КАК Описание,
+	СправочникПравилаКонвертацииСвойств.ПолучитьИзВходящихДанных КАК ПолучитьИзВходящихДанных,
+	СправочникПравилаКонвертацииСвойств.АлгоритмПередВыгрузкойСвойства КАК АлгоритмПередВыгрузкойСвойства,
+	СправочникПравилаКонвертацииСвойств.АлгоритмПриВыгрузкеСвойства КАК АлгоритмПриВыгрузкеСвойства,
+	СправочникПравилаКонвертацииСвойств.АлгоритмПослеВыгрузкиСвойства КАК АлгоритмПослеВыгрузкиСвойства,
+	СправочникПравилаКонвертацииСвойств.АлгоритмПередОбработкойВыгрузки КАК АлгоритмПередОбработкойВыгрузки,
+	СправочникПравилаКонвертацииСвойств.АлгоритмПослеОбработкиВыгрузки КАК АлгоритмПослеОбработкиВыгрузки,
+	ВЫБОР
+		КОГДА СправочникПравилаКонвертацииСвойств.ЭтоГруппа
+			ТОГДА 2
+		КОГДА СправочникПравилаКонвертацииСвойств.Поиск
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК Поиск,
+	СправочникПравилаКонвертацииСвойств.Отключить КАК Отключить,
+	СправочникПравилаКонвертацииСвойств.НеЗамещать КАК НеЗамещать,
+	СправочникПравилаКонвертацииСвойств.АвтоматическиПриводитьЗначениеКДлинеПриемника КАК АвтоматическиПриводитьЗначениеКДлинеПриемника,
+	СправочникПравилаКонвертацииСвойств.ИмяПараметраДляПередачи КАК ИмяПараметраДляПередачи,
+	СправочникПравилаКонвертацииСвойств.ПоискПоДатеНаРавенство КАК ПоискПоДатеНаРавенство,
+	СправочникПравилаКонвертацииСвойств.ВыгружатьГруппуЧерезФайл КАК ВыгружатьГруппуЧерезФайл,
+	СправочникПравилаКонвертацииСвойств.АлгоритмПередЗагрузкойСвойства КАК АлгоритмПередЗагрузкойСвойства,
+	СправочникПравилаКонвертацииСвойств.АлгоритмПослеЗагрузкиСвойства КАК АлгоритмПослеЗагрузкиСвойства,
+	СправочникПравилаКонвертацииСвойств.АлгоритмПриЗагрузкеСвойства КАК АлгоритмПриЗагрузкеСвойства,
+	СправочникПравилаКонвертацииСвойств.Предопределенный КАК Предопределенный,
+	СправочникПравилаКонвертацииСвойств.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	ВЫБОР
+		КОГДА (ВЫРАЗИТЬ(СправочникПравилаКонвертацииСвойств.АлгоритмПередВыгрузкойСвойства КАК СТРОКА(1024))) &lt;&gt; ""
+				ИЛИ (ВЫРАЗИТЬ(СправочникПравилаКонвертацииСвойств.АлгоритмПриВыгрузкеСвойства КАК СТРОКА(1024))) &lt;&gt; ""
+				ИЛИ (ВЫРАЗИТЬ(СправочникПравилаКонвертацииСвойств.АлгоритмПослеВыгрузкиСвойства КАК СТРОКА(1024))) &lt;&gt; ""
+				ИЛИ (ВЫРАЗИТЬ(СправочникПравилаКонвертацииСвойств.АлгоритмПередОбработкойВыгрузки КАК СТРОКА(1024))) &lt;&gt; ""
+				ИЛИ (ВЫРАЗИТЬ(СправочникПравилаКонвертацииСвойств.АлгоритмПослеОбработкиВыгрузки КАК СТРОКА(1024))) &lt;&gt; ""
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК ИндексКартинкиЕстьОбработчик
+ИЗ
+	Справочник.ПравилаКонвертацииСвойств КАК СправочникПравилаКонвертацииСвойств</QueryText>
 				<MainTable>Catalog.ПравилаКонвертацииСвойств</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -2204,49 +2527,6 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
-		</Attribute>
-		<Attribute name="ОписаниеВыгружаемыхДанныхДерево" id="20">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Описание выгружаемых данных дерево</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueTree</v8:Type>
-			</Type>
-			<Columns>
-				<Column name="Наименование" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Наименование</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>150</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Column>
-				<Column name="СвойствоИмяПКО" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Имя ПКО для свойства</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>50</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Column>
-			</Columns>
 		</Attribute>
 		<Attribute name="АлгоритмПослеЗагрузкиПравилОбменаРедактор" id="21">
 			<Title>
@@ -2392,6 +2672,110 @@
 			</Title>
 			<Type/>
 		</Attribute>
+		<Attribute name="ИмяТекущейСтраницы" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя текущей страницы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИмяТекущейСтраницы</Field>
+			</Save>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокПКС</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокПКС.Отключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:Gray</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокПКС</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокПКС.Отключить</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокПКС.ИмяПараметраДляПередачи</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:AliceBlue</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокПКС</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокПКС.ТипИсточника</dcsset:left>
+						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
+						<dcsset:right xsi:type="dcscor:Field">СписокПКС.ТипПриемника</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">web:CornSilk</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СписокПКС</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СписокПКС.Поиск</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="ПроверитьПодключение" id="1">
@@ -2513,6 +2897,28 @@
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">СписокПКС</AssociatedTableElementId>
 		</Command>
+		<Command name="СинхронизацияЗначений" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизация значений</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синхронизация значений ...</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СМП_Мастер</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СинхронизацияЗначений</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">СписокПКО</AssociatedTableElementId>
+		</Command>
 	</Commands>
 	<CommandInterface>
 		<NavigationPanel>
@@ -2569,5 +2975,13 @@
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 		</NavigationPanel>
+		<CommandBar>
+			<Item>
+				<Command>DataProcessor.ЗагрузкаКонвертацииXML.Command.ЗагрузитьПравилаКонвертации</Command>
+				<Type>Added</Type>
+				<CommandGroup>FormCommandBarImportant</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+			</Item>
+		</CommandBar>
 	</CommandInterface>
 </Form>

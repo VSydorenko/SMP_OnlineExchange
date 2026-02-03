@@ -30,7 +30,6 @@
 			<Subsystem>ОбщиеОбъекты</Subsystem>
 			<Subsystem>НастройкаКонвертации</Subsystem>
 			<Subsystem>РедакторКода</Subsystem>
-			<Subsystem>Подсистема1</Subsystem>
 			<Subsystem>УправлениеОчередями</Subsystem>
 		</ChildObjects>
 	</Subsystem>

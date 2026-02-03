@@ -26,8 +26,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СМП_РегистрацияДокументаПередЗаписью</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СМП_РегистрацияДокументаПриЗаписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СМП_РегистрацияСправочника</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.СМП_ФормаВыбораПриемника</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">444c5d07-8794-4a87-bd36-4f7902fce254</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СМП_ДлительнаяОперация80</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СМП_ОбъектыМетаданных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.СМП_ОбменДанными</xr:Item>

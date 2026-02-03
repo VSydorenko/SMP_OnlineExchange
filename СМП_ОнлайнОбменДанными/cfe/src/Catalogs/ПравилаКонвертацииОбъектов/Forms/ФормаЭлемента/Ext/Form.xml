@@ -99,6 +99,7 @@
 					<ChildItems>
 						<InputField name="Источник" id="13">
 							<DataPath>Объект.Источник</DataPath>
+							<DefaultItem>true</DefaultItem>
 							<EditMode>EnterOnInput</EditMode>
 							<ChooseType>false</ChooseType>
 							<ChoiceParameterLinks>
@@ -112,7 +113,6 @@
 							<ExtendedTooltip name="ИсточникРасширеннаяПодсказка" id="15"/>
 							<Events>
 								<Event name="OnChange">ИсточникПриИзменении</Event>
-								<Event name="StartChoice">ИсточникНачалоВыбора</Event>
 							</Events>
 						</InputField>
 						<InputField name="Приемник" id="199">
@@ -130,7 +130,6 @@
 							<ExtendedTooltip name="ПриемникРасширеннаяПодсказка" id="201"/>
 							<Events>
 								<Event name="OnChange">ПриемникПриИзменении</Event>
-								<Event name="StartChoice">ПриемникНачалоВыбора</Event>
 							</Events>
 						</InputField>
 					</ChildItems>

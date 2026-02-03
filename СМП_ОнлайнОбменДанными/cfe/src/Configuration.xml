@@ -72,6 +72,10 @@
 			<CommonPicture>СМП_ОбъектыМетаданных</CommonPicture>
 			<CommonPicture>СМП_ДлительнаяОперация80</CommonPicture>
 			<CommonPicture>СМП_ОнлайнОбменДанными</CommonPicture>
+			<CommonPicture>СМП_КоллекцияПКО</CommonPicture>
+			<CommonPicture>СМП_Поиск</CommonPicture>
+			<CommonPicture>СМП_УстановитьСнятьГалку</CommonPicture>
+			<CommonPicture>СМП_Мастер</CommonPicture>
 			<Role>ПолныеПрава</Role>
 			<CommonModule>ЗапретРедактированияРеквизитовОбъектовПереопределяемый</CommonModule>
 			<CommonModule>СМП_КоннекторHTTP</CommonModule>
@@ -88,7 +92,6 @@
 			<EventSubscription>СМП_РегистрацияДокументаОбработкаПроведения</EventSubscription>
 			<EventSubscription>СМП_РегистрацияСправочника</EventSubscription>
 			<EventSubscription>СМП_РегистрацияДокументаПередЗаписью</EventSubscription>
-			<CommonForm>СМП_ФормаВыбораПриемника</CommonForm>
 			<Catalog>Алгоритмы</Catalog>
 			<Catalog>Значения</Catalog>
 			<Catalog>Конфигурации</Catalog>
@@ -106,12 +109,13 @@
 			<Enum>СМП_СтатусыОбработкиСообщений</Enum>
 			<Enum>ТипыОбъектов</Enum>
 			<Enum>СМП_ВидыОбъектовОбмена</Enum>
+			<DataProcessor>ВыгрузкаКонвертацииXML</DataProcessor>
 			<DataProcessor>ЗагрузкаКонвертацииXML</DataProcessor>
 			<DataProcessor>ЗагрузкаСтруктурыКонфигурации</DataProcessor>
 			<DataProcessor>СМП_JSONКонвертер</DataProcessor>
 			<DataProcessor>СМП_ОнлайнОбменКонвертацияОбъектов</DataProcessor>
 			<DataProcessor>СМП_РедакторКода</DataProcessor>
-			<DataProcessor>ВыгрузкаКонвертации</DataProcessor>
+			<DataProcessor>АвтонастройкаПравилКонвертацииЗначений</DataProcessor>
 			<InformationRegister>СМП_ВыгруженныеСправочники</InformationRegister>
 			<InformationRegister>СМП_ОчередьВходящихСообщений</InformationRegister>
 			<InformationRegister>СМП_ОчередьИсходящихСообщений</InformationRegister>

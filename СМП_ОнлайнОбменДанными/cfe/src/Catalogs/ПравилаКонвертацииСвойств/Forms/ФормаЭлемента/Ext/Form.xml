@@ -29,11 +29,15 @@
 			<ChildItems>
 				<InputField name="Источник" id="13">
 					<DataPath>Объект.Источник</DataPath>
+					<DefaultItem>true</DefaultItem>
 					<EditMode>EnterOnInput</EditMode>
 					<DropListButton>false</DropListButton>
 					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 					<ContextMenu name="ИсточникКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="ИсточникРасширеннаяПодсказка" id="15"/>
+					<Events>
+						<Event name="OnChange">ИсточникПриИзменении</Event>
+					</Events>
 				</InputField>
 				<CheckBoxField name="ПолучитьИзВходящихДанных" id="52">
 					<DataPath>Объект.ПолучитьИзВходящихДанных</DataPath>
@@ -93,13 +97,13 @@
 				<InputField name="Приемник" id="16">
 					<DataPath>Объект.Приемник</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<DropListButton>false</DropListButton>
 					<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 					<ChooseType>false</ChooseType>
-					<TextEdit>false</TextEdit>
 					<ContextMenu name="ПриемникКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="ПриемникРасширеннаяПодсказка" id="18"/>
 					<Events>
-						<Event name="StartChoice">ПриемникНачалоВыбора</Event>
+						<Event name="OnChange">ПриемникПриИзменении</Event>
 					</Events>
 				</InputField>
 				<InputField name="ИмяПараметраДляПередачи" id="192">
@@ -239,7 +243,6 @@
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
-									<BackColor>web:LightGreen</BackColor>
 									<ExtendedTooltip name="СтраницаАлгоритмПередЗагрузкойСвойстваРасширеннаяПодсказка" id="167"/>
 									<ChildItems>
 										<Button name="ОткрытьРедакторКода3" id="181">
@@ -269,7 +272,6 @@
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
-									<BackColor>web:LightGreen</BackColor>
 									<ExtendedTooltip name="СтраницаАлгоритмПриЗагрузкеСвойстваРасширеннаяПодсказка" id="169"/>
 									<ChildItems>
 										<Button name="ОткрытьРедакторКода4" id="183">
@@ -299,7 +301,6 @@
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
-									<BackColor>web:LightGreen</BackColor>
 									<ExtendedTooltip name="СтраницаАлгоритмПослеЗагрузкиСвойстваРасширеннаяПодсказка" id="171"/>
 									<ChildItems>
 										<Button name="ОткрытьРедакторКода5" id="185">
@@ -660,11 +661,6 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.Объекты</v8:Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>150</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<Attribute name="УчетнаяЗаписьОбменаДанными" id="7">
