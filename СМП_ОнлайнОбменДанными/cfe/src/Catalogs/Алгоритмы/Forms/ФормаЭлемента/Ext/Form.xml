@@ -95,9 +95,13 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаАлгоритмРедакторРасширеннаяПодсказка" id="20"/>
 			<ChildItems>
+				<Button name="ОткрытьРедакторКода" id="29">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ОткрытьРедакторКода</CommandName>
+					<ExtendedTooltip name="ОткрытьРедакторКодаРасширеннаяПодсказка" id="30"/>
+				</Button>
 				<HTMLDocumentField name="АлгоритмРедактор" id="16">
 					<DataPath>АлгоритмРедактор</DataPath>
-					<Visible>false</Visible>
 					<TitleLocation>None</TitleLocation>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="АлгоритмРедакторКонтекстноеМеню" id="17"/>
@@ -105,6 +109,7 @@
 				</HTMLDocumentField>
 				<TextDocumentField name="Алгоритм" id="10">
 					<DataPath>Объект.Алгоритм</DataPath>
+					<Visible>false</Visible>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="АлгоритмКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="АлгоритмРасширеннаяПодсказка" id="12"/>
@@ -158,4 +163,26 @@
 			<SavedData>true</SavedData>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ОткрытьРедакторКода" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть редактор кода</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть редактор кода</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Change</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьРедакторКода</Action>
+			<Representation>Picture</Representation>
+		</Command>
+	</Commands>
 </Form>
