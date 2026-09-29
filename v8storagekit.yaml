@@ -1,0 +1,19 @@
+# v8storagekit.yaml — маніфест конвеєра «сховище ↔ git» (плагін v8storagekit).
+# Структуру джерел (типи, шляхи) описує СМП_ОнлайнОбменДанными/v8project.yaml;
+# тут — лише truth кожного джерела й те, чого Unica не знає.
+version: 1
+kitVersion: 1.2.0
+product: OnlineExchange
+mainBranch: master
+
+workspaces:
+  - path: СМП_ОнлайнОбменДанными     # тека = ім'я розширення в 1С (кирилиця — прийнятий ризик, follow-ups §10)
+    sources:
+      base:
+        truth: vendor                 # 1С:Управление нашей фирмой (RU) — код вендора, у git не потрапляє
+        dump: { from: devUNF_ru }     # ключ дев-бази з v8storagekit.local.yaml
+      СМП_ОнлайнОбменДанными:         # = <Name> у cfe/src/Configuration.xml = name: source-set
+        truth: storage
+        storage:
+          path: 'R:\СховищаРозширень_1С\ОнлайнОбменДанными'
+          user: gitbot
