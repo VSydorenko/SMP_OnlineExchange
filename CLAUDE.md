@@ -26,6 +26,26 @@ OnlineExchange — розширення `СМП_ОнлайнОбменДанны
 Воркспейси й джерела: `pwsh -NoProfile -File "<корінь плагіна>/tools/kit.ps1" check -RepoRoot .`
 (перший рядок `[i]`). Корінь плагіна показує `claude plugin list`.
 
+## Межа історії: gitsync → v8storagekit (2026-09-29)
+
+До версії сховища 51 включно репозиторій був gitsync-вивантаженням у EDT-форматі
+(`SMP_OnlineExchange/src/**/*.mdo`, `Form.form`, `Module.bsl` поруч з об'єктом). Остання точка
+старого формату — тег `legacy/gitsync-2025-05` (`3fb08c8`, 2025-05-07). Далі:
+
+- коміт перейменування `7432648` — кожен EDT-файл переїхав у свій точний Designer-шлях під
+  `СМП_ОнлайнОбменДанными/cfe/src` (вміст ще EDT-ний), напр.
+  `SMP_OnlineExchange/src/Catalogs/Алгоритмы/Алгоритмы.mdo` → `…/cfe/src/Catalogs/Алгоритмы.xml`,
+  `…/Forms/ФормаЭлемента/Form.form` → `…/Forms/ФормаЭлемента/Ext/Form.xml`,
+  `…/Forms/ФормаЭлемента/Module.bsl` → `…/Forms/ФормаЭлемента/Ext/Form/Module.bsl`,
+  `…/ObjectModule.bsl` → `…/Ext/ObjectModule.bsl`;
+- коміт конверсії `73ebac3` — вміст замінено дампом сховища v78 (у `.git-blame-ignore-revs`);
+- версії 52–78 прийшли реплеєм у `storage/СМП_ОнлайнОбменДанными`.
+
+Історія файлу через межу: `git log --follow -- <Designer-шлях>`; рядки BSL —
+`git blame -w --ignore-revs-file .git-blame-ignore-revs -- <шлях>`. Метадані й форми змінились
+кожним рядком — їхня історія до межі: `git blame 7432648 -- <той самий шлях>`. Будь-який
+прибраний файл EDT-квартету: `git show legacy/gitsync-2025-05:SMP_OnlineExchange/<шлях>`.
+
 ## Гілки
 
 `master` — історія проєкту: злиття PR-ів і звірочні коміти. `storage/<джерело>` — дзеркало
