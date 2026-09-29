@@ -4,7 +4,7 @@
 version: 1
 kitVersion: 1.2.0
 product: OnlineExchange
-mainBranch: feature/onboarding-v8storagekit
+mainBranch: master
 
 workspaces:
   - path: СМП_ОнлайнОбменДанными     # тека = ім'я розширення в 1С (кирилиця — прийнятий ризик, follow-ups §10)
