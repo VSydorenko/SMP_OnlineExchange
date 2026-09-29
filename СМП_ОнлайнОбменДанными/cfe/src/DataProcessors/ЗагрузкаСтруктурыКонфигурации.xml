@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="61847be5-48a1-4d1f-948e-18df9c637c04">
+  <producedTypes>
+    <objectType typeId="86817aae-b303-4287-a4d5-1eaf19c94011" valueTypeId="a2c9dddd-de5c-4f43-a715-5ad759fa5308"/>
+    <managerType typeId="c4a41baa-876a-4f94-a9da-b03149e15ab6" valueTypeId="5a7a5e46-9552-4b60-9044-431b64dc968a"/>
+  </producedTypes>
+  <name>ЗагрузкаСтруктурыКонфигурации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка структуры конфигурации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ЗагрузкаСтруктурыКонфигурации.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <attributes uuid="fda4c0d7-fdf9-40d6-86a1-835351f5607f">
+    <name>ИмяФайлаЗагрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла загрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя файла со структурой конфигурации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="69f4ad1b-ef8b-4442-919a-082b965dee00">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Конфигурации</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Конфигурация, структура которой загружается</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="90ac9e87-88d2-4a51-916e-ddc7450de783">
+    <name>ДобавлятьТолькоНовыеОбъектыСвойстваЗначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавлять только новые объекты свойства значения</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Добавлять только новые объекты, свойства, значения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="cda24436-b732-41fe-8bcd-76eaef75eef4">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

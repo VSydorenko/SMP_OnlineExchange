@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <subsystemsVisibility>
+    <visibilityFragments>
+      <subsystem>Subsystem.СМП_ОнлайнОбменДанными</subsystem>
+      <visible>
+        <common>true</common>
+        <for>
+          <value>true</value>
+          <role>Role.ПолныеПрава</role>
+        </for>
+      </visible>
+    </visibilityFragments>
+  </subsystemsVisibility>
+  <subsystemsOrder>
+    <subsystems>Subsystem.СМП_ОнлайнОбменДанными</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

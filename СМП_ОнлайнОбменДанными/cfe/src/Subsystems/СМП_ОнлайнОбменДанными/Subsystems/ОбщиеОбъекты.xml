@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8da0545b-7f6e-4713-8c7f-b521fec0ba14">
+  <name>ОбщиеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Общие объекты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>CommonModule.СМП_КоннекторHTTP</content>
+  <content>CommonModule.СМП_ОнлайнОбмен</content>
+  <content>CommonModule.СМП_ОнлайнОбменПовтИсп</content>
+  <content>CommonModule.СМП_ОнлайнОбменСобытия</content>
+  <content>CommonModule.СМП_ОнлайнОбменУправлениеОчередями</content>
+  <content>CommonModule.СМП_СобытияОтправкиДанных</content>
+  <content>EventSubscription.СМП_РегистрацияДокументаОбработкаПроведения</content>
+  <content>EventSubscription.СМП_РегистрацияДокументаПередЗаписью</content>
+  <content>EventSubscription.СМП_РегистрацияДокументаПриЗаписи</content>
+  <content>EventSubscription.СМП_РегистрацияСправочника</content>
+  <content>CommonForm.СМП_ФормаВыбораПриемника</content>
+  <content>444c5d07-8794-4a87-bd36-4f7902fce254</content>
+  <content>CommonPicture.СМП_ДлительнаяОперация80</content>
+  <content>CommonPicture.СМП_ОбъектыМетаданных</content>
+  <content>HTTPService.СМП_ОбменДанными</content>
+  <content>Enum.СМП_ВидыТранспортовОбмена</content>
+  <content>Enum.СМП_НастройкиОбменов</content>
+  <content>Enum.СМП_СтатусыОбработкиСообщений</content>
+  <content>Enum.СМП_ВидыОбъектовОбмена</content>
+  <content>DataProcessor.СМП_JSONКонвертер</content>
+  <content>DataProcessor.СМП_ОнлайнОбменКонвертацияОбъектов</content>
+  <content>CommonPicture.СМП_ОнлайнОбменДанными</content>
+  <parentSubsystem>Subsystem.СМП_ОнлайнОбменДанными</parentSubsystem>
+</mdclass:Subsystem>

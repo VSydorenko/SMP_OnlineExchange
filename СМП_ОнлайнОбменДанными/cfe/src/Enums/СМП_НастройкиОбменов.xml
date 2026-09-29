@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5daabc2-ed5a-46cf-b73f-e48a0862076a">
+  <producedTypes>
+    <refType typeId="ea30bdc3-25b0-4eba-86f0-a426b488a36a" valueTypeId="4c92a3e0-8b60-45d8-b403-248e7f3367ca"/>
+    <listType typeId="7d1ed461-ac3e-4bac-9600-85ee90b26642" valueTypeId="caf442d5-380b-4923-ac4f-301bf6aaa1ca"/>
+    <managerType typeId="49173101-23be-4e39-a618-f6221b55afb2" valueTypeId="df9f54ae-dda4-4dcd-aa0d-676c65221ab2"/>
+  </producedTypes>
+  <name>СМП_НастройкиОбменов</name>
+  <synonym>
+    <key>ru</key>
+    <value>СМП настройки обменов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="a19671c9-c57f-4883-a4d9-94fe27fc1888">
+    <name>ДляОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для отправки</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="abd40f19-e970-4963-859c-cd08eca5a351">
+    <name>ДляПолучения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Для получения</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

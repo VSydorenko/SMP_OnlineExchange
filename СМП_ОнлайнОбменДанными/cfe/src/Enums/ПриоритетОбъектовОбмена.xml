@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eea3d0ae-17de-4664-9785-9e28c494e417">
+  <producedTypes>
+    <refType typeId="9363890c-54a6-45b8-8663-aaf9af7e80a0" valueTypeId="c7ecc4df-9228-45fb-a757-48f02f643155"/>
+    <listType typeId="4e8fcd2b-8d0e-4e75-9636-153265e65a01" valueTypeId="938bd9df-1063-4166-8117-d297221e64aa"/>
+    <managerType typeId="dfe024b5-c25b-4bb1-86a0-924d86891224" valueTypeId="1b156ecf-356a-4339-adfb-a4feebc5d22a"/>
+  </producedTypes>
+  <name>ПриоритетОбъектовОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приоритет объектов обмена</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="d448e4e6-c9e1-4d9e-bd84-e78d4089ceeb">
+    <name>ПриоритетПоступившегоПриОбменеОбъектаНиже</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ниже</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="07d13957-7198-41a6-9b30-f7d96c47b21b">
+    <name>ПриоритетПоступившегоПриОбменеОбъектаСовпадает</name>
+    <synonym>
+      <key>ru</key>
+      <value>Совпадает</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="ad597fec-735d-45f1-a52a-dd3792c9e66d">
+    <name>ПриоритетПоступившегоПриОбменеОбъектаВыше</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выше</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>
