@@ -1,0 +1,15 @@
+format: DESIGNER
+builder: DESIGNER
+workPath: 'build'
+# 60 хвилин, не шаблонні 10: у воркспейсі повна конфігурація УНФ (≈59 тис. файлів), а її
+# завантаження в базу агента міряли на сусідньому репозиторії — 58 994 файли за 11,5 хв.
+execution_timeout: 3600000
+infobase:
+  connection: 'File=build/ib'         # база АГЕНТА: машинна, похідна від git. Серверну задає v8project.local.yaml
+source-set:
+  - name: base
+    type: CONFIGURATION
+    path: 'cf/src'
+  - name: СМП_ОнлайнОбменДанными
+    type: EXTENSION
+    path: 'cfe/src'
