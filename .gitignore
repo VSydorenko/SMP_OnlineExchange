@@ -29,17 +29,3 @@ v8project.local.yaml
 # Побічні файли платформи
 ConfigDumpInfo.xml
 DumpFilesIndex.txt
-
-# Файли бази й платформи (успадковано з попереднього .gitignore репозиторію)
-*.1CD
-*.cfl
-*.1CL
-*.cgr
-*.cf
-*.dt
-*.lgf
-*.lgp
-1Cv8Log/
-1CHelpIndex/
-1Cv8JobScheduler/
-1Cv8Temp/
