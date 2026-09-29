@@ -1,53 +1,135 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eea3d0ae-17de-4664-9785-9e28c494e417">
-  <producedTypes>
-    <refType typeId="9363890c-54a6-45b8-8663-aaf9af7e80a0" valueTypeId="c7ecc4df-9228-45fb-a757-48f02f643155"/>
-    <listType typeId="4e8fcd2b-8d0e-4e75-9636-153265e65a01" valueTypeId="938bd9df-1063-4166-8117-d297221e64aa"/>
-    <managerType typeId="dfe024b5-c25b-4bb1-86a0-924d86891224" valueTypeId="1b156ecf-356a-4339-adfb-a4feebc5d22a"/>
-  </producedTypes>
-  <name>ПриоритетОбъектовОбмена</name>
-  <synonym>
-    <key>ru</key>
-    <value>Приоритет объектов обмена</value>
-  </synonym>
-  <useStandardCommands>true</useStandardCommands>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>Order</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>Ref</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <quickChoice>true</quickChoice>
-  <choiceMode>BothWays</choiceMode>
-  <enumValues uuid="d448e4e6-c9e1-4d9e-bd84-e78d4089ceeb">
-    <name>ПриоритетПоступившегоПриОбменеОбъектаНиже</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ниже</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="07d13957-7198-41a6-9b30-f7d96c47b21b">
-    <name>ПриоритетПоступившегоПриОбменеОбъектаСовпадает</name>
-    <synonym>
-      <key>ru</key>
-      <value>Совпадает</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="ad597fec-735d-45f1-a52a-dd3792c9e66d">
-    <name>ПриоритетПоступившегоПриОбменеОбъектаВыше</name>
-    <synonym>
-      <key>ru</key>
-      <value>Выше</value>
-    </synonym>
-  </enumValues>
-</mdclass:Enum>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="eea3d0ae-17de-4664-9785-9e28c494e417">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ПриоритетОбъектовОбмена" category="Ref">
+				<xr:TypeId>9363890c-54a6-45b8-8663-aaf9af7e80a0</xr:TypeId>
+				<xr:ValueId>c7ecc4df-9228-45fb-a757-48f02f643155</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ПриоритетОбъектовОбмена" category="Manager">
+				<xr:TypeId>dfe024b5-c25b-4bb1-86a0-924d86891224</xr:TypeId>
+				<xr:ValueId>1b156ecf-356a-4339-adfb-a4feebc5d22a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ПриоритетОбъектовОбмена" category="List">
+				<xr:TypeId>4e8fcd2b-8d0e-4e75-9636-153265e65a01</xr:TypeId>
+				<xr:ValueId>938bd9df-1063-4166-8117-d297221e64aa</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ПриоритетОбъектовОбмена</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приоритет объектов обмена</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>BothWays</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="d448e4e6-c9e1-4d9e-bd84-e78d4089ceeb">
+				<Properties>
+					<Name>ПриоритетПоступившегоПриОбменеОбъектаНиже</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ниже</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="07d13957-7198-41a6-9b30-f7d96c47b21b">
+				<Properties>
+					<Name>ПриоритетПоступившегоПриОбменеОбъектаСовпадает</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Совпадает</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ad597fec-735d-45f1-a52a-dd3792c9e66d">
+				<Properties>
+					<Name>ПриоритетПоступившегоПриОбменеОбъектаВыше</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выше</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

@@ -1,79 +1,161 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b4c03675-2824-4d6c-a988-f8a4313ee142">
-  <producedTypes>
-    <selectionType typeId="9ce4386a-dd75-4dd6-adc9-79a90907d5a8" valueTypeId="317299fd-2b97-4ccd-8319-63f06b9e3c37"/>
-    <listType typeId="aca0a486-f158-405e-bba4-12c9fe559e96" valueTypeId="db64d7bc-ea59-4801-a63b-066e3aac55b0"/>
-    <managerType typeId="3928bcf7-2daa-4deb-8191-8e400ad6d94e" valueTypeId="2a33c8c9-ce02-4849-b436-737594f59fa4"/>
-    <recordSetType typeId="b7d36eca-70f4-4f29-a108-67c175e9c2c2" valueTypeId="c05d073b-acf4-40f9-95bf-3b6ca22690e2"/>
-    <recordKeyType typeId="126bc1b6-a153-40fb-93c0-38c7be339f58" valueTypeId="10470798-029e-4ac3-9557-aa5538a67b05"/>
-    <recordType typeId="ee6c8c4c-ab94-4c05-be5c-a5d60315b2e4" valueTypeId="a3f24ed5-08c5-407d-97d4-37cd4d9e2275"/>
-    <recordManagerType typeId="42a652d7-dc8c-4f82-a3b0-d69f8ebbfb07" valueTypeId="a8eec855-5b0d-4f7a-9963-533ec93b17b3"/>
-  </producedTypes>
-  <name>СМП_ВыгруженныеСправочники</name>
-  <synonym>
-    <key>ru</key>
-    <value>Выгруженные справочники</value>
-  </synonym>
-  <useStandardCommands>true</useStandardCommands>
-  <editType>InDialog</editType>
-  <defaultRecordForm>InformationRegister.СМП_ВыгруженныеСправочники.Form.ФормаЗаписи</defaultRecordForm>
-  <defaultListForm>InformationRegister.СМП_ВыгруженныеСправочники.Form.ФормаСписка</defaultListForm>
-  <dataLockControlMode>Managed</dataLockControlMode>
-  <dimensions uuid="4d04bd23-7d9c-429a-8d6f-93fdfb42fe86">
-    <name>УчетнаяЗаписьОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Учетная запись обмена</value>
-    </synonym>
-    <type>
-      <types>CatalogRef.СМП_УчетныеЗаписиОбменов</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillFromFillingValue>true</fillFromFillingValue>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <master>true</master>
-    <mainFilter>true</mainFilter>
-  </dimensions>
-  <dimensions uuid="2063e332-7b6c-41fb-affd-53f4758816e2">
-    <name>ЭлементСправочника</name>
-    <synonym>
-      <key>ru</key>
-      <value>Элемент справочника</value>
-    </synonym>
-    <type>
-      <types>String</types>
-      <stringQualifiers>
-        <length>150</length>
-      </stringQualifiers>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <dataHistory>Use</dataHistory>
-    <fillValue xsi:type="core:StringValue">
-      <value></value>
-    </fillValue>
-    <mainFilter>true</mainFilter>
-  </dimensions>
-  <forms uuid="06450781-e274-46ce-9f4d-55bba5f50351">
-    <name>ФормаСписка</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма списка</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="dbafa757-6bdb-4158-b887-e8f14b305069">
-    <name>ФормаЗаписи</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма записи</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-</mdclass:InformationRegister>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<InformationRegister uuid="b4c03675-2824-4d6c-a988-f8a4313ee142">
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.СМП_ВыгруженныеСправочники" category="Record">
+				<xr:TypeId>ee6c8c4c-ab94-4c05-be5c-a5d60315b2e4</xr:TypeId>
+				<xr:ValueId>a3f24ed5-08c5-407d-97d4-37cd4d9e2275</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.СМП_ВыгруженныеСправочники" category="Manager">
+				<xr:TypeId>3928bcf7-2daa-4deb-8191-8e400ad6d94e</xr:TypeId>
+				<xr:ValueId>2a33c8c9-ce02-4849-b436-737594f59fa4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.СМП_ВыгруженныеСправочники" category="Selection">
+				<xr:TypeId>9ce4386a-dd75-4dd6-adc9-79a90907d5a8</xr:TypeId>
+				<xr:ValueId>317299fd-2b97-4ccd-8319-63f06b9e3c37</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.СМП_ВыгруженныеСправочники" category="List">
+				<xr:TypeId>aca0a486-f158-405e-bba4-12c9fe559e96</xr:TypeId>
+				<xr:ValueId>db64d7bc-ea59-4801-a63b-066e3aac55b0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.СМП_ВыгруженныеСправочники" category="RecordSet">
+				<xr:TypeId>b7d36eca-70f4-4f29-a108-67c175e9c2c2</xr:TypeId>
+				<xr:ValueId>c05d073b-acf4-40f9-95bf-3b6ca22690e2</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.СМП_ВыгруженныеСправочники" category="RecordKey">
+				<xr:TypeId>126bc1b6-a153-40fb-93c0-38c7be339f58</xr:TypeId>
+				<xr:ValueId>10470798-029e-4ac3-9557-aa5538a67b05</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.СМП_ВыгруженныеСправочники" category="RecordManager">
+				<xr:TypeId>42a652d7-dc8c-4f82-a3b0-d69f8ebbfb07</xr:TypeId>
+				<xr:ValueId>a8eec855-5b0d-4f7a-9963-533ec93b17b3</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СМП_ВыгруженныеСправочники</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгруженные справочники</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<EditType>InDialog</EditType>
+			<DefaultRecordForm>InformationRegister.СМП_ВыгруженныеСправочники.Form.ФормаЗаписи</DefaultRecordForm>
+			<DefaultListForm>InformationRegister.СМП_ВыгруженныеСправочники.Form.ФормаСписка</DefaultListForm>
+			<AuxiliaryRecordForm/>
+			<AuxiliaryListForm/>
+			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
+			<WriteMode>Independent</WriteMode>
+			<MainFilterOnPeriod>false</MainFilterOnPeriod>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
+			<DataLockControlMode>Managed</DataLockControlMode>
+			<FullTextSearch>DontUse</FullTextSearch>
+			<EnableTotalsSliceFirst>false</EnableTotalsSliceFirst>
+			<EnableTotalsSliceLast>false</EnableTotalsSliceLast>
+			<RecordPresentation/>
+			<ExtendedRecordPresentation/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<DataHistory>DontUse</DataHistory>
+			<UpdateDataHistoryImmediatelyAfterWrite>false</UpdateDataHistoryImmediatelyAfterWrite>
+			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
+		</Properties>
+		<ChildObjects>
+			<Dimension uuid="4d04bd23-7d9c-429a-8d6f-93fdfb42fe86">
+				<Properties>
+					<Name>УчетнаяЗаписьОбмена</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учетная запись обмена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СМП_УчетныеЗаписиОбменов</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>true</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>true</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+					<TypeReductionMode>TransformValues</TypeReductionMode>
+				</Properties>
+			</Dimension>
+			<Dimension uuid="2063e332-7b6c-41fb-affd-53f4758816e2">
+				<Properties>
+					<Name>ЭлементСправочника</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элемент справочника</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Master>false</Master>
+					<MainFilter>true</MainFilter>
+					<DenyIncompleteValues>false</DenyIncompleteValues>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+					<TypeReductionMode>TransformValues</TypeReductionMode>
+				</Properties>
+			</Dimension>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаЗаписи</Form>
+		</ChildObjects>
+	</InformationRegister>
+</MetaDataObject>

@@ -1,137 +1,279 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="037f6940-a134-4fa7-b2d5-7a09ea06f3fe">
-  <producedTypes>
-    <refType typeId="a9378f29-c31e-49e0-922f-457254082f66" valueTypeId="f3cf932b-6fd0-4d06-8d69-39a40babcbf8"/>
-    <listType typeId="17f600d4-14e5-4fda-a113-d263dceefdc8" valueTypeId="818b6020-c3b4-408e-b297-e684ffee65fc"/>
-    <managerType typeId="bbcb7d9b-c202-4a33-ae76-70930e540a35" valueTypeId="54e534fb-b0e2-4488-b4e5-58852e82e60a"/>
-  </producedTypes>
-  <name>СМП_ВидыСвойств</name>
-  <synonym>
-    <key>ru</key>
-    <value>СМП виды свойств</value>
-  </synonym>
-  <useStandardCommands>true</useStandardCommands>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>Order</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <standardAttributes>
-    <dataHistory>Use</dataHistory>
-    <name>Ref</name>
-    <fillValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-  </standardAttributes>
-  <quickChoice>true</quickChoice>
-  <choiceMode>QuickChoice</choiceMode>
-  <enumValues uuid="6d8875ef-620a-45e2-b9c6-d3244b8fc005">
-    <name>ВидыСубконтоСчета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Виды субконто счета</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="7158a51d-f81c-47fd-a262-77c56fd95580">
-    <name>Измерение</name>
-    <synonym>
-      <key>ru</key>
-      <value>Измерение</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="a0c2f84e-0fdf-471e-8cc8-7e395c3800ad">
-    <name>НаборДвиженийРегистраБухгалтерии</name>
-    <synonym>
-      <key>ru</key>
-      <value>Набор движений регистра бухгалтерии</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="ae5acd31-019d-466e-927a-7aa5564ab26e">
-    <name>НаборДвиженийРегистраНакопления</name>
-    <synonym>
-      <key>ru</key>
-      <value>Набор движений регистра накопления</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="7658e14c-9984-464a-9708-c72dd129bf68">
-    <name>НаборДвиженийРегистраРасчета</name>
-    <synonym>
-      <key>ru</key>
-      <value>Набор движений регистра расчета</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="1bbcd9cf-25fd-4cea-990a-74ef4c333040">
-    <name>НаборДвиженийРегистраСведений</name>
-    <synonym>
-      <key>ru</key>
-      <value>Набор движений регистра сведений</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="820c6aa5-591f-436f-9d81-ac86018fe243">
-    <name>НаборЗаписейПодчиненногоРегистраСведений</name>
-    <synonym>
-      <key>ru</key>
-      <value>Набор записей подчиненного регистра сведений</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="85ba6438-fe3a-4f20-b54a-f7f8b4234ef1">
-    <name>НаборЗаписейПоследовательности</name>
-    <synonym>
-      <key>ru</key>
-      <value>Набор записей последовательности</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="b2fc40cb-5287-49d1-ba6c-df28dcc4726f">
-    <name>ПодчиненныйСправочник</name>
-    <synonym>
-      <key>ru</key>
-      <value>Подчиненный справочник</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="7831b405-e095-4004-bace-141aeea0997c">
-    <name>Реквизит</name>
-    <synonym>
-      <key>ru</key>
-      <value>Реквизит</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="64e0425c-8fd9-43d8-a198-ef756f87c265">
-    <name>Ресурс</name>
-    <synonym>
-      <key>ru</key>
-      <value>Ресурс</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="d949ef23-fd2c-4d81-aaf2-8fe48da08b39">
-    <name>Свойство</name>
-    <synonym>
-      <key>ru</key>
-      <value>Свойство объекта</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="960e9657-855c-482c-89ae-f19c09cc142a">
-    <name>СоставПланаОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Состав плана обмена</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="515528fe-d41c-48de-9d69-c81cf6379125">
-    <name>ТабличнаяЧасть</name>
-    <synonym>
-      <key>ru</key>
-      <value>Табличная часть</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="c8c2f6f0-9cf1-4935-b8f3-089514123dcc">
-    <name>ЭлементСоставаПланаОбмена</name>
-    <synonym>
-      <key>ru</key>
-      <value>Элемент состава плана обмена</value>
-    </synonym>
-  </enumValues>
-</mdclass:Enum>
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Enum uuid="037f6940-a134-4fa7-b2d5-7a09ea06f3fe">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СМП_ВидыСвойств" category="Ref">
+				<xr:TypeId>a9378f29-c31e-49e0-922f-457254082f66</xr:TypeId>
+				<xr:ValueId>f3cf932b-6fd0-4d06-8d69-39a40babcbf8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СМП_ВидыСвойств" category="Manager">
+				<xr:TypeId>bbcb7d9b-c202-4a33-ae76-70930e540a35</xr:TypeId>
+				<xr:ValueId>54e534fb-b0e2-4488-b4e5-58852e82e60a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СМП_ВидыСвойств" category="List">
+				<xr:TypeId>17f600d4-14e5-4fda-a113-d263dceefdc8</xr:TypeId>
+				<xr:ValueId>818b6020-c3b4-408e-b297-e684ffee65fc</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СМП_ВидыСвойств</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>СМП виды свойств</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<UseStandardCommands>true</UseStandardCommands>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Order">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
+			<Characteristics/>
+			<QuickChoice>true</QuickChoice>
+			<ChoiceMode>QuickChoice</ChoiceMode>
+			<DefaultListForm/>
+			<DefaultChoiceForm/>
+			<AuxiliaryListForm/>
+			<AuxiliaryChoiceForm/>
+			<ListPresentation/>
+			<ExtendedListPresentation/>
+			<Explanation/>
+			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="6d8875ef-620a-45e2-b9c6-d3244b8fc005">
+				<Properties>
+					<Name>ВидыСубконтоСчета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Виды субконто счета</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7158a51d-f81c-47fd-a262-77c56fd95580">
+				<Properties>
+					<Name>Измерение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Измерение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="a0c2f84e-0fdf-471e-8cc8-7e395c3800ad">
+				<Properties>
+					<Name>НаборДвиженийРегистраБухгалтерии</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор движений регистра бухгалтерии</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ae5acd31-019d-466e-927a-7aa5564ab26e">
+				<Properties>
+					<Name>НаборДвиженийРегистраНакопления</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор движений регистра накопления</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7658e14c-9984-464a-9708-c72dd129bf68">
+				<Properties>
+					<Name>НаборДвиженийРегистраРасчета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор движений регистра расчета</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="1bbcd9cf-25fd-4cea-990a-74ef4c333040">
+				<Properties>
+					<Name>НаборДвиженийРегистраСведений</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор движений регистра сведений</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="820c6aa5-591f-436f-9d81-ac86018fe243">
+				<Properties>
+					<Name>НаборЗаписейПодчиненногоРегистраСведений</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор записей подчиненного регистра сведений</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="85ba6438-fe3a-4f20-b54a-f7f8b4234ef1">
+				<Properties>
+					<Name>НаборЗаписейПоследовательности</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Набор записей последовательности</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b2fc40cb-5287-49d1-ba6c-df28dcc4726f">
+				<Properties>
+					<Name>ПодчиненныйСправочник</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подчиненный справочник</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7831b405-e095-4004-bace-141aeea0997c">
+				<Properties>
+					<Name>Реквизит</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизит</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="64e0425c-8fd9-43d8-a198-ef756f87c265">
+				<Properties>
+					<Name>Ресурс</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ресурс</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d949ef23-fd2c-4d81-aaf2-8fe48da08b39">
+				<Properties>
+					<Name>Свойство</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойство объекта</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="960e9657-855c-482c-89ae-f19c09cc142a">
+				<Properties>
+					<Name>СоставПланаОбмена</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состав плана обмена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="515528fe-d41c-48de-9d69-c81cf6379125">
+				<Properties>
+					<Name>ТабличнаяЧасть</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Табличная часть</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c8c2f6f0-9cf1-4935-b8f3-089514123dcc">
+				<Properties>
+					<Name>ЭлементСоставаПланаОбмена</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элемент состава плана обмена</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

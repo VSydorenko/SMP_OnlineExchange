@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаСохранитьФайлы" id="43">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.СохранитьФайлы</CommandName>
+				<ExtendedTooltip name="ФормаСохранитьФайлыРасширеннаяПодсказка" id="44"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаРабочийФункционал" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа рабочий функционал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа рабочий функционал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРабочийФункционалРасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<InputField name="КонвертацияДляВыгрузки" id="10">
+					<DataPath>Объект.КонвертацияДляВыгрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КонвертацияДляВыгрузкиКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КонвертацияДляВыгрузкиРасширеннаяПодсказка" id="12"/>
+				</InputField>
+				<UsualGroup name="ГруппаФайлПравил" id="41">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа файл правил</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа файл правил</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаФайлПравилРасширеннаяПодсказка" id="42"/>
+					<ChildItems>
+						<InputField name="ИмяФайлаПравил" id="1">
+							<DataPath>Объект.ИмяФайлаПравил</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+							<ClearButton>true</ClearButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ИмяФайлаПравилКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ИмяФайлаПравилРасширеннаяПодсказка" id="3"/>
+							<Events>
+								<Event name="StartChoice">ИмяФайлаПравилНачалоВыбора</Event>
+							</Events>
+						</InputField>
+						<CheckBoxField name="СжиматьФайлПравил" id="16">
+							<DataPath>Объект.СжиматьФайлПравил</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СжиматьФайлПравилКонтекстноеМеню" id="17"/>
+							<ExtendedTooltip name="СжиматьФайлПравилРасширеннаяПодсказка" id="18"/>
+							<Events>
+								<Event name="OnChange">СжиматьФайлПравилПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="НеЗакрыватьФормуПослеСохраненияПравил" id="45">
+					<DataPath>НеЗакрыватьФормуПослеСохраненияПравил</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НеЗакрыватьФормуПослеСохраненияПравилКонтекстноеМеню" id="46"/>
+					<ExtendedTooltip name="НеЗакрыватьФормуПослеСохраненияПравилРасширеннаяПодсказка" id="47"/>
+				</CheckBoxField>
+				<CheckBoxField name="ВыгружатьПравилаКорреспондента" id="28">
+					<DataPath>Объект.ВыгружатьПравилаКорреспондента</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыгружатьПравилаКорреспондентаКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ВыгружатьПравилаКорреспондентаРасширеннаяПодсказка" id="30"/>
+					<Events>
+						<Event name="OnChange">ВыгружатьПравилаКорреспондентаПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ИмяФайлаПравилКорреспондента" id="48">
+					<DataPath>Объект.ИмяФайлаПравилКорреспондента</DataPath>
+					<ChoiceButton>true</ChoiceButton>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяФайлаПравилКорреспондентаКонтекстноеМеню" id="49"/>
+					<ExtendedTooltip name="ИмяФайлаПравилКорреспондентаРасширеннаяПодсказка" id="50"/>
+					<Events>
+						<Event name="StartChoice">ИмяФайлаПравилКорреспондентаНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНерабочийФункционал" id="39">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа нерабочий функционал</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа нерабочий функционал</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаНерабочийФункционалРасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<CheckBoxField name="ВыгружатьПравилаРегистрации" id="34">
+					<DataPath>Объект.ВыгружатьПравилаРегистрации</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыгружатьПравилаРегистрацииКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ВыгружатьПравилаРегистрацииРасширеннаяПодсказка" id="36"/>
+				</CheckBoxField>
+				<InputField name="РегистрацияДляВыгрузки" id="31">
+					<DataPath>Объект.РегистрацияДляВыгрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РегистрацияДляВыгрузкиКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="РегистрацияДляВыгрузкиРасширеннаяПодсказка" id="33"/>
+				</InputField>
+				<InputField name="ИмяФайлаМодуляВыгрузки" id="4">
+					<DataPath>Объект.ИмяФайлаМодуляВыгрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяФайлаМодуляВыгрузкиКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ИмяФайлаМодуляВыгрузкиРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="ИмяФайлаМодуляЗагрузки" id="7">
+					<DataPath>Объект.ИмяФайлаМодуляЗагрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяФайлаМодуляЗагрузкиКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ИмяФайлаМодуляЗагрузкиРасширеннаяПодсказка" id="9"/>
+				</InputField>
+				<InputField name="РежимСохраненияВерсии" id="13">
+					<DataPath>Объект.РежимСохраненияВерсии</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РежимСохраненияВерсииКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="РежимСохраненияВерсииРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="ИмяФайлаОбработчиковВыгрузки" id="19">
+					<DataPath>Объект.ИмяФайлаОбработчиковВыгрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяФайлаОбработчиковВыгрузкиКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ИмяФайлаОбработчиковВыгрузкиРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="ИмяФайлаОбработчиковЗагрузки" id="22">
+					<DataPath>Объект.ИмяФайлаОбработчиковЗагрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИмяФайлаОбработчиковЗагрузкиКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ИмяФайлаОбработчиковЗагрузкиРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="КонвертацияКорреспондентДляВыгрузки" id="25">
+					<DataPath>Объект.КонвертацияКорреспондентДляВыгрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КонвертацияКорреспондентДляВыгрузкиКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="КонвертацияКорреспондентДляВыгрузкиРасширеннаяПодсказка" id="27"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ВыгрузкаКонвертацииXML</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Объект.ИмяФайлаПравил</Field>
+				<Field>Объект.СжиматьФайлПравил</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="НеЗакрыватьФормуПослеСохраненияПравил" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не закрывать форму после сохранения правил обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>НеЗакрыватьФормуПослеСохраненияПравил</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПравилаАдресВХ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила адрес ВХ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СохранитьФайлы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Write</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СохранитьФайлы</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>
