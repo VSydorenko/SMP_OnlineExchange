@@ -112,6 +112,7 @@
 			<Enum>СМП_СтатусыОбработкиСообщений</Enum>
 			<Enum>ТипыОбъектов</Enum>
 			<Enum>СМП_ВидыОбъектовОбмена</Enum>
+			<Report>СМП_СверкаДанныхОбмена</Report>
 			<DataProcessor>ВыгрузкаКонвертацииXML</DataProcessor>
 			<DataProcessor>ЗагрузкаКонвертацииXML</DataProcessor>
 			<DataProcessor>ЗагрузкаСтруктурыКонфигурации</DataProcessor>

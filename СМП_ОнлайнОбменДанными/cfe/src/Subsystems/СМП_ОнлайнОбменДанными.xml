@@ -3,29 +3,31 @@
 	<Subsystem uuid="b454cbd6-4a81-4d52-8541-a657fb59ab3f">
 		<Properties>
 			<Name>СМП_ОнлайнОбменДанными</Name>
-			<Synonym>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>simplyExchange</v8:content>
-				</v8:item>
+			<Synonym>&#13;
+				<v8:item>&#13;
+					<v8:lang>ru</v8:lang>&#13;
+					<v8:content>simplyExchange</v8:content>&#13;
+				</v8:item>&#13;
 			</Synonym>
 			<Comment/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<UseOneCommand>false</UseOneCommand>
-			<Explanation>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка онлайн обменов данными между текущей базой данных и другими системами (1С и не только)</v8:content>
-				</v8:item>
+			<Explanation>&#13;
+				<v8:item>&#13;
+					<v8:lang>ru</v8:lang>&#13;
+					<v8:content>Настройка онлайн обменов данными между текущей базой данных и другими системами (1С и не только)</v8:content>&#13;
+				</v8:item>&#13;
 			</Explanation>
-			<Picture>
-				<xr:Ref>CommonPicture.СМП_ОнлайнОбменДанными</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+			<Picture>&#13;
+				<xr:Ref>CommonPicture.СМП_ОнлайнОбменДанными</xr:Ref>&#13;
+				<xr:LoadTransparent>false</xr:LoadTransparent>&#13;
 			</Picture>
-			<Content/>
+			<Content>&#13;
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СМП_СверкаДанныхОбмена</xr:Item>
+			</Content>
 		</Properties>
-		<ChildObjects>
+		<ChildObjects>&#13;
 			<Subsystem>ЗаимствованныеОбьекты</Subsystem>
 			<Subsystem>ОбщиеОбъекты</Subsystem>
 			<Subsystem>НастройкаКонвертации</Subsystem>

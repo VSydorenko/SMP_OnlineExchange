@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Сверка данных обмена</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаОбмен" id="1">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаОбменРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<InputField name="УчетнаяЗапись" id="3">
+					<DataPath>Отчет.УчетнаяЗапись</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обмен</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="5"/>
+					<Events>
+						<Event name="OnChange">УчетнаяЗаписьПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ТипДокумента" id="6">
+					<DataPath>Отчет.ТипДокумента</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип документа</v8:content>
+						</v8:item>
+					</Title>
+					<DropListButton>true</DropListButton>
+					<ContextMenu name="ТипДокументаКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ТипДокументаРасширеннаяПодсказка" id="8"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПериод" id="9">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаПериодРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<InputField name="НачалоПериода" id="11">
+					<DataPath>Отчет.НачалоПериода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период с</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="НачалоПериодаКонтекстноеМеню" id="12"/>
+					<ExtendedTooltip name="НачалоПериодаРасширеннаяПодсказка" id="13"/>
+				</InputField>
+				<InputField name="КонецПериода" id="14">
+					<DataPath>Отчет.КонецПериода</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>по</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КонецПериодаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="КонецПериодаРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<CheckBoxField name="ТолькоРасхождения" id="17">
+					<DataPath>Отчет.ТолькоРасхождения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Только расхождения</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТолькоРасхожденияКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТолькоРасхожденияРасширеннаяПодсказка" id="19"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаЗапрос" id="20">
+			<Group>Horizontal</Group>
+			<ExtendedTooltip name="ГруппаЗапросРасширеннаяПодсказка" id="21"/>
+			<ChildItems>
+				<InputField name="РазмерПорции" id="22">
+					<DataPath>Отчет.РазмерПорции</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документов в запросе</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="РазмерПорцииКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="РазмерПорцииРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="Таймаут" id="25">
+					<DataPath>Отчет.Таймаут</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таймаут, сек</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТаймаутКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ТаймаутРасширеннаяПодсказка" id="27"/>
+				</InputField>
+				<Button name="Сформировать" id="28">
+					<CommandName>Form.Command.Сформировать</CommandName>
+					<DefaultButton>true</DefaultButton>
+					<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="29"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<SpreadSheetDocumentField name="Результат" id="1001">
+			<DataPath>Результат</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<VerticalScrollBar>true</VerticalScrollBar>
+			<HorizontalScrollBar>true</HorizontalScrollBar>
+			<ContextMenu name="РезультатКонтекстноеМеню" id="1002"/>
+			<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="1003"/>
+			<Events>
+				<Event name="DetailProcessing">РезультатОбработкаРасшифровки</Event>
+			</Events>
+		</SpreadSheetDocumentField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="30">
+			<Type>
+				<v8:Type>cfg:ReportObject.СМП_СверкаДанныхОбмена</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Отчет.УчетнаяЗапись</Field>
+				<Field>Отчет.ТипДокумента</Field>
+				<Field>Отчет.РазмерПорции</Field>
+				<Field>Отчет.Таймаут</Field>
+				<Field>Отчет.ТолькоРасхождения</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="АдресРасшифровки" id="31">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Результат" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Сформировать" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Сформировать</Action>
+		</Command>
+	</Commands>
+</Form>
