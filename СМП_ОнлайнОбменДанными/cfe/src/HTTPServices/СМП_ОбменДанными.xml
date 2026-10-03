@@ -73,6 +73,35 @@
 					</Method>
 				</ChildObjects>
 			</URLTemplate>
+			<URLTemplate uuid="87e13034-75d3-4138-ae4e-6094415c585a">
+				<Properties>
+					<Name>Сверка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сверка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Template>/validate/{ИдентификаторОбмена}</Template>
+				</Properties>
+				<ChildObjects>
+					<Method uuid="90b41716-933f-428f-b59b-bea5b12d3552">
+						<Properties>
+							<Name>ValidatePost</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Validate post</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<HTTPMethod>POST</HTTPMethod>
+							<Handler>СверкаValidatePost</Handler>
+						</Properties>
+					</Method>
+				</ChildObjects>
+			</URLTemplate>
 			<URLTemplate uuid="34fb0772-2030-4e77-9cd9-178c4a872e2f">
 				<Properties>
 					<Name>ВыгрузкаОписанияМетаданных</Name>
