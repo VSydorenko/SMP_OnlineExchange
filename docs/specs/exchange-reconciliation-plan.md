@@ -91,7 +91,7 @@
 - Мутації Уніки: спершу `dryRun: true` (прев'ю), потім той самий виклик з `dryRun: false`.
 - **Перевірка завдання** (далі — «стандартна перевірка»):
   1. `unica.cfe.validate` — `{ "cwd": W, "ExtensionPath": "cfe/src" }` → `errors: []`.
-  2. `unica.runtime.execute` — `{ "cwd": W, "operation": "build", "sourceSet": "СМП_ОнлайнОбменДанными", "dryRun": false }` → успіх (≈2 хв).
+  2. `unica.runtime.execute` — `{ "cwd": W, "operation": "build", "sourceSet": "СМП_ОнлайнОбменДанными", "fullRebuild": true, "dryRun": false }` → успіх. Лише повна збірка: часткове завантаження платформи падає на файл-списку з кирилицею («Ошибка чтения файла-списка загружаемых файлов»), виявлено при виконанні.
   3. `unica.runtime.execute` — `{ "cwd": W, "operation": "syntax", "mode": "designer-modules", "extension": "СМП_ОнлайнОбменДанными", "server": true, "thinClient": true, "externalConnection": true, "dryRun": false }` → без помилок.
   4. У виводі платформи підрядки `лиценз`, `ліценз`, `license`, `HASP` — зупинка й доповідь людині.
 - **Модулі (BSL):** код додається `unica.code.patch` (`operation: insert`; без `selector` — у кінець модуля). Якщо Unica відмовляє, бо файлу модуля ще немає (`Ext/ObjectModule.bsl`, `Ext/Form/Module.bsl`), — створити файл Write-ом із наведеним вмістом і перекодувати в UTF-8 **з BOM**, як решта модулів:
