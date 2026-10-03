@@ -320,6 +320,10 @@ Expected: `WithinOwnerSubordination`, `true`, `50`, `String`.
 
 Процедура ОбработкаПроверкиЗаполнения(Отказ, ПроверяемыеРеквизиты)
 	
+	// Код - ключ показателя в контракте /validate, наименование - заголовок в отчете.
+	ПроверяемыеРеквизиты.Добавить("Код");
+	ПроверяемыеРеквизиты.Добавить("Наименование");
+	
 	Если Вид = Перечисления.СМП_ВидыПоказателейСверки.Реквизит Тогда
 		
 		ПроверяемыеРеквизиты.Добавить("Реквизит");
@@ -383,6 +387,15 @@ Expected: `WithinOwnerSubordination`, `true`, `50`, `String`.
 
 `unica.form.add` — `{ "cwd": "<W>", "ObjectPath": "cfe/src/Catalogs/СМП_ПравилаСверки.xml", "FormName": "ФормаЭлемента", "Purpose": "Object", "SetDefault": true, "dryRun": false }`, потім
 `unica.form.compile` — `{ "cwd": "<W>", "JsonPath": "build/dsl/ПравилаСверки.ФормаЭлемента.json", "OutputPath": "cfe/src/Catalogs/СМП_ПравилаСверки/Forms/ФормаЭлемента/Ext/Form.xml", "dryRun": false }`.
+
+- [ ] **Step 7a: Обробник `OnChange` поля «Вид» — вручну**
+
+`unica.form.compile` мовчки ігнорує ключ DSL `handlers` (виявлено при виконанні). У `Form.xml`, в `<InputField name="Вид" …>` одразу після `<ExtendedTooltip …/>` дописати (як у `ПравилаКонвертацииСвойств/Forms/ФормаЭлемента/Ext/Form.xml:38-40`):
+```xml
+			<Events>
+				<Event name="OnChange">ВидПриИзменении</Event>
+			</Events>
+```
 
 - [ ] **Step 8: Модуль форми**
 
@@ -1757,7 +1770,9 @@ git commit -m "feat(звірка): збір даних у джерелі, зап
 `unica.form.add` — `{ "cwd": "<W>", "ObjectPath": "cfe/src/Reports/СМП_СверкаДанныхОбмена.xml", "FormName": "ФормаОтчета", "Purpose": "Object", "SetDefault": true, "dryRun": false }`;
 `unica.form.compile` — `{ "cwd": "<W>", "JsonPath": "build/dsl/СверкаДанныхОбмена.Форма.json", "OutputPath": "cfe/src/Reports/СМП_СверкаДанныхОбмена/Forms/ФормаОтчета/Ext/Form.xml", "dryRun": false }`.
 
-- [ ] **Step 5: Поле результату — правка XML**
+- [ ] **Step 5: Поле результату, події — правка XML**
+
+DSL `handlers` ігнорується (див. Task 2 Step 7a): у `<InputField name="УчетнаяЗапись" …>` після `<ExtendedTooltip …/>` дописати `<Events><Event name="OnChange">УчетнаяЗаписьПриИзменении</Event></Events>`; у `<Events>` форми перевірити `OnCreateAtServer` і `OnLoadDataFromSettingsAtServer` — відсутню дописати (`<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>`).
 
 DSL Уніки не має поля табличного документа. У `…/Forms/ФормаОтчета/Ext/Form.xml` (зразок — `cf/src/Reports/ОтчетПоНекорректнымКонтрагентам/Forms/Форма/Ext/Form.xml`):
 
