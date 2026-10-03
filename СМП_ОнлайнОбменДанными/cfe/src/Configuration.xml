@@ -59,7 +59,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_17</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>https://simplysoft.com.ua/</Vendor>
-			<Version>3.2.0.4</Version>
+			<Version>3.3.0.1</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -101,6 +101,7 @@
 			<Catalog>ПравилаКонвертацииСвойств</Catalog>
 			<Catalog>Свойства</Catalog>
 			<Catalog>СМП_УчетныеЗаписиОбменов</Catalog>
+			<Enum>СМП_ВидыПоказателейСверки</Enum>
 			<Enum>СМП_ВидыСвойств</Enum>
 			<Enum>Приложения</Enum>
 			<Enum>ПриоритетОбъектовОбмена</Enum>
