@@ -1261,6 +1261,12 @@
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>1</Index>
 			</Item>
+			<Item>
+				<Command>Catalog.СМП_ПравилаСверки.StandardCommand.OpenByValue</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>2</Index>
+			</Item>
 		</NavigationPanel>
 	</CommandInterface>
 </Form>

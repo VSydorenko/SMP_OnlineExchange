@@ -33,9 +33,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СМП_НастройкиОбменов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СМП_СтатусыОбработкиСообщений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СМП_ВидыОбъектовОбмена</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СМП_JSONКонвертер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">1a15b2b1-0331-440e-adca-8eac49634d1e</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СМП_ОнлайнОбменКонвертацияОбъектов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.СМП_ОнлайнОбменДанными</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СМП_ПравилаСверки</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>
