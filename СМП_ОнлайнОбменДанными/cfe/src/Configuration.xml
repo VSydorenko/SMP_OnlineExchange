@@ -59,7 +59,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_17</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>https://simplysoft.com.ua/</Vendor>
-			<Version>3.3.0.1</Version>
+			<Version>3.3.0.2</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -116,7 +116,6 @@
 			<DataProcessor>ВыгрузкаКонвертацииXML</DataProcessor>
 			<DataProcessor>ЗагрузкаКонвертацииXML</DataProcessor>
 			<DataProcessor>ЗагрузкаСтруктурыКонфигурации</DataProcessor>
-			<DataProcessor>СМП_JSONКонвертер</DataProcessor>
 			<DataProcessor>СМП_ОнлайнОбменКонвертацияОбъектов</DataProcessor>
 			<DataProcessor>СМП_РедакторКода</DataProcessor>
 			<DataProcessor>АвтонастройкаПравилКонвертацииЗначений</DataProcessor>

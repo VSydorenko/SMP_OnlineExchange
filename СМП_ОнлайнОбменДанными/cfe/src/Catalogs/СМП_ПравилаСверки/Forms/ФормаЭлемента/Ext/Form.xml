@@ -13,106 +13,192 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Владелец" id="1">
-			<DataPath>Объект.Owner</DataPath>
-			<ReadOnly>true</ReadOnly>
+		<Pages name="СтраницыНастройки" id="40">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Правило конвертации</v8:content>
+					<v8:content>Страницы настройки</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ВладелецКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="3"/>
-		</InputField>
-		<UsualGroup name="ГруппаКодНаименование" id="4">
-			<Group>Horizontal</Group>
-			<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="5"/>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыНастройкиРасширеннаяПодсказка" id="41"/>
 			<ChildItems>
-				<InputField name="Код" id="6">
-					<DataPath>Объект.Code</DataPath>
+				<Page name="СтраницаОсновное" id="42">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Код показателя</v8:content>
+							<v8:content>Основное</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="КодКонтекстноеМеню" id="7"/>
-					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="8"/>
-				</InputField>
-				<InputField name="Наименование" id="9">
-					<DataPath>Объект.Description</DataPath>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаОсновноеРасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаКодНаименование" id="4">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаКодНаименованиеРасширеннаяПодсказка" id="5"/>
+							<ChildItems>
+								<InputField name="Код" id="6">
+									<DataPath>Объект.Code</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Имя показателя</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="КодКонтекстноеМеню" id="7"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="8"/>
+								</InputField>
+								<InputField name="Наименование" id="9">
+									<DataPath>Объект.Description</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование для отчета сверки</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="10"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="11"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Вид" id="12">
+							<DataPath>Объект.Вид</DataPath>
+							<ContextMenu name="ВидКонтекстноеМеню" id="13"/>
+							<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="14"/>
+							<Events>
+								<Event name="OnChange">ВидПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Реквизит" id="15">
+							<DataPath>Объект.Реквизит</DataPath>
+							<ContextMenu name="РеквизитКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="РеквизитРасширеннаяПодсказка" id="17"/>
+						</InputField>
+						<InputField name="Выражение" id="18">
+							<DataPath>Объект.Выражение</DataPath>
+							<TitleLocation>Left</TitleLocation>
+							<Height>4</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>4</MaxHeight>
+							<MultiLine>true</MultiLine>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Объект.СуммаДокумента</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="ВыражениеКонтекстноеМеню" id="19"/>
+							<ExtendedTooltip name="ВыражениеРасширеннаяПодсказка" id="20"/>
+						</InputField>
+						<UsualGroup name="ГруппаПараметры" id="21">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="22"/>
+							<ChildItems>
+								<InputField name="Допуск" id="23">
+									<DataPath>Объект.Допуск</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Допустимое расхождение для числовых показателей, при котором показатели будут считаться равными</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ContextMenu name="ДопускКонтекстноеМеню" id="24"/>
+									<ExtendedTooltip name="ДопускРасширеннаяПодсказка" id="25"/>
+								</InputField>
+								<CheckBoxField name="Информативный" id="29">
+									<DataPath>Объект.Информативный</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Информативные показатели не участвуют в сравнении</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИнформативныйКонтекстноеМеню" id="30"/>
+									<ExtendedTooltip name="ИнформативныйРасширеннаяПодсказка" id="31"/>
+								</CheckBoxField>
+								<CheckBoxField name="Отключить" id="32">
+									<DataPath>Объект.Отключить</DataPath>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ОтключитьКонтекстноеМеню" id="33"/>
+									<ExtendedTooltip name="ОтключитьРасширеннаяПодсказка" id="34"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаДополнительно" id="44">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Наименование</v8:content>
+							<v8:content>Дополнительно</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="10"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="11"/>
-				</InputField>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница дополнительно</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаДополнительноРасширеннаяПодсказка" id="45"/>
+					<ChildItems>
+						<InputField name="Владелец" id="1">
+							<DataPath>Объект.Owner</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Правило конвертации</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ВладелецКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Порядок" id="26">
+							<DataPath>Объект.Порядок</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Приоритет</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ПорядокКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="28"/>
+						</InputField>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</UsualGroup>
-		<InputField name="Вид" id="12">
-			<DataPath>Объект.Вид</DataPath>
-			<ContextMenu name="ВидКонтекстноеМеню" id="13"/>
-			<ExtendedTooltip name="ВидРасширеннаяПодсказка" id="14"/>
-			<Events>
-				<Event name="OnChange">ВидПриИзменении</Event>
-			</Events>
-		</InputField>
-		<InputField name="Реквизит" id="15">
-			<DataPath>Объект.Реквизит</DataPath>
-			<ContextMenu name="РеквизитКонтекстноеМеню" id="16"/>
-			<ExtendedTooltip name="РеквизитРасширеннаяПодсказка" id="17"/>
-		</InputField>
-		<InputField name="Выражение" id="18">
-			<DataPath>Объект.Выражение</DataPath>
-			<Height>4</Height>
-			<MultiLine>true</MultiLine>
+		</Pages>
+		<InputField name="Комментарий" id="35">
+			<DataPath>Объект.Комментарий</DataPath>
+			<ChoiceButton>true</ChoiceButton>
 			<InputHint>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Объект.СуммаДокумента</v8:content>
+					<v8:content>Комментарий</v8:content>
 				</v8:item>
 			</InputHint>
-			<ContextMenu name="ВыражениеКонтекстноеМеню" id="19"/>
-			<ExtendedTooltip name="ВыражениеРасширеннаяПодсказка" id="20"/>
-		</InputField>
-		<UsualGroup name="ГруппаПараметры" id="21">
-			<Group>Horizontal</Group>
-			<ExtendedTooltip name="ГруппаПараметрыРасширеннаяПодсказка" id="22"/>
-			<ChildItems>
-				<InputField name="Допуск" id="23">
-					<DataPath>Объект.Допуск</DataPath>
-					<ContextMenu name="ДопускКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="ДопускРасширеннаяПодсказка" id="25"/>
-				</InputField>
-				<InputField name="Порядок" id="26">
-					<DataPath>Объект.Порядок</DataPath>
-					<ContextMenu name="ПорядокКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="ПорядокРасширеннаяПодсказка" id="28"/>
-				</InputField>
-				<CheckBoxField name="Информативный" id="29">
-					<DataPath>Объект.Информативный</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ИнформативныйКонтекстноеМеню" id="30"/>
-					<ExtendedTooltip name="ИнформативныйРасширеннаяПодсказка" id="31"/>
-				</CheckBoxField>
-				<CheckBoxField name="Отключить" id="32">
-					<DataPath>Объект.Отключить</DataPath>
-					<TitleLocation>Right</TitleLocation>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ОтключитьКонтекстноеМеню" id="33"/>
-					<ExtendedTooltip name="ОтключитьРасширеннаяПодсказка" id="34"/>
-				</CheckBoxField>
-			</ChildItems>
-		</UsualGroup>
-		<InputField name="Комментарий" id="35">
-			<DataPath>Объект.Комментарий</DataPath>
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="36"/>
 			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="37"/>
+			<Events>
+				<Event name="StartChoice">КомментарийНачалоВыбора</Event>
+			</Events>
 		</InputField>
 	</ChildItems>
 	<Attributes>

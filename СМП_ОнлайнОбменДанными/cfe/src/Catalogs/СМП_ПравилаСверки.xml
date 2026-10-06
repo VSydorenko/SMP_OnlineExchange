@@ -49,7 +49,7 @@
 			<CodeSeries>WithinOwnerSubordination</CodeSeries>
 			<CheckUnique>true</CheckUnique>
 			<Autonumbering>false</Autonumbering>
-			<DefaultPresentation>AsDescription</DefaultPresentation>
+			<DefaultPresentation>AsCode</DefaultPresentation>
 			<StandardAttributes>
 				<xr:StandardAttribute name="PredefinedDataName">
 					<xr:LinkByType/>
@@ -190,7 +190,7 @@
 					<xr:LinkByType/>
 					<xr:FillChecking>DontCheck</xr:FillChecking>
 					<xr:MultiLine>false</xr:MultiLine>
-					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:FillFromFillingValue>true</xr:FillFromFillingValue>
 					<xr:CreateOnInput>Auto</xr:CreateOnInput>
 					<xr:TypeReductionMode>Deny</xr:TypeReductionMode>
 					<xr:MaxValue xsi:nil="true"/>
@@ -209,7 +209,7 @@
 					<xr:Comment/>
 					<xr:FullTextSearch>Use</xr:FullTextSearch>
 					<xr:ChoiceParameterLinks/>
-					<xr:FillValue xsi:nil="true"/>
+					<xr:FillValue xsi:type="xr:DesignTimeRef">Catalog.ПравилаКонвертацииОбъектов.EmptyRef</xr:FillValue>
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
@@ -322,9 +322,19 @@
 			<DataLockFields/>
 			<DataLockControlMode>Automatic</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation/>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правило серки</v8:content>
+				</v8:item>
+			</ObjectPresentation>
 			<ExtendedObjectPresentation/>
-			<ListPresentation/>
+			<ListPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Правила сверки</v8:content>
+				</v8:item>
+			</ListPresentation>
 			<ExtendedListPresentation/>
 			<Explanation/>
 			<CreateOnInput>DontUse</CreateOnInput>

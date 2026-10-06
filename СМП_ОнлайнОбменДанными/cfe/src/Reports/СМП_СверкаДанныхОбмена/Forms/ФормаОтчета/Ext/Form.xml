@@ -12,14 +12,26 @@
 	<AutoShowState>Auto</AutoShowState>
 	<ReportResultViewMode>Auto</ReportResultViewMode>
 	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="Сформировать" id="28">
+				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
+				<CommandName>Form.Command.Сформировать</CommandName>
+				<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="29"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаОбмен" id="1">
-			<Group>Horizontal</Group>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОбменРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
 				<InputField name="УчетнаяЗапись" id="3">
@@ -117,12 +129,6 @@
 					<ContextMenu name="ТаймаутКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="ТаймаутРасширеннаяПодсказка" id="27"/>
 				</InputField>
-				<Button name="Сформировать" id="28">
-					<Type>UsualButton</Type>
-					<DefaultButton>true</DefaultButton>
-					<CommandName>Form.Command.Сформировать</CommandName>
-					<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="29"/>
-				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<SpreadSheetDocumentField name="Результат" id="1001">
