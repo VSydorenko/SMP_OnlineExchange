@@ -59,7 +59,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_17</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>https://simplysoft.com.ua/</Vendor>
-			<Version>3.2.0.4</Version>
+			<Version>3.3.0.2</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -81,6 +81,7 @@
 			<CommonModule>СМП_КоннекторHTTP</CommonModule>
 			<CommonModule>СМП_ОнлайнОбмен</CommonModule>
 			<CommonModule>СМП_ОнлайнОбменПовтИсп</CommonModule>
+			<CommonModule>СМП_ОнлайнОбменСверка</CommonModule>
 			<CommonModule>СМП_ОнлайнОбменСобытия</CommonModule>
 			<CommonModule>СМП_ОнлайнОбменУправлениеОчередями</CommonModule>
 			<CommonModule>СМП_РедакторКодаКлиент</CommonModule>
@@ -100,7 +101,9 @@
 			<Catalog>ПравилаКонвертацииОбъектов</Catalog>
 			<Catalog>ПравилаКонвертацииСвойств</Catalog>
 			<Catalog>Свойства</Catalog>
+			<Catalog>СМП_ПравилаСверки</Catalog>
 			<Catalog>СМП_УчетныеЗаписиОбменов</Catalog>
+			<Enum>СМП_ВидыПоказателейСверки</Enum>
 			<Enum>СМП_ВидыСвойств</Enum>
 			<Enum>Приложения</Enum>
 			<Enum>ПриоритетОбъектовОбмена</Enum>
@@ -109,10 +112,10 @@
 			<Enum>СМП_СтатусыОбработкиСообщений</Enum>
 			<Enum>ТипыОбъектов</Enum>
 			<Enum>СМП_ВидыОбъектовОбмена</Enum>
+			<Report>СМП_СверкаДанныхОбмена</Report>
 			<DataProcessor>ВыгрузкаКонвертацииXML</DataProcessor>
 			<DataProcessor>ЗагрузкаКонвертацииXML</DataProcessor>
 			<DataProcessor>ЗагрузкаСтруктурыКонфигурации</DataProcessor>
-			<DataProcessor>СМП_JSONКонвертер</DataProcessor>
 			<DataProcessor>СМП_ОнлайнОбменКонвертацияОбъектов</DataProcessor>
 			<DataProcessor>СМП_РедакторКода</DataProcessor>
 			<DataProcessor>АвтонастройкаПравилКонвертацииЗначений</DataProcessor>

@@ -23,7 +23,9 @@
 				<xr:Ref>CommonPicture.СМП_ОнлайнОбменДанными</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СМП_СверкаДанныхОбмена</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>ЗаимствованныеОбьекты</Subsystem>
