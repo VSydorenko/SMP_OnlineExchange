@@ -467,6 +467,9 @@
 						<dcsset:field>Документ</dcsset:field>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НомерИсточник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>Статус</dcsset:field>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
