@@ -17,12 +17,12 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Номер</dataPath>
-			<field>Номер</field>
+			<dataPath>Правило</dataPath>
+			<field>Правило</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Номер</v8:content>
+					<v8:content>Правило</v8:content>
 				</v8:item>
 			</title>
 			<valueType>
@@ -34,12 +34,29 @@
 			</valueType>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Дата</dataPath>
-			<field>Дата</field>
+			<dataPath>НомерИсточник</dataPath>
+			<field>НомерИсточник</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Дата</v8:content>
+					<v8:content>Номер (источник)</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаИсточник</dataPath>
+			<field>ДатаИсточник</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата (источник)</v8:content>
 				</v8:item>
 			</title>
 			<valueType>
@@ -348,7 +365,7 @@
 				<dcsset:name>Документы</dcsset:name>
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Дата</dcsset:field>
+						<dcsset:field>ДатаИсточник</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
@@ -362,7 +379,14 @@
 						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
-						<dcsset:field>Номер</dcsset:field>
+						<dcsset:field>Правило</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>НомерИсточник</dcsset:field>
 						<dcsset:groupType>Items</dcsset:groupType>
 						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
 						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
@@ -427,7 +451,7 @@
 				</dcsset:groupItems>
 				<dcsset:order>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
-						<dcsset:field>Дата</dcsset:field>
+						<dcsset:field>ДатаИсточник</dcsset:field>
 						<dcsset:orderType>Asc</dcsset:orderType>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:OrderItemField">
@@ -437,13 +461,19 @@
 				</dcsset:order>
 				<dcsset:selection>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
-						<dcsset:field>Дата</dcsset:field>
+						<dcsset:field>ДатаИсточник</dcsset:field>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>Документ</dcsset:field>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>НомерИсточник</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>Статус</dcsset:field>
+					</dcsset:item>
+					<dcsset:item xsi:type="dcsset:SelectedItemField">
+						<dcsset:field>Правило</dcsset:field>
 					</dcsset:item>
 					<dcsset:item xsi:type="dcsset:SelectedItemField">
 						<dcsset:field>ПроведенИсточник</dcsset:field>
