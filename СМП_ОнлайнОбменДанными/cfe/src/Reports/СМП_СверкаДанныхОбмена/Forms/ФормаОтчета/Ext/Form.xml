@@ -6,6 +6,9 @@
 			<v8:content>Сверка данных обмена</v8:content>
 		</v8:item>
 	</Title>
+	<CommandSet>
+		<ExcludedCommand>Generate</ExcludedCommand>
+	</CommandSet>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
 	<ReportFormType>Main</ReportFormType>
@@ -20,6 +23,24 @@
 				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.Сформировать</CommandName>
 				<ExtendedTooltip name="СформироватьРасширеннаяПодсказка" id="29"/>
+			</Button>
+			<Button name="ИзменитьВариант" id="33">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.ChangeVariant</CommandName>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="ИзменитьВариантРасширеннаяПодсказка" id="34"/>
+			</Button>
+			<Button name="ЗагрузитьВариант" id="35">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.LoadVariant</CommandName>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="ЗагрузитьВариантРасширеннаяПодсказка" id="36"/>
+			</Button>
+			<Button name="СохранитьВариант" id="37">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.SaveVariant</CommandName>
+				<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+				<ExtendedTooltip name="СохранитьВариантРасширеннаяПодсказка" id="38"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
