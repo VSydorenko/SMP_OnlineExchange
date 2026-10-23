@@ -461,7 +461,7 @@
 	</totalField>
 	<totalField>
 		<dataPath>КоличествоДокументов</dataPath>
-		<expression>КоличествоРазличных(Документ)</expression>
+		<expression>Количество(Различные Документ)</expression>
 	</totalField>
 	<totalField>
 		<dataPath>Источник</dataPath>
