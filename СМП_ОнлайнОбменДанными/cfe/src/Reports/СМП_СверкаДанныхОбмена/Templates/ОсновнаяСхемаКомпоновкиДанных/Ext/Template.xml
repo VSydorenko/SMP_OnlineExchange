@@ -393,6 +393,16 @@
 		</title>
 	</calculatedField>
 	<calculatedField>
+		<dataPath>РасхождениеПоказателя</dataPath>
+		<expression>ВЫБОР КОГДА Расхождение ТОГДА 1 ИНАЧЕ 0 КОНЕЦ</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Расхождение показателя</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
 		<dataPath>КоличествоДокументов</dataPath>
 		<expression>Документ</expression>
 		<title xsi:type="v8:LocalStringType">
@@ -435,17 +445,19 @@
 	<totalField>
 		<dataPath>ЗначениеИсточник</dataPath>
 		<expression>Максимум(ЗначениеИсточник)</expression>
-		<group>Документ</group>
 	</totalField>
 	<totalField>
 		<dataPath>ЗначениеПриемник</dataPath>
 		<expression>Максимум(ЗначениеПриемник)</expression>
-		<group>Документ</group>
 	</totalField>
 	<totalField>
 		<dataPath>ЕстьРасхождение</dataPath>
 		<expression>Максимум(ЕстьРасхождение)</expression>
-		<group>Документ</group>
+	</totalField>
+	<totalField>
+		<dataPath>РасхождениеПоказателя</dataPath>
+		<expression>Максимум(РасхождениеПоказателя)</expression>
+		<group>Показатель</group>
 	</totalField>
 	<totalField>
 		<dataPath>КоличествоДокументов</dataPath>
@@ -822,6 +834,12 @@
 							<dcsset:field>Показатель</dcsset:field>
 						</dcsset:item>
 					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
 				</dcsset:column>
 				<dcsset:row>
 					<dcsset:groupItems>
@@ -1110,6 +1128,33 @@
 							<dcsset:field>Приемник</dcsset:field>
 						</dcsset:item>
 					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">РасхождениеПоказателя</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:MistyRose</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ЦветТекста</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">web:Red</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection>
+						<dcsset:item>
+							<dcsset:field>Источник</dcsset:field>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:field>Приемник</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
 					<dcsset:filter/>
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
@@ -1128,6 +1173,14 @@
 							<v8:content>Сверка данных обмена</v8:content>
 						</v8:item>
 					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
 				</dcscor:item>
 			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
@@ -1227,6 +1280,12 @@
 							<dcsset:field>СтатусОшибка</dcsset:field>
 						</dcsset:item>
 					</dcsset:selection>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+							<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
 				</dcsset:item>
 			</dcsset:item>
 		</dcsset:settings>
