@@ -403,6 +403,16 @@
 		</title>
 	</calculatedField>
 	<calculatedField>
+		<dataPath>СтрокаДокумента</dataPath>
+		<expression>1</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Строка документа</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<calculatedField>
 		<dataPath>КоличествоДокументов</dataPath>
 		<expression>Документ</expression>
 		<title xsi:type="v8:LocalStringType">
@@ -458,6 +468,11 @@
 		<dataPath>РасхождениеПоказателя</dataPath>
 		<expression>Максимум(РасхождениеПоказателя)</expression>
 		<group>Показатель</group>
+	</totalField>
+	<totalField>
+		<dataPath>СтрокаДокумента</dataPath>
+		<expression>Максимум(СтрокаДокумента)</expression>
+		<group>Документ</group>
 	</totalField>
 	<totalField>
 		<dataPath>КоличествоДокументов</dataPath>
@@ -913,6 +928,24 @@
 							<dcsset:item xsi:type="dcsset:SelectedItemField">
 								<dcsset:field>Отличия</dcsset:field>
 							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ЗначениеИсточник</dcsset:field>
+								<dcsset:lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Источник</v8:content>
+									</v8:item>
+								</dcsset:lwsTitle>
+							</dcsset:item>
+							<dcsset:item xsi:type="dcsset:SelectedItemField">
+								<dcsset:field>ЗначениеПриемник</dcsset:field>
+								<dcsset:lwsTitle>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Приемник</v8:content>
+									</v8:item>
+								</dcsset:lwsTitle>
+							</dcsset:item>
 						</dcsset:selection>
 					</dcsset:item>
 				</dcsset:row>
@@ -1160,6 +1193,22 @@
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
 							<dcscor:value xsi:type="v8ui:HorizontalAlign">Right</dcscor:value>
+						</dcscor:item>
+					</dcsset:appearance>
+				</dcsset:item>
+				<dcsset:item>
+					<dcsset:selection/>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">СтрокаДокумента</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:appearance>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
 						</dcscor:item>
 					</dcsset:appearance>
 				</dcsset:item>
