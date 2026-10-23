@@ -17,6 +17,23 @@
 			</title>
 		</field>
 		<field xsi:type="DataSetFieldField">
+			<dataPath>КлючДокумента</dataPath>
+			<field>КлючДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ документа</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
 			<dataPath>Правило</dataPath>
 			<field>Правило</field>
 			<title xsi:type="v8:LocalStringType">
@@ -476,7 +493,7 @@
 	</totalField>
 	<totalField>
 		<dataPath>КоличествоДокументов</dataPath>
-		<expression>Количество(Различные Документ)</expression>
+		<expression>Количество(Различные КлючДокумента)</expression>
 	</totalField>
 	<totalField>
 		<dataPath>Источник</dataPath>
