@@ -81,6 +81,7 @@
 			<CommonModule>СМП_КоннекторHTTP</CommonModule>
 			<CommonModule>СМП_ОнлайнОбмен</CommonModule>
 			<CommonModule>СМП_ОнлайнОбменПовтИсп</CommonModule>
+			<CommonModule>СМП_ОнлайнОбменПравилаРегистрации</CommonModule>
 			<CommonModule>СМП_ОнлайнОбменСверка</CommonModule>
 			<CommonModule>СМП_ОнлайнОбменСобытия</CommonModule>
 			<CommonModule>СМП_ОнлайнОбменУправлениеОчередями</CommonModule>
