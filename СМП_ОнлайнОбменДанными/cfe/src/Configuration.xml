@@ -79,6 +79,7 @@
 			<Role>ПолныеПрава</Role>
 			<CommonModule>ЗапретРедактированияРеквизитовОбъектовПереопределяемый</CommonModule>
 			<CommonModule>СМП_КоннекторHTTP</CommonModule>
+			<CommonModule>СМП_ОбщегоНазначения</CommonModule>
 			<CommonModule>СМП_ОнлайнОбмен</CommonModule>
 			<CommonModule>СМП_ОнлайнОбменПовтИсп</CommonModule>
 			<CommonModule>СМП_ОнлайнОбменПравилаРегистрации</CommonModule>
@@ -88,12 +89,11 @@
 			<CommonModule>СМП_РедакторКодаКлиент</CommonModule>
 			<CommonModule>СМП_РедакторКодаСервер</CommonModule>
 			<CommonModule>СМП_СобытияОтправкиДанных</CommonModule>
-			<CommonModule>СМП_ОбщегоНазначения</CommonModule>
 			<HTTPService>СМП_ОбменДанными</HTTPService>
+			<EventSubscription>СМП_РегистрацияДокументаПередЗаписью</EventSubscription>
 			<EventSubscription>СМП_РегистрацияДокументаПриЗаписи</EventSubscription>
 			<EventSubscription>СМП_РегистрацияДокументаОбработкаПроведения</EventSubscription>
 			<EventSubscription>СМП_РегистрацияСправочника</EventSubscription>
-			<EventSubscription>СМП_РегистрацияДокументаПередЗаписью</EventSubscription>
 			<FunctionalOption>СМП_ВерсияПравилРегистрации</FunctionalOption>
 			<Constant>СМП_ВерсияПравилРегистрации</Constant>
 			<Catalog>Алгоритмы</Catalog>
