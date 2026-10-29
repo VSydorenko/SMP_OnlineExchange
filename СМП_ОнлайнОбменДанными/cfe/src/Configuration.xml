@@ -59,7 +59,7 @@
 			<ConfigurationExtensionCompatibilityMode>Version8_3_17</ConfigurationExtensionCompatibilityMode>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>https://simplysoft.com.ua/</Vendor>
-			<Version>3.4.0.1</Version>
+			<Version>3.5.0.1</Version>
 			<BriefInformation/>
 			<DetailedInformation/>
 			<Copyright/>
@@ -126,6 +126,7 @@
 			<InformationRegister>СМП_ОчередьВходящихСообщений</InformationRegister>
 			<InformationRegister>СМП_ОчередьИсходящихСообщений</InformationRegister>
 			<InformationRegister>СМП_ОчередьОбработкиДанных</InformationRegister>
+			<InformationRegister>СМП_ПолученныеОбъекты</InformationRegister>
 		</ChildObjects>
 	</Configuration>
 </MetaDataObject>
