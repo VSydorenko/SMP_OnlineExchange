@@ -6,11 +6,11 @@
 			<v8:content>Сверка данных обмена</v8:content>
 		</v8:item>
 	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
 	<CommandSet>
 		<ExcludedCommand>Generate</ExcludedCommand>
 	</CommandSet>
-	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
-	<AutoTitle>false</AutoTitle>
 	<ReportFormType>Main</ReportFormType>
 	<AutoShowState>Auto</AutoShowState>
 	<ReportResultViewMode>Auto</ReportResultViewMode>
