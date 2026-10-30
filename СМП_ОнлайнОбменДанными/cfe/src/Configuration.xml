@@ -95,7 +95,6 @@
 			<EventSubscription>СМП_РегистрацияДокументаПриЗаписи</EventSubscription>
 			<EventSubscription>СМП_РегистрацияДокументаОбработкаПроведения</EventSubscription>
 			<EventSubscription>СМП_РегистрацияСправочника</EventSubscription>
-			<FunctionalOption>СМП_ВерсияПравилРегистрации</FunctionalOption>
 			<Constant>СМП_ВерсияПравилРегистрации</Constant>
 			<Catalog>Алгоритмы</Catalog>
 			<Catalog>Значения</Catalog>
