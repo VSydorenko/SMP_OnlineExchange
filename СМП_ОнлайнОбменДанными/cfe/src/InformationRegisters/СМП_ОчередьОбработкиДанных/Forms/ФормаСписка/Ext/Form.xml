@@ -12,6 +12,11 @@
 				<CommandName>Form.Command.ОбработатьСообщение</CommandName>
 				<ExtendedTooltip name="ОбработатьСообщениеРасширеннаяПодсказка" id="44"/>
 			</Button>
+			<Button name="ПовторноПроверитьПравилаРегистрации" id="50">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПовторноПроверитьПравилаРегистрации</CommandName>
+				<ExtendedTooltip name="ПовторноПроверитьПравилаРегистрацииРасширеннаяПодсказка" id="51"/>
+			</Button>
 			<Button name="ФормаОбновить" id="48">
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
@@ -219,6 +224,23 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбработатьСообщение</Action>
+			<CurrentRowUse>Use</CurrentRowUse>
+			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
+		</Command>
+		<Command name="ПовторноПроверитьПравилаРегистрации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторно проверить правила регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Повторно проверить правила регистрации для выделенных строк со статусом "Ошибка регистрации"</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПовторноПроверитьПравилаРегистрации</Action>
 			<CurrentRowUse>Use</CurrentRowUse>
 			<AssociatedTableElementId xsi:type="xs:string">Список</AssociatedTableElementId>
 		</Command>
