@@ -6,7 +6,7 @@
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сверка данных обмена</v8:content>
+					<v8:content>Сверка данных обмена (СМП)</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment>Открытие и формирование отчета сверки данных обмена</Comment>
